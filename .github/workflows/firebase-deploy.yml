@@ -1,0 +1,47 @@
+name: Firebase Hosting CI/CD
+
+on:
+  push:
+    branches:
+      - main  # This ensures that the action runs on every push to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the code
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Set up Node.js (for Firebase CLI)
+    - name: Set up Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'  # Specify the Node.js version you want to use
+
+    # Install dependencies inside the frontend-react folder
+    - name: Install dependencies
+      run: |
+        npm install -g firebase-tools
+        npm install
+      working-directory: frontend-react  # Ensure the command runs in the frontend-react directory
+
+
+    # Build the React app
+    - name: Build React app
+      run: npm run build
+      working-directory: frontend-react
+
+
+    # Set up Google Cloud credentials
+    - name: Authenticate with Google Cloud
+      env:
+        GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-key.json
+      run: echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}" > $GOOGLE_APPLICATION_CREDENTIALS
+
+
+    # Deploy to Firebase
+    - name: Deploy to Firebase
+      run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_AUTH_TOKEN }}
+      working-directory: frontend-react  # Ensure the command runs in the frontend-react directory
