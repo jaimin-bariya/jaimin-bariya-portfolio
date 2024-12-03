@@ -22,7 +22,7 @@ function App() {
           {/* Layout compo wraps the routes  */}
 
          
-            <Route path='/' element={<HomePage/>}/>
+            <Route path='/home' element={<HomePage/>}/>
             <Route path='/about' element={<AboutPage/>}/>
             <Route path='/education/' element={<EducationPage/>}/>
 
@@ -30,7 +30,7 @@ function App() {
             <Route path='/education/certificate/' element={<AllCertificates/>}/>
             
             
-            <Route path='/project/' element={<ProjectPage/>}>
+            <Route path='/projects/' element={<ProjectPage/>}>
             </Route>
             
 

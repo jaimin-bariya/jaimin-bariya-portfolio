@@ -1,5 +1,7 @@
 // HomePage ------------------------------------------------------------------------------------------------------
 export {default as HomePage} from '@components/HomePage/HomePage'
+export {default as ShortNoteCard} from '@components/HomePage/ShortNoteCard'
+export {default as WhatIDo} from '@components/HomePage/WhatIDo'
 
 
 // Experience --------------------------------------------------------------------------------------------------
