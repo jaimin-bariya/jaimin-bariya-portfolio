@@ -2,6 +2,8 @@
 export {default as HomePage} from '@components/HomePage/HomePage'
 export {default as ShortNoteCard} from '@components/HomePage/ShortNoteCard'
 export {default as WhatIDo} from '@components/HomePage/WhatIDo'
+export {default as ShareButtons} from '@components/HomePage/ShareButtons'
+export {default as StartMe} from '@components/HomePage/StartMe'
 
 
 // Experience --------------------------------------------------------------------------------------------------
@@ -18,6 +20,7 @@ export {default as ContactPage} from '@components/ContactPage/ContactPage'
 
 // EducationPage --------------------------------------------------------------------------------------------------
 export {default as EducationPage} from '@components/EducationPage/EducationPage'
+export {default as AllCertificates} from '@components/EducationPage/AllCertificates'
 
 
 // Footer-Header --------------------------------------------------------------------------------------------------

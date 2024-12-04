@@ -1,5 +1,5 @@
 import { ArrowUpRight, Code, CircleDotDashed, LineChart, BrainCircuit, Cloud, CloudLightning, SquareFunction, Sticker } from 'lucide-react'
-import { Card } from "@/components/ui/card"
+  import { Card } from "@/components/ui/card"
 
 
 const WhatIDo = ({className}) => {
@@ -115,6 +115,10 @@ const WhatIDo = ({className}) => {
             <div className="mt-2 flex items-center gap-2">
             <Sticker className='text-orange-500 h-8 w-8'  />
               <span className="text-gray-400 text-sm">Practicing Data Structures and Algorithms (DSA) to sharpen my problem-solving skills and prepare for coding challenges.</span>
+            </div>
+            <div className="mt-2 flex items-center gap-2">
+            <Sticker className='text-orange-500 text-xs'  />
+              <span className="text-gray-400 text-sm">Watching Netflix (Telegram Version 😅)</span>
             </div>
             {/* <div className="mt-2 flex items-center gap-2">
             <Sticker className='text-orange-500'  />

@@ -6,7 +6,7 @@ import clsx from "clsx";
 const ShortNoteCard = ({className}) => {
   return (
     <>  
-        <div className={className}>
+        <div className={`${className} `}>
       <Card className="w-[450px] h-fit bg-gray-800/80 backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90 transition-colors cursor-pointer group">
         <div className="flex justify-between items-start">
           <span className="text-gray-300 text-lg font-extrabold  truncate">About Me...</span>

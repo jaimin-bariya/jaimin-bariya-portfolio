@@ -1,11 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { AllCertificates } from "@components/index";
 
 const EducationPage = () => {
   return (
     <>
-      <p>Education page</p>
+      <p>Education fedpage</p>
 
-      <Outlet/>
+      <AllCertificates/>
+     
 
     </>
   );

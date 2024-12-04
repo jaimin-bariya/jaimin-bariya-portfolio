@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Valeria Garza",
+      "type": "Promotion",
+      "timeAgo": "24 min ago",
+      "imageUrl": "/placeholder.svg?height=400&width=400"
+    },
+    {
+      "name": "Marci Senter",
+      "type": "HR Letters",
+      "timeAgo": "1d ago",
+      "imageUrl": "/placeholder.svg?height=400&width=400"
+    },
+    {
+      "name": "Donal Roche",
+      "type": "Leave",
+      "timeAgo": "2d ago",
+      "imageUrl": "/placeholder.svg?height=400&width=400"
+    },
+    {
+      "name": "Feida Varnes",
+      "type": "Forms",
+      "timeAgo": "5w ago",
+      "imageUrl": "/placeholder.svg?height=400&width=400"
+    },
+    {
+      "name": "John Doe",
+      "type": "Expense Report",
+      "timeAgo": "1h ago",
+      "imageUrl": "/placeholder.svg?height=400&width=400"
+    },
+    {
+      "name": "Jane Smith",
+      "type": "Project Proposal",
+      "timeAgo": "3d ago",
+      "imageUrl": "/placeholder.svg?height=400&width=400"
+    },
+    {
+      "name": "Alex Johnson",
+      "type": "Training Request",
+      "timeAgo": "1w ago",
+      "imageUrl": "/placeholder.svg?height=400&width=400"
+    },
+    {
+      "name": "Emily Brown",
+      "type": "Client Meeting",
+      "timeAgo": "2h ago",
+      "imageUrl": "/placeholder.svg?height=400&width=400"
+    }
+  ]
+  
