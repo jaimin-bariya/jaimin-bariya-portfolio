@@ -1,8 +1,15 @@
 import { ArrowUpRight, Code, CircleDotDashed, LineChart, BrainCircuit, Cloud, CloudLightning, SquareFunction, Sticker } from 'lucide-react'
-  import { Card } from "@/components/ui/card"
-
+import { Card } from "@/components/ui/card"
+import { useState, useEffect } from 'react';
 
 const WhatIDo = ({className}) => {
+
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
     <>
     <div className= {`max-w mx-auto  ${className} `}>
@@ -12,7 +19,7 @@ const WhatIDo = ({className}) => {
         
         <div className="grid grid-cols-2 grid-rows-2 sm:grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Web Development Card */}
-          <Card className="bg-gray-800/80 w-[450px] backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90 transition-colors cursor-pointer group">
+          <Card className={`bg-gray-800/80 w-[450px] backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90  cursor-pointer group  transform opacity-0 transition-all duration-200 ease-out delay-500 ${isVisible ?'translate-y-0  opacity-100' : 'translate-y-80 opacity-0' }` }>
             <div className="flex justify-between items-start">
               <span className="text-gray-200 font-medium truncate ">Data Science & AI/ML</span>
               <BrainCircuit className="text-emerald-500 w-5 h-5" />
@@ -46,7 +53,7 @@ const WhatIDo = ({className}) => {
           </Card>
 
           {/* Full Stack Development */}
-          <Card className="bg-gray-800/80 backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90 transition-colors cursor-pointer group">
+          <Card className={`bg-gray-800/80 w-[450px] backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90  cursor-pointer group   transform opacity-0 transition-all duration-500 ease-out delay-700 ${isVisible ?'translate-y-0  opacity-100' : 'translate-y-80 opacity-0' }` }>
             <div className="flex justify-between items-start">
               <span className="text-gray-200 font-medium truncate">Full Stack Development</span>
               <Code className=" text-blue-500 w-5 h-5 " />
@@ -71,7 +78,7 @@ const WhatIDo = ({className}) => {
           </Card>
 
           {/* Cloud Infra-Architecture */}
-          <Card className="bg-gray-800/80 backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90 transition-colors cursor-pointer group">
+          <Card className={`bg-gray-800/80 w-[450px] backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90  cursor-pointer group   transform opacity-0 transition-all duration-700 ease-out delay-1000 ${isVisible ?'translate-y-0  opacity-100' : 'translate-y-80 opacity-0' }` }>
             <div className="flex justify-between items-start">
               <span className="text-gray-200 font-medium truncate">Cloud Infra-Architecture</span>
               <CloudLightning className="w-5 h-5 text-yellow-500 "/>
@@ -97,7 +104,7 @@ const WhatIDo = ({className}) => {
           </Card>
 
           {/* Fun Work */}
-          <Card className="bg-gray-800/80 backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90 transition-colors cursor-pointer group">
+          <Card className={`bg-gray-800/80 w-[450px] backdrop-blur-lg p-4 rounded-3xl hover:bg-gray-800/90  cursor-pointer group   transform opacity-0 transition-all duration-1000 ease-out delay-1000 ${isVisible ?'translate-y-0  opacity-100' : 'translate-y-80 opacity-0' }` }>
             <div className="flex justify-between items-start">
               <span className="text-gray-200 font-medium truncate">Fun Work</span>
               <SquareFunction className="w-5 h-5 text-red-800 " />

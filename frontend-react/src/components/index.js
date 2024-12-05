@@ -21,6 +21,8 @@ export {default as ContactPage} from '@components/ContactPage/ContactPage'
 // EducationPage --------------------------------------------------------------------------------------------------
 export {default as EducationPage} from '@components/EducationPage/EducationPage'
 export {default as AllCertificates} from '@components/EducationPage/AllCertificates'
+export {default as Certification} from '@components/EducationPage/Certification'
+export {default as Degree} from '@components/EducationPage/Degree'
 
 
 // Footer-Header --------------------------------------------------------------------------------------------------

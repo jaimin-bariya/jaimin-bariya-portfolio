@@ -1,11 +1,16 @@
-import { AllCertificates } from "@components/index";
+import { AllCertificates, Certification, Degree } from "@components/index";
+
 
 const EducationPage = () => {
   return (
     <>
-      <p>Education fedpage</p>
 
-      <AllCertificates/>
+      <div className="flex gap-4 justify-between px-9">
+      <Degree/>
+      <Certification/>
+
+      </div>
+      
      
 
     </>

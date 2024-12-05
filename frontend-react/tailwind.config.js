@@ -1,3 +1,5 @@
+import { Transform } from 'stream';
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ["class"],
@@ -54,11 +56,27 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+		scrollbar: ['hidden'], // Hide scrollbar utility
+		keyframes: {
+			scaleUp: {
+				'0%': {transform: 'scale(0.75)', opacity: '0'},
+				'100%': {transform: 'scale(1)', opacity: '1'},
+			}
+		},
+		transitionDelay: {
+			'2000': '2000ms', // Adding a custom delay of 2000ms (2 seconds)
+			'1200': '1200ms',
+			'1400': '1400ms',
+			'1600': '1600ms',
+			'1800': '1800ms',
+
+		},
   	}
   },
   plugins: [
     // require('@shadcn/ui/plugin'), // Add this line if needed
-      require("tailwindcss-animate")
+      require("tailwindcss-animate"),
+      require("tailwind-scrollbar-hide")
 ],
 }

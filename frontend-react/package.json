@@ -25,6 +25,7 @@
     "react-router-dom": "^7.0.1",
     "react-share": "^5.1.1",
     "tailwind-merge": "^2.5.5",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
