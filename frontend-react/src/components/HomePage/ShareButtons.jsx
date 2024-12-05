@@ -25,7 +25,7 @@ const ShareButtons = ({className}) => {
             <Tooltip>
                 <TooltipTrigger>
             <div className="w-10 h-10">
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/jaimin-bariya" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="w-full h-full hover:text-[#181717] transform transition-transform duration-300 hover:scale-110"/>
                 </a>
             </div>
@@ -41,7 +41,7 @@ const ShareButtons = ({className}) => {
             <Tooltip>
                 <TooltipTrigger>
             <div className="w-10 h-10">
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/jaiminbariya_" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="w-full h-full hover:text-[#E1306C] transform transition-transform duration-300 hover:scale-110"/>
                 </a>
             </div>
@@ -57,7 +57,7 @@ const ShareButtons = ({className}) => {
             <Tooltip>
                 <TooltipTrigger>
             <div className="w-10 h-10">
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/jaiminbariya_" target="_blank" rel="noopener noreferrer">
                     <FaSquareXTwitter className="w-full h-full hover:text-[#1DA1F2] transform transition-transform duration-300 hover:scale-110"/>
                 </a>
             </div>
@@ -73,7 +73,7 @@ const ShareButtons = ({className}) => {
             <Tooltip>
                 <TooltipTrigger>
             <div className="w-10 h-10">
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/jaiminbariya/" target="_blank" rel="noopener noreferrer">
                     <CiLinkedin className="w-full h-full hover:text-[#0077B5] transform transition-transform duration-300 hover:scale-110"/>
                 </a>
             </div>
@@ -89,7 +89,7 @@ const ShareButtons = ({className}) => {
             <Tooltip>
                 <TooltipTrigger>
             <div className="w-10 h-10">
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://leetcode.com/u/jaimin-bariya/" target="_blank" rel="noopener noreferrer">
                     <SiLeetcode className="w-full h-full hover:text-[#FFDC5D] transform transition-transform duration-300 hover:scale-110"/>
                 </a>
             </div>
@@ -104,7 +104,7 @@ const ShareButtons = ({className}) => {
             <Tooltip>
                 <TooltipTrigger>
             <div className="w-10 h-10">
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.hackerrank.com/profile/jaiminbariyastu1" target="_blank" rel="noopener noreferrer">
                     <FaHackerrank className="w-full h-full hover:text-[#2EC866]  transform transition-transform duration-300 hover:scale-110"/>
                 </a>
             </div>
