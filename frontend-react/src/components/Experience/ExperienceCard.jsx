@@ -3,10 +3,11 @@ import clsx from "clsx";
 
 import { useState, useEffect } from "react";
 
-const ShortNoteCard = ({ className, textNote }) => {
+const ShortNoteCard = ({ className, textNote="", title="Me", imgPath='' }) => {
   const [displayText, setDisplayText] = useState("");
   const typingSpeed = 20; // in milliseconds
 
+  
   useEffect(() => {
     let index = 0;
 
@@ -27,7 +28,7 @@ const ShortNoteCard = ({ className, textNote }) => {
           <div className="text-white bg h-2/5 ">
             
             <a href="https://storyset.com/technology">
-              <img className="w-full h-full rounded-t-3xl" src="/images/experience1.svg" alt="" />
+              <img className="w-full h-full rounded-t-3xl" src={imgPath} alt="" />
             </a>
 
           </div>
@@ -35,7 +36,7 @@ const ShortNoteCard = ({ className, textNote }) => {
           <div className="bg-gray-800/40 rounded-b-3xl m-0 p-4  h-3/5 ">
             <div className="flex justify-between items-start">
               <span className="text-gray-300 text-lg font-extrabold  truncate">
-                About Me...
+                {title}...
               </span>
             </div>
 

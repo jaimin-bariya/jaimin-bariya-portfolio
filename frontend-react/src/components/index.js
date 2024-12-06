@@ -10,6 +10,7 @@ export {default as StartMe} from '@components/HomePage/StartMe'
 export {default as Experience} from '@components/Experience/Experience'
 export {default as Accordian} from '@components/Experience/Accordian'
 export {default as ExperienceCard} from '@components/Experience/ExperienceCard'
+export {default as CompaniesCard} from '@components/Experience/CompaniesCard'
 
 
 // AboutPage --------------------------------------------------------------------------------------------------

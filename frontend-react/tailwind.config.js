@@ -193,7 +193,10 @@ export default {
     			'1600': '1600ms',
     			'1800': '1800ms',
     			'2000': '2000ms'
-    		}
+    		},
+			transitionDuration: {
+				'2000': '2000ms', // You can now use duration-2000
+			  },
     	}
     },
 	plugins: [
