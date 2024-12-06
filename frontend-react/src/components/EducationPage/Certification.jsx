@@ -29,27 +29,52 @@ const Certification = () => {
       provider: "Andrew Ng",
     },
     {
-      platform: "App brewery",
+      platform: "3 App brewery",
       title: "Machine Learning",
       provider: "Andrew Ng",
     },
     {
-      platform: "Udemy",
+      platform: "4 Udemy",
       title: "Deep Learning",
       provider: "Andrew Ng",
     },
     {
-      platform: "App brewery",
+      platform: "5 App brewery",
       title: "Machine Learning",
       provider: "Andrew Ng",
     },
     {
-      platform: "Udemy",
+      platform: "6 Udemy",
       title: "Deep Learning",
       provider: "Andrew Ng",
     },
     {
-      platform: "App brewery",
+      platform: "7 App brewery",
+      title: "Machine Learning",
+      provider: "Andrew Ng",
+    },
+    {
+      platform: "8 App brewery",
+      title: "Machine Learning",
+      provider: "Andrew Ng",
+    },
+    {
+      platform: "9 App brewery",
+      title: "Machine Learning",
+      provider: "Andrew Ng",
+    },
+    {
+      platform: "10 App brewery",
+      title: "Machine Learning",
+      provider: "Andrew Ng",
+    },
+    {
+      platform: "11 App brewery",
+      title: "Machine Learning",
+      provider: "Andrew Ng",
+    },
+    {
+      platform: "12 App brewery",
       title: "Machine Learning",
       provider: "Andrew Ng",
     },
@@ -67,9 +92,30 @@ const Certification = () => {
         </h2>
         </div>
 
-          {certificates.map((item, index) => (
+          {certificates.map((item, index) => {
 
-            <Card key={index} className="bg-gray-800/80 backdrop-blur-lg h-40 w-64 border-t-0 border-l-0 border-b-2  border-emerald-500 hover:border-rose-700  p-4 hover:bg-gray-800/90 transition-colors group">
+            // Determine the animation axis dynamically
+            let newIndex = index++;
+            let isYaxis = newIndex % 3 === 0; // Alternate between x and y axes
+            // let initialTransform = isYaxis ? `translateY(${index % 3 === 0 ? '-90%' : '90%'})` : `translateX(-50%)`;
+            let initialTransform = isYaxis ? `translateY(-50%)` : `translateX(-50%)`;
+
+
+           return (
+
+
+
+            <Card 
+              key={index} 
+              className={`bg-gray-800/80 backdrop-blur-lg  h-40 w-64 border-t-0 border-l-0 border-b-2  border-emerald-500 hover:border-rose-700  p-4 hover:bg-gray-800/90 transition-colors group animate-slideInCustom   `}
+              
+
+
+
+              
+
+            >
+              
               <a href="https://x.com" target="_blank">
                 <div className="flex justify-center items-center  text-center transform  duration-300 h-3/5 hover:scale-110">
                   <span className="text-gray-200 font-semibold text-lg  ">
@@ -89,7 +135,7 @@ const Certification = () => {
               </div>
             </Card>
 
-          ))}
+          ) })}
         </div>
       </ScrollArea>
 

@@ -8,6 +8,8 @@ export {default as StartMe} from '@components/HomePage/StartMe'
 
 // Experience --------------------------------------------------------------------------------------------------
 export {default as Experience} from '@components/Experience/Experience'
+export {default as Accordian} from '@components/Experience/Accordian'
+export {default as ExperienceCard} from '@components/Experience/ExperienceCard'
 
 
 // AboutPage --------------------------------------------------------------------------------------------------

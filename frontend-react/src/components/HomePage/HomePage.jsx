@@ -16,6 +16,13 @@ const HomePage = () => {
     navigate("/about");
   };
 
+
+  
+
+
+ 
+
+
   return (
     <>
       <div className="grid grid-cols-6 grid-rows-2 sm:grid-cols-1 lg:grid-cols-6 px-8 gap-2">
