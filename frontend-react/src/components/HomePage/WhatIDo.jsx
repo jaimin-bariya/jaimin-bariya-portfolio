@@ -10,6 +10,9 @@ const WhatIDo = ({className}) => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+
+  
   return (
     <>
     <div className= {`max-w mx-auto  ${className} `}>

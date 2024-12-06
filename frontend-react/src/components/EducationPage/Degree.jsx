@@ -7,13 +7,14 @@ const Degree = () => {
 
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(false); // Reset animation
-      setTimeout(() => setIsVisible(true), 100); // Re-trigger animation
-    }, 100); // Slight delay ensures reset
-    return () => clearTimeout(timer); // Cleanup timer
-  }, []); // Empty dependency ensures it triggers on every render
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsVisible(false); // Reset animation
+  //     setTimeout(() => setIsVisible(true), 5); // Re-trigger animation
+  //   }, 5); // Slight delay ensures reset
+  //   return () => clearTimeout(timer); // Cleanup timer
+  // }, []); // Empty dependency ensures it triggers on every render
+
 
 
 
@@ -53,13 +54,15 @@ const Degree = () => {
           </h2>
       </div>
 
-      <ScrollArea className="mt-6 h-[350px] pr-4 overflow-y-auto scrollbar-hide">
+      <ScrollArea className="mt-6 h-[350px] pr-4 overflow-y-auto  hide-scrollbar">
         {/* <div className="w-full rounded-xl flex flex-col gap-9 bg-gray-900/80 p-6 backdrop-blur-md"> */}
-        <div className="w-full rounded-xl flex flex-col gap-9 pb-2  pt-2">
+        <div className="w-full rounded-xl flex flex-col gap-9 pb-2  pt-2 ">
 
           {degree.map((item, index) => (
 
-            <Card key={index} className={`bg-transparent   cursor-pointer   rounded-md   transform opacity-0 transition-all duration-500 ease-out delay-700 ${isVisible ?'translate-y-0  opacity-100' : 'translate-y-80 opacity-0' }` }>
+
+            // <Card key={index} className={`bg-transparent   cursor-pointer   rounded-md   transform opacity-0 transition-all duration-500 ease-out delay-700 ${isVisible ?'translate-y-0  opacity-100' : 'translate-y-80 opacity-0' }` }>
+            <Card key={index} className={`bg-transparent   cursor-pointer   rounded-md animate-slideInBottom ` }>
           
               <div className="text-white bg p-4 ">
                 <img src="" alt="" />

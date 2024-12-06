@@ -13,16 +13,11 @@ const ShareButtons = ({className}) => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-
         const timer = setTimeout(() => {
-
             setIsVisible(false); //reset animation 
             setTimeout(() => setIsVisible(true), 100); // re-trigger animation
-
         }, 100);
-
         return () => clearTimeout(timer) // clear up timer
-
     }, []);
   
 

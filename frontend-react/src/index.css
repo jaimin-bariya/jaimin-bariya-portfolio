@@ -19,12 +19,23 @@ html, body {
 
 
 body {
-  background-image: url('/bg.jpg');
+  background-image: url('/images/bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
+}
+
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Hide the scrollbar */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Hide scrollbar in IE */
+  scrollbar-width: none;  /* Hide scrollbar in Firefox */
 }
 
 

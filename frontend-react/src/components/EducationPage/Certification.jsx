@@ -1,9 +1,20 @@
 
 import { Card } from "@/components/ui/card";
 import { ScrollArea } from "../ui/scroll-area";
-
+import { useEffect, useState } from "react";
 
 const Certification = () => {
+
+
+  const [isVisible, setIsVisible] = useState(false);
+
+
+  useEffect(() => {
+
+    
+
+
+  }, []) 
 
 
   const certificates = [
@@ -49,8 +60,9 @@ const Certification = () => {
       <ScrollArea className="mt-6 h-[430px] pr-4 overflow-y-auto" >
         <div className="grid grid-cols-3 gap-9  pr-9 ">
 
-        <div className="justify-center items-center h-full w-full flex">
-        <h2 className="text-3xl font-bold text-black  border-y-4 py-7 border-emerald-500 ">
+        <div className="justify-center items-center h-full w-full flex ">
+        <h2 className="text-3xl font-bold text-black  border-y-4 py-7 border-emerald-500 animate-slideInLeft  ">
+        {/* <h2 className="text-3xl font-bold text-black  border-y-4 py-7 border-emerald-500   animate-slideIn"> */}
            {"Certifications -> "}
         </h2>
         </div>
