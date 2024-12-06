@@ -56,6 +56,11 @@ export default {
     			}
     		},
     		keyframes: {
+				moveButak: {
+					'0%': {opacity: '1', transform: 'translate(-81vw, 0vh)' },
+					'100%': {opacity: '1', transform: 'translate(0)' },
+				},
+
     			slideInCustom: {
     				'0%': {
     					opacity: '0',
@@ -179,7 +184,8 @@ export default {
     			slideInCustomY: 'slideInCustomY 0.8s ease-out',
     			slideInMixed: 'slideInMixed 0.8s ease-out',
     			'accordion-down': 'accordion-down 0.2s ease-out',
-    			'accordion-up': 'accordion-up 0.2s ease-out'
+    			'accordion-up': 'accordion-up 0.2s ease-out',
+				moveButak: 'moveButak 12s ease-out'
     		},
     		transitionDelay: {
     			'0': '0ms',

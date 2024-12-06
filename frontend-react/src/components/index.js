@@ -19,6 +19,9 @@ export {default as AboutPage} from '@components/AboutPage/AboutPage'
 
 // ContactPage --------------------------------------------------------------------------------------------------
 export {default as ContactPage} from '@components/ContactPage/ContactPage'
+export {default as ContactShortNote} from '@components/ContactPage/ContactShortNote' 
+export {default as SimpleButton} from '@/components/ContactPage/SimpleButton' 
+export {default as CarAnimation} from '@components/ContactPage/CarAnimation' 
 
 
 // EducationPage --------------------------------------------------------------------------------------------------

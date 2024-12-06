@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { CiLinkedin } from "react-icons/ci";
 import { SiLeetcode } from "react-icons/si";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Heading1 } from 'lucide-react'
 import { Card } from "@/components/ui/card"
 import { useState, useEffect } from "react";
 
-const ShareButtons = ({className}) => {
+const ShareButtons = ({className, shareHeading}) => {
 
 
     const [isVisible, setIsVisible] = useState(false);
@@ -30,10 +30,10 @@ const ShareButtons = ({className}) => {
 
             <Card className="bg-gray-800/20 w-[450px] backdrop-blur-lg p-3 rounded-3xl hover:bg-gray-800/40 transition-colors cursor-pointer group">
 
-
+            {shareHeading ? <h1 className="animate-slideInLeft font-extrabold font-mono text-xl w-full text-center pb-4">{shareHeading}</h1> : ""}
             
 
-            <div className="flex justify-around">
+            <div className={`flex justify-around `}>
                 <TooltipProvider>
                 <Tooltip>
                     <TooltipTrigger>
