@@ -38,6 +38,15 @@ export {default as Header} from '@components/HeaderFooter/Header'
 // Open Source -------------------------------------------------------------------------------------------------------
 export {default as OpenSourcePage} from '@components/OpenSourcePage/OpenSourcePage'
 
+
+// Beyond Me -------------------------------------------------------------------------------------------------------
+export {default as BeyondMe} from '@components/BeyondMe/BeyondMe'
+export {default as MyGuidance} from '@components/BeyondMe/MyGuidance'
+export {default as PlatformIcon} from '@components/BeyondMe/PlatformIcon'
+export {default as MyStory} from '@components/BeyondMe/MyStory'
+
+
+
 // Project Page -------------------------------------------------------------------------------------------------------
 export {default as ProjectPage} from '@components/ProjectPage/ProjectPage'
 export {default as SingleProjectView} from '@components/ProjectPage/SingleProjectView'

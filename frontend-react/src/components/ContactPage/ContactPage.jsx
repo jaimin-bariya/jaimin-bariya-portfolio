@@ -1,8 +1,10 @@
 import { ContactShortNote, ShareButtons, SimpleButton, CarAnimation} from "@components/index";
-
+import { useNavigate } from "react-router-dom";
 
 const ContactPage = () => {
 
+
+  const navigate = useNavigate();
 
   const textNote = `<br/>Hey, bro! Don’t hesitate to slide into my DMs on any social media—I’m always around. 
   I usually reply in a day, max! Whether you need help with AI, ML, React, or just wanna talk tech.
@@ -29,9 +31,9 @@ const ContactPage = () => {
         </div>
 
         <div className="flex gap-2 justify-between">
-          <SimpleButton title="See My Resume" linkOpen="" fillColor="bg-orange-900" textColor="text-white"/>
-          <SimpleButton title="Visit My Notes" linkOpen="" fillColor="bg-white" textColor="text-black"/>
-          <SimpleButton title="Beyond Portfolio [🤘]" fillColor="bg-green-800" textColor="text-white"/>
+          <SimpleButton title="See My Resume" linkOpen={() =>window.open("", '_blank')} fillColor="bg-orange-900" textColor="text-white"/>
+          <SimpleButton title="Visit My Notes" linkOpen={() => window.open("", '_blank')} fillColor="bg-white" textColor="text-black"/>
+          <SimpleButton title="Beyond Portfolio [🤘]" linkOpen={() => navigate('/beyond-me')}  fillColor="bg-green-800" textColor="text-white"/>
         </div>
 
       </div>

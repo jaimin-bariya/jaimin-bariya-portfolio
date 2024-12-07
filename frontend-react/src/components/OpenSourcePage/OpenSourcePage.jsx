@@ -2,7 +2,9 @@
 const OpenSourcePage = () => {
   return (
     <>
-      <p>Open source page</p>
+      <div className="flex justify-center items-center ">
+        <img src="/images/comming/comming.png" alt="" />
+      </div>
     </>
   );
 };

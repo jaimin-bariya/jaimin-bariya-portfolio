@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {HomePage, Header, Footer, AboutPage, EducationPage, Experience, OpenSourcePage, ContactPage, ProjectPage, SingleProjectView} from '@components/index'
+import {HomePage, Header, Footer, AboutPage, EducationPage, Experience, OpenSourcePage, ContactPage, ProjectPage, BeyondMe} from '@components/index'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Layout from '@components/Layout'
 import AllCertificates from '@components/EducationPage/AllCertificates'
@@ -15,34 +15,47 @@ function App() {
     <>
 
       <Router>
-        <Layout>
+      
+      <Layout>
 
         <Routes>
 
-          {/* Layout compo wraps the routes  */}
+          
 
-         
-            <Route path='/home' element={<HomePage/>}/>
-            <Route path='/about' element={<AboutPage/>}/>
-            <Route path='/education/' element={<EducationPage/>}/>
+            {/* Layout compo wraps the routes  */}
+            {/* <Route element={<Layout/>}> */}
 
+            <Route path='/' element={<HomePage/>}/>
+
+              <Route path='/home' element={<HomePage/>}/>
               
-            <Route path='/education/certificate/' element={<AllCertificates/>}/>
-            
-            
-            <Route path='/projects/' element={<ProjectPage/>}>
-            </Route>
-            
+              
+              <Route path='/about' element={<AboutPage/>}/>
+              <Route path='/education/' element={<EducationPage/>}/>
+
+                
+              <Route path='/education/certificate/' element={<AllCertificates/>}/>
+              
+              
+              <Route path='/projects/' element={<ProjectPage/>}>
+              </Route>
+              
 
 
 
-            <Route path='opensource' element={<OpenSourcePage/>}/>
-            <Route path='contact-me' element={<ContactPage/>}/>
-            <Route path='experience' element={<Experience/>}/>
+              <Route path='/opensource' element={<OpenSourcePage/>}/>
+              <Route path='/contact-me' element={<ContactPage/>}/>
+              <Route path='/experience' element={<Experience/>}/>
+              <Route path='/beyond-me' element={<BeyondMe/>}/>
 
+
+          {/* </Route> */}
+          
+          
         </Routes>
 
         </Layout>
+        
       </Router>
 
     </>
