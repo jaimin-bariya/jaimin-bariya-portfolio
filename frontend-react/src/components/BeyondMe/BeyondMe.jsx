@@ -1,5 +1,5 @@
 
-    import { ExperienceCard, MyGuidance, MyStory } from "@components/index";
+    import { ExperienceCard, MyGuidance, MyStory, Persona } from "@components/index";
 
 
     const BeyondMe = () => {
@@ -51,6 +51,18 @@
         ]
     }
 
+
+    const personaList = [
+        'A',
+        "B",
+        "dfghj",
+        "dfghj",
+        "dfghj",
+        "df",
+        "df32e",
+        "dffew",
+    ]
+
     return (
         <>
 
@@ -58,6 +70,7 @@
             <div className="flex gap-4 px-8">
             <MyGuidance MyMentorList={MyMentorList}/>
             <MyStory/>
+            <Persona personaList={personaList}/>
             </div>
         
         </>

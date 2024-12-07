@@ -44,6 +44,7 @@ export {default as BeyondMe} from '@components/BeyondMe/BeyondMe'
 export {default as MyGuidance} from '@components/BeyondMe/MyGuidance'
 export {default as PlatformIcon} from '@components/BeyondMe/PlatformIcon'
 export {default as MyStory} from '@components/BeyondMe/MyStory'
+export {default as Persona} from '@components/BeyondMe/Persona'
 
 
 

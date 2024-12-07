@@ -109,24 +109,21 @@ export default {
     					opacity: '1'
     				}
     			},
-    			slideInBottom: {
-    				'0%': {
-    					transform: 'translateY(100%)',
-    					opacity: '0'
-    				},
-    				'20%': {
-    					opacity: '0.5'
-    				},
-    				'40%': {
-    					opacity: '0.7'
-    				},
-    				'60%': {
-    					opacity: '0.7'
-    				},
-    				'100%': {
-    					transform: 'translateY(0)',
-    					opacity: '1'
-    				}
+    			slideInBottom: 
+				{
+    				'0%': {transform: 'translateY(100%)', opacity: '0'},
+    				'20%': {opacity: '0.5'},
+					'40%': {opacity: '0.7'},
+    				'60%': {opacity: '0.7'},
+    				'100%': {transform: 'translateY(0)', opacity: '1'}
+    			},
+				slideInUp: 
+				{
+    				'0%': {transform: 'translateY(-100%)', opacity: '0'},
+    				'20%': {opacity: '0.5'},
+					'40%': {opacity: '0.7'},
+    				'60%': {opacity: '0.7'},
+    				'100%': {transform: 'translateY(0)', opacity: '1'}
     			},
     			slideInCustomX: {
     				'0%': {
@@ -179,7 +176,8 @@ export default {
     			fadeIn: 'fadeIn 0.5s ease-in-out',
     			slideInLeft: 'slideInLeft 0.5s ease-out',
     			slideInCustom: 'slideInCustom 1s ease-out',
-    			slideInBottom: 'slideInBottom 1s ease-out',
+    			slideInBottom: 'slideInBottom 1.5s ease-out',
+    			slideInUp: 'slideInUp 1.5s ease-out',
     			slideInCustomX: 'slideInCustomX 0.8s ease-out',
     			slideInCustomY: 'slideInCustomY 0.8s ease-out',
     			slideInMixed: 'slideInMixed 0.8s ease-out',

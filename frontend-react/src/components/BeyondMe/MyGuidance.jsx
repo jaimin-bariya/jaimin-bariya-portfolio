@@ -50,7 +50,7 @@ const MyGuidance = ({  className,
             </div>
 
             <ScrollArea className='h-[410px] pl-2 pr-4 overflow-y-hidden'>
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start animate-slideInUp">
               {/* Iterate through platforms */}
               {MyMentorList &&
                 Object.entries(MyMentorList).map(
