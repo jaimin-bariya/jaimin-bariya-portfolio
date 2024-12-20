@@ -1,4 +1,3 @@
-
 const Background = () => {
   return (
     <>

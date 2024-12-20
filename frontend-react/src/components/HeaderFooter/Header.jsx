@@ -8,15 +8,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useNavigate } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 
-
 const Header = () => {
   const [activeItem, setActiveItem] = useState("home");
   const location = useLocation();
 
   const navigate = useNavigate();
-
-
-
 
   const tabLinkList = [
     "home",
@@ -36,16 +32,13 @@ const Header = () => {
     // Extract the current path without the leading slash
     const currentPath = location.pathname.slice(1) || "home";
     setActiveItem(currentPath);
-  }, [location])
+  }, [location]);
 
   const handleNavigation = (value) => {
     if (value) {
       setActiveItem(value);
     }
   };
-
-  
-
 
   return (
     <>
@@ -66,31 +59,21 @@ const Header = () => {
             <ToggleGroup
               type="single"
               value={activeItem}
-              
               onValueChange={handleNavigation}
               className="bg-black/40 backdrop-blur-lg rounded-full p-1 border-0 h-12"
             >
               {tabLinkList.map((item, index) => (
-                <Link key={item} to={`/${item === 'home' ? '' : item}`}>
-                <ToggleGroupItem
-                value={item}
-                
-                className="rounded-full px-4 py-2 text-sm font-medium text-white data-[state=on]:bg-white/20 data-[state=on]:text-white hover:bg-white/10 hover:text-white transition-colors"
-                >
-                
-                  {item.charAt(0).toUpperCase() + item.slice(1).replace('-', ' ')}
-                
-                </ToggleGroupItem>
+                <Link key={item} to={`/${item === "home" ? "" : item}`}>
+                  <ToggleGroupItem
+                    value={item}
+                    className="rounded-full px-4 py-2 text-sm font-medium text-white data-[state=on]:bg-white/20 data-[state=on]:text-white hover:bg-white/10 hover:text-white transition-colors"
+                  >
+                    {item.charAt(0).toUpperCase() +
+                      item.slice(1).replace("-", " ")}
+                  </ToggleGroupItem>
                 </Link>
-
-
               ))}
-
-              </ToggleGroup>
-
-              
-
-              
+            </ToggleGroup>
 
             {/* User Actions */}
             <div className="flex items-center space-x-4">

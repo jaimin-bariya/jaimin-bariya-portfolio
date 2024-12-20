@@ -1,4 +1,3 @@
-
 const Publications = () => {
   return (
     <>

@@ -18,60 +18,58 @@ const ProjectPage = () => {
       title: "Apple Music Clone",
       description:
         "A clone of the Apple Music app with a clean interface and basic functionalities like browsing",
-      techStack: ["python", 'ai', 'flask'],
+      techStack: ["python", "ai", "flask"],
       codeLink: "",
-      runLink: ""
-      
+      runLink: "",
     },
-    
+
     {
       title: "FindX",
       description:
         "FindX is a Flutter tool that simplifies Google dorking to locate specific file types online.",
-      techStack: ["react", 'shadcn'],
+      techStack: ["react", "shadcn"],
       codeLink: "",
-      runLink: ""
+      runLink: "",
     },
     {
       title: "Apple Music Clone",
       description:
         "A clone of the Apple Music app with a clean interface and basic functionalities like browsing music and playlists.",
-      techStack: ["python", 'ai', 'flask'],
+      techStack: ["python", "ai", "flask"],
       codeLink: "",
-      runLink: ""
+      runLink: "",
     },
     {
       title: "Apple Music Clone",
       description:
         "A clone of the Apple Music app with a clean interface and basic functionalities like browsing music and playlists.",
-      techStack: ["python", 'ai', 'flask'],
+      techStack: ["python", "ai", "flask"],
       codeLink: "",
-      runLink: ""
+      runLink: "",
     },
     {
       title: "FindX",
       description:
         "FindX is a Flutter tool that simplifies Google dorking to locate specific file types online.",
-      techStack: ["react", 'shadcn'],
+      techStack: ["react", "shadcn"],
       codeLink: "",
-      runLink: ""
+      runLink: "",
     },
     {
       title: "Apple Music Clone",
       description:
         "A clone of the Apple Music app with a clean interface and basic functionalities like browsing music and playlists.",
-      techStack: ["python", 'ai', 'flask'],
+      techStack: ["python", "ai", "flask"],
       codeLink: "",
-      runLink: ""
+      runLink: "",
     },
     {
       title: "Apple Music Clone",
       description:
         "A clone of the Apple Music app with a clean interface and basic functionalities like browsing music and playlists.",
-      techStack: ["python", 'ai', 'flask'],
+      techStack: ["python", "ai", "flask"],
       codeLink: "",
-      runLink: ""
-      
+      runLink: "",
     },
   ];
 
@@ -79,30 +77,27 @@ const ProjectPage = () => {
     <>
       <div className="flex gap-4  px-8">
         <ExperienceCard textNote={textNote} imgPath={imgPath} title={title} />
-        
+
         <ScrollArea className="h-[550px]">
-        <div className="min-h-screen bg-transparent">
-          <div className="mx-auto grid grid-cols-2 px-6 pb-12 gap-4 animate-slideInBottom">
-            
-            {projects.map((project, index) => (
+          <div className="min-h-screen bg-transparent">
+            <div className="mx-auto grid grid-cols-2 px-6 pb-12 gap-4 animate-slideInBottom">
+              {projects.map((project, index) => (
+                <SingleProjectView key={index} {...project} />
+              ))}
 
-              <SingleProjectView
-                key={index}
-                {...project}
-              /> 
-            ))}
+              <div className="w-full h-full bg-blue-800/10 rounded-2xl border flex justify-center items-center">
+                {/* <Button className="hover:bg-gradient-to-r hover:from-orange-900 overflow-hidden hover:to-gray-900 hover:text-white">More Projects</Button> */}
 
-            <div className="w-full h-full bg-blue-800/10 rounded-2xl border flex justify-center items-center">
-            {/* <Button className="hover:bg-gradient-to-r hover:from-orange-900 overflow-hidden hover:to-gray-900 hover:text-white">More Projects</Button> */}
-            
-            <button className="bg-gray-900 text-white px-4 py-2 rounded-lg relative overflow-hidden group">
-            <span className="absolute inset-0 bg-orange-900 w-0 group-hover:w-full  transition-all ease-in-out"  style={{transitionDuration: "6000ms"}}></span>
-            <span className=" relative z-10">More Projects</span>
-            </button>
-
+                <button className="bg-gray-900 text-white px-4 py-2 rounded-lg relative overflow-hidden group">
+                  <span
+                    className="absolute inset-0 bg-orange-900 w-0 group-hover:w-full  transition-all ease-in-out"
+                    style={{ transitionDuration: "6000ms" }}
+                  ></span>
+                  <span className=" relative z-10">More Projects</span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
         </ScrollArea>
       </div>
     </>

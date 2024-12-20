@@ -1,5 +1,4 @@
 import { useState } from "react";
-import 
 
 const LoaderLogo = () => {
   const [animateToCenter, setAnimateToCenter] = useState(false);
