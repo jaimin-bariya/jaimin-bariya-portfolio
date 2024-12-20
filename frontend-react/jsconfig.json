@@ -10,7 +10,8 @@
         "@hooks/*": ["src/hooks/*"],
         "@contexts/*": ["./src/contexts/*"],
         "@images/*": ["./src/assets/*"],
-        "@databases/*": ["./src/databases/*"]
+        "@databases/*": ["./src/databases/*"],
+        "@public/*": ["./public/*"]
       }
     },
     "exclude": ["node_modules"]

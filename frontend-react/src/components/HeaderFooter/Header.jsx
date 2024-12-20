@@ -104,7 +104,7 @@ const Header = () => {
               </Button> */}
 
               <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarImage src="/images/jp.png" />
                 <AvatarFallback>JP</AvatarFallback>
               </Avatar>
 
