@@ -1,1 +1,0 @@
-# jaimin-bariya-portfolio
