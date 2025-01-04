@@ -20,12 +20,12 @@ jobs:
       with:
         node-version: '18.x'  # Specify the Node.js version you want to use
 
-    # Install dependencies inside the frontend-react folder
+    # Install dependencies inside the frontend folder
     - name: Install dependencies
       run: |
         npm install -g firebase-tools
         npm install
-      working-directory: frontend  # Ensure the command runs in the frontend-react directory
+      working-directory: frontend  # Ensure the command runs in the frontend directory
 
 
     # Build the React app
@@ -34,15 +34,15 @@ jobs:
       working-directory: frontend
 
 
-    # Set up Google Cloud credentials
-    - name: Authenticate with Google Cloud
-      env:
-        GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-key.json
-      run: echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}" > $GOOGLE_APPLICATION_CREDENTIALS
+    # # Set up Google Cloud credentials
+    # - name: Authenticate with Google Cloud
+    #   env:
+    #     GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-key.json
+    #   run: echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}" > $GOOGLE_APPLICATION_CREDENTIALS
 
 
     # Deploy to Firebase
     - name: Deploy to Firebase
-      run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_AUTH_TOKEN }}
+      run: firebase deploy --only hosting --project jaimin-bariya --token ${{ secrets.FIREBASE_AUTH_TOKEN }}
       working-directory: frontend  # Ensure the command runs in the frontend directory
 
