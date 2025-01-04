@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "jaimin-bariya"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "jaimin-bariya-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
