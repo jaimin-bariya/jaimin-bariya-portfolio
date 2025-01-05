@@ -1,0 +1,19 @@
+- Store helper functions, utility modules, or reusable logic that is not tied to a specific component, page, or feature. 🚀
+
+What Goes in utils?
+
+1. Helper Functions: Small reusable functions used across the app. Example: Date formatting, string manipulation, array filtering.
+
+2. API Call Functions: Centralize HTTP requests for better maintenance. Example: Functions for GET, POST, etc., API endpoints.
+
+3. Constants: Store fixed values, like app-wide URLs, configuration, or enums.
+
+4. Validators: Functions for input validation (e.g., email validation, form checks).
+
+5. Math/Logic Helpers: Common mathematical or logical operations.
+
+6. Custom Hooks: Custom React hooks (useFetch, useDebounce, etc.) that encapsulate reusable stateful logic.
+
+------
+
+
