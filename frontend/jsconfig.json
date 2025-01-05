@@ -3,14 +3,14 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@components/*": ["components/*"],
-      "@utils/*": ["utils/*"],
-      "@routers/*": ["routers/*"],
-      "@pages/*": ["pages/*"],
-      "@assets/*": ["assets/*"],
-      "@layouts/*": ["layouts/*"],
-      "@contexts/*": ["contexts/*"],
-      "@hooks/*": ["hooks/*"]
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@routers/*": ["./src/routers/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@contexts/*": ["./src/contexts/*"],
+      "@hooks/*": ["./src/hooks/*"]
     }
   }
 }
