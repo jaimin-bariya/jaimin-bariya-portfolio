@@ -6,6 +6,14 @@ import { Button } from '@/components/ui/button';  // Make sure to replace with y
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';  // Same for this import
 import { routesName } from '@/data/navbar';
 import {playMouseClick, themeModeChange, PlaynavChangeSound} from "@utils/soundsPlaying"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 
 export default function NavBar() {
@@ -51,15 +59,29 @@ export default function NavBar() {
         </nav>
 
         <div className="flex items-center justify-end space-x-2">
-          <Button
+          
+
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild >
+            <Button
             variant="ghost"
             size="icon"
             className="h-9 w-9 rounded-3xl hover:border-orange-400 border-2 transform transition-transform duration-700 ease-in-out hover:rotate-180 bg-gray-300 dark:bg-orange-800 "
-            onClick={() => { playMouseClick()}}
+            onClick={() => { playMouseClick();}}
             aria-label="Apps"
-          >
-            <Grid className="h-4 w-4" />
-          </Button>
+            >
+              <Grid className="h-4 w-4" />
+            </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>Profile</DropdownMenuItem>
+                <DropdownMenuItem>Billing</DropdownMenuItem>
+                <DropdownMenuItem>Team</DropdownMenuItem>
+                <DropdownMenuItem>Subscription</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
 
           <Button
             variant="ghost"
@@ -71,6 +93,7 @@ export default function NavBar() {
             <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           </Button>
+          
 
 
           {/* For Mobile Menu  */}

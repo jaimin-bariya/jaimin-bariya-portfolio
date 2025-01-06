@@ -1,11 +1,14 @@
 import { Navbar } from "@/components";
-
+import { Outlet } from "react-router-dom";
 
 const MainLayout = ({children}) => {
   return (
     <>
         <Navbar/>
-        {children}
+        <main>
+          <Outlet/>
+        </main>
+      
         
     </>
   );

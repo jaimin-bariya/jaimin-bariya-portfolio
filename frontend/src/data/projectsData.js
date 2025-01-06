@@ -23,6 +23,30 @@ const projects = [
       description: "This is a web app which can be used to analyze users' sentiments across different platforms using REST Apis. Made with Python, Flask, HTML, Javascript and deployed on Heroku.",
       tags: [],
       githubLink: "#"
+    },
+    {
+      title: "Stock Portfolio Management",
+      description: "It is a web application for managing your investment portfolio. Users can get real-time stock data and market news via Yahoo Finance, IEX Cloud, and Quandl APIs.",
+      tags: [],
+      githubLink: "#"
+    },
+    {
+      title: "Sentiment Analysis",
+      description: "This is a web app which can be used to analyze users' sentiments across different platforms using REST Apis. Made with Python, Flask, HTML, Javascript and deployed on Heroku.",
+      tags: [],
+      githubLink: "#"
+    },
+    {
+      title: "Stock Portfolio Management",
+      description: "It is a web application for managing your investment portfolio. Users can get real-time stock data and market news via Yahoo Finance, IEX Cloud, and Quandl APIs.",
+      tags: [],
+      githubLink: "#"
+    },
+    {
+      title: "Sentiment Analysis",
+      description: "This is a web app which can be used to analyze users' sentiments across different platforms using REST Apis. Made with Python, Flask, HTML, Javascript and deployed on Heroku.",
+      tags: [],
+      githubLink: "#"
     }
   ]
 

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
-import {Experience, About, Projects, Home, Blog, Compete} from "@pages/index"
+import {Experience, About, Projects, Home, Articles, Compete} from "@pages/index"
 
 const AppRouter = () => {
   return (
@@ -8,14 +8,26 @@ const AppRouter = () => {
 
         <Routes>
 
-            {/* Routes wrapped in MainLayout */}
-            <Route path="/" element={<MainLayout> <Home/> </MainLayout>}/>
-            <Route path="/blog" element={<MainLayout> <Blog/> </MainLayout>}/>
-            <Route path="/projects" element={<MainLayout> <Projects/> </MainLayout>}/>
-            <Route path="/about-me" element={<MainLayout> <About/> </MainLayout>}/>
-            <Route path="/experience" element={<MainLayout> <Experience/> </MainLayout>}/>
-            <Route path="/compete" element={<MainLayout> <Compete/> </MainLayout>}/>
+          {/* Define MainLayout as a parent route */}
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about-me" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/compete" element={<Compete />} />
+            
 
+            <Route path="/connect" element={<Compete />} />
+            <Route path="/my-journey" element={<Compete />} />
+            <Route path="/my-bucket-list" element={<Compete />} />
+            
+            {/* Miscellaneous */}
+            <Route path="/toolbox" element={<Compete />} />
+
+
+          </Route>
+            
         </Routes>
 
     </Router>
