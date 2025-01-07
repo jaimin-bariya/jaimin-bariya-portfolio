@@ -13,7 +13,7 @@ const PlatForms = () => {
             My Coding Platforms
           </h2>
         </div>
-        <div className="flex gap-4 ">
+        <div className="grid sm:grid-cols-4 md:grid-cols-6  grid-cols-2 gap-4 ">
           {PlatFormIUse.map((platform, index) => (
             <a
               key={index}
