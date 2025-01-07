@@ -13,6 +13,7 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+			articleLinkColor: "#C1C3F8",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -58,21 +59,5 @@ export default {
   },
   plugins: [
 	
-	require("tailwindcss-animate"),
-	
-	function ({ addUtilities }) {
-		addUtilities({
-		  ".hide-scrollbar": {
-			/* Enable scrolling */
-			overflow: "auto",
-			/* Hide scrollbar for Firefox */
-			"scrollbar-width": "none",
-		  },
-		  ".hide-scrollbar::-webkit-scrollbar": {
-			/* Hide scrollbar for Chrome, Safari, Edge */
-			display: "none",
-		  },
-		});
-	  },
-  ],
+	require("tailwindcss-animate") ],
 }

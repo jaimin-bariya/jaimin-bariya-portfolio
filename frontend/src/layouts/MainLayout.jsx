@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Navbar, Footer } from "@/components";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = ({children}) => {
@@ -8,6 +8,7 @@ const MainLayout = ({children}) => {
         <main>
           <Outlet/>
         </main>
+        <Footer/>
       
         
     </>
