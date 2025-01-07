@@ -1,3 +1,6 @@
+import pic from "@assets/images/logo/github.avif"
+
+
 const AllExperience = [
     {
         company: "Optimus AI Lab",
@@ -9,7 +12,7 @@ const AllExperience = [
             "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
             "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products."
         ],
-        logo: "/placeholder.svg?height=48&width=48"
+        logo: pic
       },
       {
         company: "Educative",
@@ -22,7 +25,7 @@ const AllExperience = [
             "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
             "Technical content author tasked with creating interactive real-world tutorials, focused on topics like Next.js, TypeScript, React."
         ],
-        logo: "/placeholder.svg?height=48&width=48"
+        logo: pic
       },
 ]
 

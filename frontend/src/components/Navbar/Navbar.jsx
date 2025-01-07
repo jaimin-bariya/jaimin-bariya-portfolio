@@ -35,8 +35,8 @@ export default function NavBar() {
   
 
   return (
-    <header className="sticky py-2 top-0 flex justify-center z-50  border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 w-full items-center">
+    <header className="sticky py-2 top-0 flex justify-center z-50  border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
+      <div className="container flex h-14 w-full items-center mx-6  justify-between sm:mx-0">
         <Link to="/" className="mr-8 flex items-center space-x-2 w-44  ">
           <span className="font-bold text-orange-400 text-xl">~{location.pathname}{ showCursor && <span className=''>|</span>}</span>
         </Link>
@@ -108,8 +108,8 @@ export default function NavBar() {
                 <Menu className="h-4 w-4" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[80vw] sm:w-[385px]">
-              <nav className="flex flex-col space-y-4">
+            <SheetContent side="right" className="w-[60vw] sm:w-[385px]">
+              <nav className="flex flex-col space-y-4 my-12 border-t-2 pt-6 pl-8">
                 {routesName.map((route) => (
                   <Link
                     key={route.href}

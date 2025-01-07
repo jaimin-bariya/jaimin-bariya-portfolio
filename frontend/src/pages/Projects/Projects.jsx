@@ -5,9 +5,9 @@ const Projects = () => {
   return (
     <>
 
-      <div className="my-32 max-w-6xl mx-auto p-8 md:p-0">
-        <div className="mb-32">
-        <h2 className="text-5xl  font-semibold" >A collection of my favorite works</h2>
+      <div className="sm:my-32 my-16 max-w-6xl mx-auto p-8 md:p-0">
+        <div className="sm:mb-32 mb-16">
+        <h2 className="sm:text-5xl  text-4xl font-semibold" >A collection of my favorite works</h2>
         </div>
 
 

@@ -40,7 +40,7 @@ const Home = () => {
         {/* Stand Out Section  */}
         <div className="my-32 max-w-4xl mx-auto">
           <div className="border-b-2 mb-8 pb-6 ">
-            <h1 className="text-4xl text-center">
+            <h1 className="sm:text-4xl text-3xl text-center">
               What Sets Me Apart from the Crowd
             </h1>
           </div>
@@ -177,7 +177,7 @@ const Home = () => {
         {/* Articles Section  */}
         <div className="my-32 mt-52 max-w-4xl mx-auto">
           <div className="border-b-2 mb-8 pb-6 flex items-center  justify-between">
-            <h1 className="text-5xl  text-start">Articles</h1>
+            <h1 className="sm:text-5xl text-4xl  text-start">Articles</h1>
 
 
             <CallToActionCard pageLink="articles" titleOfPage="All Articles" />
