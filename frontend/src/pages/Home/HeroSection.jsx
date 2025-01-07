@@ -14,7 +14,7 @@ const HeroSection = () => {
             <h1 className="text-5xl md:text-6xl lg:text-5xl font-bold">
               Hey, I am <span className="text-orange-500">Jaimin Bariya</span>
             </h1>
-            <p className="dark:text-gray-300 text-sm md:text-[18px] leading-relaxed ">
+            <p className="dark:text-gray-300 text-[16px]  md:text-xl leading-relaxed ">
               Welcome to my{" "}
               <span className="text-white bg-orange-700 px-2 font-mono rounded">
                 digital home
@@ -34,8 +34,7 @@ const HeroSection = () => {
           {/* Image Section */}
           <div className="w-fit h-fit lg:w-96 lg:h-96 mx-auto flex gap-2 flex-col items-center justify-center">
             <img width="800px" height="800px" src={HeroHomeIcon} alt="" />
-            {/* <img width="800px" height="800px" src={HeroHomeIcon2} alt="" /> */}
-
+            
             
               {/* Navigation Cards */}
               {/* <div className="grid gap-6">

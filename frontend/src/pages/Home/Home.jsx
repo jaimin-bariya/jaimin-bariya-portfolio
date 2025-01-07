@@ -23,11 +23,10 @@ const Home = () => {
 
         {/* Projects  */}
         <div className="my-32 max-w-6xl mx-auto">
-          <div className="border-b-2 mb-8 pb-6 flex items-center  justify-between">
-            <h1 className="text-5xl  text-start">Projects</h1>
+          <div className="border-b-2 mb-8 pb-6 flex flex-col sm:flex-row sm:gap-0 sm:items-center gap-6 sm:justify-between">
+            <h1 className="sm:text-5xl text-4xl  text-start">Projects</h1>
 
             <CallToActionCard pageLink="projects" titleOfPage="All Projects"/>
-
             
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -46,6 +45,7 @@ const Home = () => {
           </div>
 
           {/* Grid Layout */}
+
           <div className="grid sm:grid-cols-4 grid-cols-2 sm:gap-6 gap-4 ">
             {/* 1 - Learn More About me Card */}
             <Card className="bg-transparent border-white backdrop-blur-xl p-0 overflow-hidden sm:col-span-1 sm:h-80 h-60 col-span-2 cursor-pointer ">
@@ -176,7 +176,7 @@ const Home = () => {
 
         {/* Articles Section  */}
         <div className="my-32 mt-52 max-w-4xl mx-auto">
-          <div className="border-b-2 mb-8 pb-6 flex items-center  justify-between">
+          <div className="border-b-2 mb-8 pb-6 flex flex-col sm:flex-row sm:gap-0 sm:items-center gap-6 sm:justify-between">
             <h1 className="sm:text-5xl text-4xl  text-start">Articles</h1>
 
 

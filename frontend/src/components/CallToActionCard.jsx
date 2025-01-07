@@ -13,7 +13,7 @@ const CallToActionCard = ({pageLink = "", titleOfPage = "None"}) => {
                   {titleOfPage} →
                 </span>
               </div>
-            </Link>
+        </Link>
     </>
   );
 };
