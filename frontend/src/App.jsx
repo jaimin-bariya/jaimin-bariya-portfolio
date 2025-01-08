@@ -1,14 +1,13 @@
-import { ThemeProvider, useTheme } from './contexts/ThemeContext'
-import { Button } from './components/ui/button'
-import { Grid, Menu, Moon, Sun } from 'lucide-react'
-import { Navbar } from '@components/index'
+import { ThemeProvider} from './contexts/ThemeContext'
 import AppRouter from './routers/AppRouter'
 import './App.css'
+import { useEffect } from 'react'
+import {useNavigate} from "react-router-dom"
 
 function App() {
 
-  const {theme, setTheme} = useTheme();
 
+  
   return (
     <ThemeProvider>
       <AppRouter/>

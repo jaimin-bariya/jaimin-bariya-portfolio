@@ -4,17 +4,29 @@ import HeroSection from "./HeroSection";
 import { projects } from "@/data/projectsData";
 import { Toparticles } from "@/data/articlesData";
 import { CardProject, ArticleSingleShow, CallToActionCard } from "@/components";
-import { Link, useNavigate } from "react-router-dom";
-import { Command, GraduationCap, Book } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import gitHubLogo from "@assets/images/logo/github.avif";
 import xLogo from "@assets/images/logo/x.avif";
 import linkedinLogo from "@assets/images/logo/linkedin.avif";
 import leetcodeLogo from "@assets/images/logo/leetcode.webp";
+import { PlayAdminIntro } from "@/utils/soundsPlaying";
+import { useKeyShortcut } from "@/hooks/keyListener";
 
 const Home = () => {
   const navigate = useNavigate();
+
+
+  useKeyShortcut(() => {
+    PlayAdminIntro();
+
+    setTimeout(() => {
+      navigate('/admin/dashboard')
+    }, 1200);
+
+    
+  }, (e) => e.ctrlKey && e.key === 'd')  
+
 
   return (
     <>
