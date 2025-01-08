@@ -3,7 +3,9 @@
 import HeroSectionAbout from "./HeroSectionAbout";
 import SocialMediaList from "./SocialMediaList";
 import ToolBoxSection from "./ToolBoxSection";
+import HobbiesSection from "./HobbiesSection";
 import { WhatIamDoingNow } from "@/data/adminData";
+import { CallToActionCard } from "@/components";
 
 
 const About = () => {
@@ -26,7 +28,7 @@ const About = () => {
       <div className="">
         <h2 className="text-3xl font-semibold font-mono mb-6">What I'm Doing Now</h2>
         <p className=" italic dark:text-zinc-500 mb-4">Updated {WhatIamDoingNow.lastUpdate}</p>
-        <ul className="list-disc  list-inside mx-2 text-gray-300 space-y-2">
+        <ul className="list-disc  list-inside pl-4 text-gray-300 space-y-2">
           {WhatIamDoingNow["list"].map((item, index) => (
             <li key={index} >{item}</li>
           ))}
@@ -35,6 +37,21 @@ const About = () => {
 
 
       <ToolBoxSection/>
+
+
+      <HobbiesSection/>
+
+
+      <div>
+
+        
+        <h3 className="text-3xl font-semibold font-mono mb-8">Resumeee 👨‍💻</h3>
+        <div>
+          <CallToActionCard pageLink="Resume" iconOfAction="📑" titleOfPage="📑 Resume" />
+        </div>
+        
+
+      </div>
 
 
       

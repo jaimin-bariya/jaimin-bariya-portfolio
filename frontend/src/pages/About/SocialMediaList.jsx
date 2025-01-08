@@ -10,7 +10,7 @@ const SocialMediaList = () => {
 
   return (
     <>
-      <div className=" space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 mx-2">
+      <div className=" space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 pl-4">
         
 
         <ul className='grid sm:grid-cols-3 grid-cols-2 space-y-1'>

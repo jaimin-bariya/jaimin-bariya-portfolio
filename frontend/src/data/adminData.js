@@ -214,7 +214,45 @@ const ToolBox = {
 };
 
 
+const MyHobbies = [
+  {
+    name: "Playing Games 🎮",
+    message: "Because who doesn't want to save the world, level up, and be a hero... all from the comfort of my couch? 😜"
+  },
+
+  {
+    name: "Watching Anime & Movies 🍿",
+    message: "Watching epic battles and heartwarming stories, one episode at a time... and pretending I can do those sick moves! 💥"
+  },
+
+  {
+    name: "Going to the Gym 🏋️‍♂️",
+    message: "Training for the day when my character’s strength stat finally maxes out. 💪"
+  },
+
+  {
+    name: "Running 🏃‍♂️",
+    message: "Chasing after that 'just one more level' feeling. 🏃‍♂️💨"
+  },
+
+  {
+    name: "Stargazing ✨",
+    message: "Waiting for aliens to invade or just wishing my life had a cool soundtrack. 🌌"
+  },
+
+  {
+    name: "Reading 📚",
+    message: "Feeding my brain with knowledge... or occasionally diving into a good fantasy novel. 📖🧙‍♂️"
+  },
+
+  {
+    name: "Investing 📈",
+    message: "Trying to turn my coins into EPIC loot—except it’s real life, so no respawns. 💰"
+  }
+];
 
 
-export { AllSocialMedia, WhatIamDoingNow, ToolBox};
+
+
+export { AllSocialMedia, WhatIamDoingNow, ToolBox, MyHobbies};
   

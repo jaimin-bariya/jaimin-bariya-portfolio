@@ -8,10 +8,10 @@ const ToolBoxSection = () => {
 <div className="">
         <h2 className="text-3xl font-semibold font-mono mb-6">Toolbox <span className="text-orange-500">{"(Arsenal)"}</span> </h2>
         <p className=" italic dark:text-zinc-500 mb-4"> {ToolBox["tagline"]}</p>
-        <div className="[&>*]:pb-8">
+        <div className="[&>*]:pb-8 pl-4">
           {Object.entries(ToolBox["ToolList"]).map(([ToolName, SubToolName], index) => (
 
-            <div key={index} className="pl-4">
+            <div key={index} >
               <h3 className="text-2xl font-roboto-slab" >{ToolName}</h3>
               <div className="pl-12 pt-1 sm:space-y-2 space-y-4">
                 {SubToolName.map((SubTool, index) => (
