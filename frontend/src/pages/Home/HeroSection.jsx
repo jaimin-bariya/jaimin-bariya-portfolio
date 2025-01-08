@@ -1,7 +1,7 @@
-import { Command, GraduationCap, Book } from "lucide-react";
+
 import HeroHomeIcon from "@assets/images/keyboard.png";
 import HeroHomeIcon2 from "@assets/images/hunter.png";
-import { Link } from "react-router-dom";
+
 
 
 const HeroSection = () => {

@@ -1,4 +1,4 @@
-import pic from "@assets/images/logo/github.avif"
+import { GitHubLogo } from "@/assets/images/logo"
 
 
 const AllExperience = [
@@ -12,7 +12,7 @@ const AllExperience = [
             "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
             "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products."
         ],
-        logo: pic
+        logo: GitHubLogo
       },
       {
         company: "Educative",
@@ -25,7 +25,7 @@ const AllExperience = [
             "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
             "Technical content author tasked with creating interactive real-world tutorials, focused on topics like Next.js, TypeScript, React."
         ],
-        logo: pic
+        logo: GitHubLogo
       },
 ]
 

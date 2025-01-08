@@ -42,3 +42,18 @@
 .read-the-docs {
   color: #888;
 }
+
+
+@font-face {
+  font-family: 'jersey-15';
+  src: url('./assets/fonts/Jersey15-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-slab';
+  src: url('./assets/fonts/RobotoSlab.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

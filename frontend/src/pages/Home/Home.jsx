@@ -6,10 +6,8 @@ import { Toparticles } from "@/data/articlesData";
 import { CardProject, ArticleSingleShow, CallToActionCard } from "@/components";
 import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
-import gitHubLogo from "@assets/images/logo/github.avif";
-import xLogo from "@assets/images/logo/x.avif";
-import linkedinLogo from "@assets/images/logo/linkedin.avif";
-import leetcodeLogo from "@assets/images/logo/leetcode.webp";
+import { GitHubLogo, LeetCodeLogo, LinkedInLogo, XLogo } from "@/assets/images/logo";
+
 import { PlayAdminIntro } from "@/utils/soundsPlaying";
 import { useKeyShortcut } from "@/hooks/keyListener";
 
@@ -63,7 +61,7 @@ const Home = () => {
             <Card className="bg-transparent border-white backdrop-blur-xl p-0 overflow-hidden sm:col-span-1 sm:h-80 h-60 col-span-2 cursor-pointer ">
               <div className="relative h-full">
                 <img
-                  src={gitHubLogo}
+                  src={GitHubLogo}
                   alt="Profile"
                   className="object-cover w-full h-full"
                 />
@@ -82,7 +80,7 @@ const Home = () => {
                 {/* X Card */}
                 <Card className="bg-transparent h-40 border-white p-6 flex justify-center items-center  cursor-pointer">
                   <img
-                    src={gitHubLogo}
+                    src={GitHubLogo}
                     alt="Avatar"
                     height="80px"
                     width="80px"
@@ -93,7 +91,7 @@ const Home = () => {
                 {/* LinkedIn Card */}
                 <Card className="bg-transparent h-40 border-white p-6 flex justify-center items-center cursor-pointer ">
                   <img
-                    src={xLogo}
+                    src={XLogo}
                     alt="Avatar"
                     height="80px"
                     width="80px"
@@ -104,7 +102,7 @@ const Home = () => {
                 {/* LinkedIn Card */}
                 <Card className="bg-transparent h-40  border-white p-6 flex justify-center items-center cursor-pointer ">
                   <img
-                    src={linkedinLogo}
+                    src={LinkedInLogo}
                     alt="Avatar"
                     height="80px"
                     width="80px"
@@ -115,7 +113,7 @@ const Home = () => {
                 {/* Resume Card */}
                 <Card className="bg-transparent h-40 border-white p-6 flex justify-center items-center cursor-pointer">
                   <img
-                    src={leetcodeLogo}
+                    src={LeetCodeLogo}
                     alt="Avatar"
                     height="80px"
                     width="80px"

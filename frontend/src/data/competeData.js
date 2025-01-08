@@ -1,8 +1,8 @@
 /** @format */
 
-import leetcodeLogo from "@assets/images/logo/leetcode.webp";
-import GitHubLogo from "@assets/images/logo/github.avif"
-import CodeForceLogo from "@assets/images/logo/codeforces.png"
+
+
+import { LeetCodeLogo, GitHubLogo, CodeforcesLogo } from "@/assets/images/logo";
 
 
 
@@ -11,7 +11,7 @@ import CodeForceLogo from "@assets/images/logo/codeforces.png"
 const AllBadges = [
   {
     name: "leetcode",
-    logo: leetcodeLogo,
+    logo: LeetCodeLogo,
     link: "https://leetcode.com/u/jaimin-bariya/",
     badges: ["https://assets.leetcode.com/static_assets/others/Top_SQL_50.gif"],
   },
@@ -37,7 +37,7 @@ const AllHackathons = [
 const PlatFormIUse = [
     {
         name: "LeetCode",
-        logo: leetcodeLogo,
+        logo: LeetCodeLogo,
         link: "https://leetcode.com/u/jaimin-bariya/",
     },
     {
@@ -47,7 +47,7 @@ const PlatFormIUse = [
     },
     {
       name: "Codeforce",
-      logo: CodeForceLogo,
+      logo: CodeforcesLogo,
       link: "https://codeforces.com/profile/jaiminbariya",
   },
 

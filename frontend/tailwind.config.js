@@ -54,8 +54,14 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
-  	}
+  		},
+
+		fontFamily: {
+			'jersey': ['jersey-15', 'sans-serif'], 
+			'roboto-slab': ['roboto-slab', 'sans-serif'], 
+		},
+		
+  	},
   },
   plugins: [
 	
