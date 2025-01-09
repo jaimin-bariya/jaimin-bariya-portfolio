@@ -8,6 +8,9 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Button } from "../ui/button";
 import { Grid, Menu, Moon, Sun } from 'lucide-react';
+import { subRoutesNames } from "@/data/navbar";
+import { Link } from "react-router-dom";
+
 
 const SubNavbar = () => {
   return (
@@ -27,11 +30,19 @@ const SubNavbar = () => {
             <DropdownMenuContent>
                 <DropdownMenuLabel>My Sub-Pages</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Screen Time Chronicles🍿📺</DropdownMenuItem>
-                <DropdownMenuItem>Favorite YT Channels / Mentors </DropdownMenuItem>
-                <DropdownMenuItem>Startup.py</DropdownMenuItem>
-                <DropdownMenuSeparator/>
-                <DropdownMenuItem>My-Bucket-List</DropdownMenuItem>
+                {subRoutesNames.map((route) => (
+                  <Link 
+                    to={route['href']}
+                    key={route['label']}
+                    className="dark:text-white text-black " 
+                  >
+                    <DropdownMenuItem>{route['label']}</DropdownMenuItem>
+                  </Link>
+                ))}
+                
+                
+                {/* <DropdownMenuSeparator/> */}
+                
             </DropdownMenuContent>
           </DropdownMenu>
     </>

@@ -1,4 +1,4 @@
-import { GitHubLogo } from "@/assets/images/logo"
+import { GitHubLogo } from "@/assets/images"
 
 
 const AllExperience = [

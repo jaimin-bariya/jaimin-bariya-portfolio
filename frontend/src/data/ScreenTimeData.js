@@ -17,20 +17,10 @@ const Movies = [
         name: "LEO",
         poster: "https://drive.google.com/thumbnail?id=1X2rTXpkoGvIqqJ5AT0ulfer5PIkuD33v",
         isMessage: true,
-        message: "Yes yes!!"
+        message: "Screen Time Chronicles🍿📺 Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺"
     },
-    {
-        name: "LEO",
-        poster: "https://drive.google.com/thumbnail?id=1X2rTXpkoGvIqqJ5AT0ulfer5PIkuD33v",
-        isMessage: true,
-        message: "Yes yes!!"
-    },
-    {
-        name: "LEO",
-        poster: "https://drive.google.com/thumbnail?id=1X2rTXpkoGvIqqJ5AT0ulfer5PIkuD33v",
-        isMessage: true,
-        message: "Yes yes!!"
-    },
+    
+   
     
 
 ]

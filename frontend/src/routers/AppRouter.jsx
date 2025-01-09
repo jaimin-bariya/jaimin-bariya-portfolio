@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
-import {Experience, About, Projects, Home, Articles, Compete, Dashboard} from "@pages/index"
+import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople} from "@pages/index"
 
 const AppRouter = () => {
 
@@ -23,12 +23,16 @@ const AppRouter = () => {
             <Route path="/compete" element={<Compete />} />
             
 
-            <Route path="/connect" element={<Compete />} />
-            <Route path="/my-journey" element={<Compete />} />
-            <Route path="/my-bucket-list" element={<Compete />} />
+            
+
             
             {/* Miscellaneous */}
-            <Route path="/toolbox" element={<Compete />} />
+            <Route path="/Screen-Time-Chronicles" element={<ScreenTimeChronicleFullPage/>} />
+            <Route path="/Favorite-YT-Channels-Mentors" element={<YTMentors/> } />
+            <Route path="/Startup-py" element={<StartPy />} />
+            <Route path="/My-Bucket-List" element={<MyBucketList />} />
+            <Route path="/my-journey" element={<MyJourney />} />
+            <Route path="/connect" element={<ConnectPeople />} />
           </Route>
 
             <Route path="/admin/dashboard" element={<Dashboard/>} />

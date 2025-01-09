@@ -4,25 +4,13 @@ import HeroSection from "./HeroSection";
 import { projects } from "@/data/projectsData";
 import { Toparticles } from "@/data/articlesData";
 import { CardProject, ArticleSingleShow, CallToActionCard } from "@/components";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
-import { PlayAdminIntro } from "@/utils/soundsPlaying";
-import { useKeyShortcut } from "@/hooks/keyListener";
+
 import StandOutSection from "./StandOutSection";
 
 const Home = () => {
-  const navigate = useNavigate();
 
-
-  useKeyShortcut(() => {
-    PlayAdminIntro();
-
-    setTimeout(() => {
-      navigate('/admin/dashboard')
-    }, 1200);
-
-    
-  }, (e) => e.ctrlKey && e.key === 'd')  
 
 
   return (

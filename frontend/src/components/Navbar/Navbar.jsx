@@ -31,7 +31,7 @@ export default function NavBar() {
     <header className="sticky py-2 top-0 flex justify-center z-50  border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
       <div className="container flex h-14 w-full items-center mx-6  justify-between sm:mx-28">
         <Link to="/" className="mr-8 flex items-center space-x-2 w-44  ">
-          <span className="font-bold text-orange-400 text-xl">~{location.pathname}{ showCursor && <span className=''>|</span>}</span>
+          <span className="font-bold text-orange-400 text-xl overflow-hidden text-nowrap text-ellipsis ">~{location.pathname}{ showCursor && <span className=''>|</span>}</span>
         </Link>
 
         <nav className="hidden md:flex flex-1 items-center justify-center space-x-6 text-[16px] font-extrabold">

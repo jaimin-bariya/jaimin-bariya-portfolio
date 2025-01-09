@@ -11,7 +11,7 @@ const Dashboard = () => {
     const handleKeyDown = (e) => {
       if (e.ctrlKey && e.key === "d" ) {
           e.preventDefault();
-          navigate("/")
+          navigate(-1) // last page opened in stack
         
       }
     };

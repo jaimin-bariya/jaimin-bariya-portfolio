@@ -2,7 +2,7 @@
 
 
 
-import { LeetCodeLogo, GitHubLogo, CodeforcesLogo } from "@/assets/images/logo";
+import { LeetCodeLogo, GitHubLogo, CodeforcesLogo } from "@/assets/images";
 
 
 

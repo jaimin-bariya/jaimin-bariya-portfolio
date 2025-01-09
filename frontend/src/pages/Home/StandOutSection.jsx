@@ -7,7 +7,7 @@ import {
   LeetCodeLogo,
   LinkedInLogo,
   XLogo,
-} from "@/assets/images/logo";
+} from "@/assets/images";
 
 const StandOutSection = () => {
   return (

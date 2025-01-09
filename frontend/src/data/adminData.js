@@ -13,7 +13,7 @@ import {
     SlackLogo,
     StackOverFlowLogo,
     YTLogo,
-    } from "@/assets/images/logo";
+    } from "@/assets/images";
   
 
 

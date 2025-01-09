@@ -8,4 +8,15 @@ const routesName = [
   ];
 
 
-export {routesName}
+const subRoutesNames = [
+  {href: "/Screen-Time-Chronicles", label: "Screen Time Chronicles🍿📺"},
+  {href: "/Favorite-YT-Channels-Mentors", label: "Favorite YT Channels / Mentors "},
+  {href: "/Startup-py", label: "Startup.py"},
+  {href: "/My-Bucket-List", label: "My-Bucket-List"},
+  {href: "/connect", label: "Connect"},
+  {href: "/my-journey", label: "My Journey [TimeLine]"},
+]
+
+
+
+export {routesName, subRoutesNames}
