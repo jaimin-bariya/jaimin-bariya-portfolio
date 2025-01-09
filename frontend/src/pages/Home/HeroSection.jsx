@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <>
       
-        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-3 items-center gap-10">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center sm:gap-10 ">
           {/* Hero Section */}
           <div className="space-y-6 col-span-2 text-start ">
             <h1 className="text-5xl md:text-6xl lg:text-5xl font-bold">
@@ -32,7 +32,7 @@ const HeroSection = () => {
           </div>
 
           {/* Image Section */}
-          <div className="w-fit h-fit lg:w-96 lg:h-96 mx-auto flex gap-2 flex-col items-center justify-center">
+          <div className="w-fit h-fit lg:w-96 lg:h-96 mx-auto pt-8 sm:pt-0 flex gap-2 flex-col items-center justify-center">
             <img width="800px" height="800px" src={HeroHomeIcon} alt="" />
             
             

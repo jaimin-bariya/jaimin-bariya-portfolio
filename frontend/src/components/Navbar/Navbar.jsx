@@ -3,18 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { Grid, Menu, Moon, Sun } from 'lucide-react';
 import { useTheme } from "@contexts/ThemeContext"
 import { Button } from '@/components/ui/button';  // Make sure to replace with your actual path
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';  // Same for this import
+
 import { routesName } from '@/data/navbar';
 import {playMouseClick, themeModeChange, PlaynavChangeSound} from "@utils/soundsPlaying"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-
+import SubNavbar from './SubNavbar';
+import MobileNavBar from './MobileNavBar';
 
 export default function NavBar() {
   const location = useLocation();  // useLocation to get the current path
@@ -61,27 +54,7 @@ export default function NavBar() {
         <div className="flex items-center justify-end space-x-2">
           
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild >
-            <Button
-            variant="ghost"
-            size="icon"
-            className="h-9 w-9 rounded-3xl hover:border-orange-400 border-2 transform transition-transform duration-700 ease-in-out hover:rotate-180 bg-gray-300 dark:bg-orange-800 "
-            onClick={() => { playMouseClick();}}
-            aria-label="Apps"
-            >
-              <Grid className="h-4 w-4" />
-            </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>Profile</DropdownMenuItem>
-                <DropdownMenuItem>Billing</DropdownMenuItem>
-                <DropdownMenuItem>Team</DropdownMenuItem>
-                <DropdownMenuItem>Subscription</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <SubNavbar/>
 
           <Button
             variant="ghost"
@@ -97,35 +70,8 @@ export default function NavBar() {
 
 
           {/* For Mobile Menu  */}
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-9 w-9 md:hidden"
-                aria-label="Open menu"
-              >
-                <Menu className="h-4 w-4" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[60vw] sm:w-[385px]">
-              <nav className="flex flex-col space-y-4 my-12 border-t-2 pt-6 pl-8">
-                {routesName.map((route) => (
-                  <Link
-                    key={route.href}
-                    to={route.href}
-                    className={`text-sm font-medium transition-colors hover:text-foreground/80 ${
-                      location.pathname === route.href
-                        ? "text-foreground"
-                        : "text-foreground/60"
-                    }`}
-                  >
-                    {route.label}
-                  </Link>
-                ))}
-              </nav>
-            </SheetContent>
-          </Sheet>
+          <MobileNavBar routesName={routesName}/>
+
         </div>
       </div>
     </header>
