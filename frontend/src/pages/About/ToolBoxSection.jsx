@@ -17,10 +17,10 @@ const ToolBoxSection = () => {
                 {SubToolName.map((SubTool, index) => (
 
                   <div key={index} className="sm:flex gap-2 space-y-2 items-baseline">
-                    <h4 className="text-2xl font-jersey text-zinc-100">{SubTool['name']}:</h4>
+                    <h4 className="text-2xl font-jersey dark:text-zinc-100">{SubTool['name']}:</h4>
                     <div className="sm:pl-0 pl-4 flex gap-2 " >
                       {SubTool['list'].map((item, index) => (
-                        <Badge key={index} className="bg-transparent cursor-pointer border-white text-orange-500/80 border-2 " >{item}</Badge>
+                        <Badge key={index} className="bg-transparent cursor-pointer dark:border-white border-black dark:text-orange-500/80 text-orange-700 border-2 " >{item}</Badge>
                       ))}
                     </div>
                   </div>

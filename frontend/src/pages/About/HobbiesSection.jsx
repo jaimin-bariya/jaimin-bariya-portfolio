@@ -13,11 +13,11 @@ const HobbiesSection = () => {
         </div>
 
         <div className="flex flex-col gap-6 pl-4">
-            {MyHobbies.map((hob) => (
-                <div className=" flex items-center">
+            {MyHobbies.map((hob, index) => (
+                <div key={index} className=" flex items-center">
                     
-                    <h2 className="border rounded-s-xl w-fit text-nowrap h-16 border-white p-8 flex justify-center items-center hover:bg-orange-500 hover:font-bold" >{hob['name']}</h2>
-                    <p className="border rounded-e-xl w-fit  h-16 border-white p-8 flex justify-center items-center " > {hob['message']} </p>
+                    <h2 className="border rounded-s-xl w-fit text-nowrap h-16 dark:border-white border-black p-8 flex justify-center items-center hover:bg-orange-500 hover:font-bold" >{hob['name']}</h2>
+                    <p className="border rounded-e-xl w-fit  h-16 dark:border-white border-black p-8 flex justify-center items-center " > {hob['message']} </p>
                     
                 </div>
             ))}
