@@ -7,8 +7,20 @@ import HobbiesSection from "./HobbiesSection";
 import { WhatIamDoingNow } from "@/data/adminData";
 import { CallToActionCard } from "@/components";
 import ScreenTimeChronicles from "./ScreenTimeChronicles";
+import { Movies, AnimeShow } from "@/data/ScreenTimeData";
+import { FilterShowsBasedOnPoster } from "@/utils/PureFunctions";
 
 const About = () => {
+
+
+
+
+  const MovieList = FilterShowsBasedOnPoster(Movies).slice(0, 3)
+  const AnimeShowList = FilterShowsBasedOnPoster(AnimeShow).slice(0, 3)
+
+  const CombineShows = [...MovieList, ...AnimeShowList];
+   
+
   return (
     <>
 
@@ -56,7 +68,8 @@ const About = () => {
 
         {/* Screen Time Chronicles Section  */}
         <div>
-            <ScreenTimeChronicles/>
+            <h2 className="text-3xl font-mono font-semibold mb-8">Screen Time Chronicles🍿📺</h2>
+            <ScreenTimeChronicles numberOfMovieCardShow={6} ScreenTimeFile={CombineShows} />
         </div>
 
 
