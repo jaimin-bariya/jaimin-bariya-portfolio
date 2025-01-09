@@ -1,13 +1,13 @@
 const Movies = [
     {
         name: "LEO",
-        poster: "https://drive.google.com/thumbnail?id=1X2rTXpkoGvIqqJ5AT0ulfer5PIkuD33v",
+        poster: null,
         isMessage: true,
         message: "Yes yes!!"
     },
     {
         name: "Master",
-        poster: "https://drive.google.com/thumbnail?id=1GPaKbxudXNVv7eSUcllMrG0jl6B16cSb",
+        poster: null,
         isMessage: true,
         message: "Yes yes!!"
     },

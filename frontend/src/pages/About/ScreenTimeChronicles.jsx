@@ -8,18 +8,18 @@ const ScreenTimeChronicles = () => {
     const MoviesWithoutImg = Movies.filter((movie) => movie['poster'] === null)
     const SortedMovies = [...MoviesWithImg, ...MoviesWithoutImg]
 
-    // Movies.sort((a, b) => {
+    Movies.sort((a, b) => {
 
-    //     if (a['poster'] !== null && b['poster'] === null) {
-    //         return -1 //  a, b
+        if (a['poster'] !== null && b['poster'] === null) {
+            return -1 //  a, b
         
-    //     } else if (a['poster'] === null && b['poster'] !== null) {
-    //         return 1 // b, a
-    //     } 
+        } else if (a['poster'] === null && b['poster'] !== null) {
+            return 1 // b, a
+        } 
 
-    //     return 0;
+        return 0;
 
-    // }) 
+    }) 
 
 
   return (
