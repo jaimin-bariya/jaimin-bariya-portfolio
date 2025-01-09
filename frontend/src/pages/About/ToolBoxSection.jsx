@@ -6,7 +6,7 @@ const ToolBoxSection = () => {
     <>
 
 <div className="">
-        <h2 className="text-3xl font-semibold font-mono mb-6">Toolbox <span className="text-orange-500">{"(Arsenal)"}</span> </h2>
+        <h2 className="sm:text-3xl text-2xl  font-semibold font-mono mb-6">Toolbox <span className="text-orange-500">{"(Arsenal)"}</span> </h2>
         <p className=" italic dark:text-zinc-500 mb-4"> {ToolBox["tagline"]}</p>
         <div className="[&>*]:pb-8 pl-4">
           {Object.entries(ToolBox["ToolList"]).map(([ToolName, SubToolName], index) => (
@@ -18,7 +18,7 @@ const ToolBoxSection = () => {
 
                   <div key={index} className="sm:flex gap-2 space-y-2 items-baseline">
                     <h4 className="text-2xl font-jersey dark:text-zinc-100">{SubTool['name']}:</h4>
-                    <div className="sm:pl-0 pl-4 flex gap-2 " >
+                    <div className="sm:pl-0 pl-4 flex gap-2 flex-wrap" >
                       {SubTool['list'].map((item, index) => (
                         <Badge key={index} className="bg-transparent cursor-pointer dark:border-white border-black dark:text-orange-500/80 text-orange-700 border-2 " >{item}</Badge>
                       ))}

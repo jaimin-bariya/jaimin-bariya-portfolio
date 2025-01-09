@@ -25,7 +25,7 @@ const About = () => {
     <>
 
 
-      <main className="max-w-4xl mx-auto space-y-8 [&>*]:pt-12 divide-y py-12 px-6 sm:py-28">
+      <main className="max-w-4xl mx-auto space-y-8 [&>*]:pt-12 divide-y py-6 px-6 sm:py-16">
 
         {/* IntroSection  */}
         <HeroSectionAbout/>
@@ -33,7 +33,7 @@ const About = () => {
 
         {/* Connect Contact  */}
         <div className="">
-          <h2 className="text-3xl font-semibold font-mono mb-6">Contact</h2>
+          <h2 className="sm:text-3xl text-2xl  font-semibold font-mono mb-6">Contact</h2>
           <SocialMediaList/>
         </div>
 
@@ -41,7 +41,7 @@ const About = () => {
 
         {/* What I am Doing Now Section  */}
         <div className="">
-          <h2 className="text-3xl font-semibold font-mono mb-6">What I'm Doing Now</h2>
+          <h2 className="sm:text-3xl text-2xl  font-semibold font-mono mb-6">What I'm Doing Now</h2>
           <p className=" italic dark:text-zinc-500 mb-4">Updated {WhatIamDoingNow.lastUpdate}</p>
           <ul className="list-disc  list-inside pl-4 dark:text-gray-300 space-y-2">
             {WhatIamDoingNow["list"].map((item, index) => (
@@ -61,14 +61,14 @@ const About = () => {
 
         {/* Resume Section  */}
         <div>
-          <h3 className="text-3xl font-semibold font-mono mb-8">Resumeee 👨‍💻</h3>
+          <h3 className="tsm:text-3xl text-2xl  font-semibold font-mono mb-8">Resumeee 👨‍💻</h3>
           <CallToActionCard pageLink="Resume" iconOfAction="📑" titleOfPage="📑 Resume" />
         </div>
 
 
         {/* Screen Time Chronicles Section  */}
         <div>
-            <h2 className="text-3xl font-mono font-semibold mb-8">Screen Time Chronicles🍿📺</h2>
+            <h2 className="sm:text-3xl text-2xl font-mono font-semibold mb-8">Screen Time Chronicles🍿📺</h2>
             <ScreenTimeChronicles numberOfMovieCardShow={6} ScreenTimeFile={CombineShows} />
         </div>
 
