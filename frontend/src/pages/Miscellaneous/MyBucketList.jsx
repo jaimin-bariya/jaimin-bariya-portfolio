@@ -25,7 +25,7 @@ const MyBucketList = () => {
                         {oneBucket['Types'].map((oneSmallBucket) => (
                           <div>
                             <h3 className="sm:text-xl text-lg font-sans">{oneSmallBucket['name']}</h3>
-                            <ul className="sm:text-base p-4 pl-12 space-y-2 list-disc list-outside font-serif text-zinc-300">
+                            <ul className="sm:text-base p-4 pl-12 space-y-2 list-disc list-outside font-serif dark:text-zinc-300 text-zinc-700">
                               {oneSmallBucket['list'].map((oneList) => (
                                 
 
@@ -33,7 +33,7 @@ const MyBucketList = () => {
                                   
                                   <li className={`${oneList['isDone'] ? "line-through text-orange-500" : "" } text-wrap`} >{oneList['action']}</li>
 
-                                  {oneList['haveSideMSG'] && <p className="text-zinc-400 font-light ">: {oneList['message']}</p> }
+                                  {oneList['haveSideMSG'] && <p className="dark:text-zinc-400 text-zinc-500 font-light ">: {oneList['message']}</p> }
                                 </div>
 
                                   
@@ -46,7 +46,7 @@ const MyBucketList = () => {
                     
                     (
                       <div>
-                        <ul className="sm:text-base p-4 pl-12 space-y-2 list-disc list-outside font-serif text-zinc-300">
+                        <ul className="sm:text-base p-4 pl-12 space-y-2 list-disc list-outside font-serif dark:text-zinc-300 text-zinc-700">
                               {oneBucket['list'].map((oneList) => (
                                 
 
@@ -58,7 +58,7 @@ const MyBucketList = () => {
                                   </li>
 
                                   {oneList['haveSideMSG'] && 
-                                    <p className="text-zinc-400 font-light text-wrap ">: {oneList['message']}</p> 
+                                    <p className="dark:text-zinc-400 text-zinc-500 font-light text-wrap ">: {oneList['message']}</p> 
                                   }
                                 </div>
 

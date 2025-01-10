@@ -28,7 +28,6 @@ const AllHackathons = [
     description: "Hackathon Wins: Highlight any hackathons you’ve won or placed highly in. Include brief descriptions of the projects, your role, the technologies used, and any prizes.",
     technology: ["Ml", "NLP", "DL"],
   },
- 
 
 ];
 
@@ -56,27 +55,27 @@ const PlatFormIUse = [
 
 
 const CompetitionNames = [
-  {
-    name: "Leetcode Weekly 100",
-    platform: "LeetCode",
-    rank: "1",
-    prize: "10,000",
-    link: ""
-  },
-  {
-    name: "Leetcode Weekly 100",
-    platform: "LeetCode",
-    rank: null,
-    prize: null,
-    link: ""
-  },
-  {
-    name: "Leetcode Weekly 100",
-    platform: "LeetCode",
-    rank: "101",
-    prize: "Laptop",
-    link: ""
-  },
+  // {
+  //   name: "Leetcode Weekly 100",
+  //   platform: "LeetCode",
+  //   rank: "1",
+  //   prize: "10,000",
+  //   link: ""
+  // },
+  // {
+  //   name: "Leetcode Weekly 100",
+  //   platform: "LeetCode",
+  //   rank: null,
+  //   prize: null,
+  //   link: ""
+  // },
+  // {
+  //   name: "Leetcode Weekly 100",
+  //   platform: "LeetCode",
+  //   rank: "101",
+  //   prize: "Laptop",
+  //   link: ""
+  // },
   
 
 ]

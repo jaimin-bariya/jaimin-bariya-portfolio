@@ -20,7 +20,7 @@ const BadgeSection = () => {
               />
               <h3 className="sm:text-3xl text-2xl ">
                 <a
-                  className="text-white hover:text-orange-500 transition-colors"
+                  className="dark:text-white text-black hover:text-orange-500 transition-colors"
                   href={platform.link}
                 >
                   {platform.name}

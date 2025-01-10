@@ -14,3 +14,4 @@ export {default as StackOverFlowLogo} from "@assets/images/logo/stackoverflow.pn
 export {default as YTLogo} from "@assets/images/logo/YT.png"
 export {default as NetflixLogo} from "@assets/images/logo/netflix.svg"
 export {default as TelegramLogo} from "@assets/images/logo/telegram.svg"
+export {default as FreelancerLogo} from "@assets/images/logo/freelancer.svg"

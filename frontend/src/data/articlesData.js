@@ -1,69 +1,24 @@
 const Toparticles = [
-    {
-      title: "Creating a Keyboard Shortcut Hook in React (Deep Dive)",
+  {
+    title: "SQL Basic Question for interview",
+    date: "November 2024 ",
+    href: "https://dev.to/jaiminbariya/sql-basic-question-for-interview-51j5"
+  },
+  {
+    title: "SQL Basic and Intermediate Questions for Interview",
+    date: "December 2024",
+    href: "https://dev.to/jaiminbariya/sql-basic-and-intermediate-questions-for-interview-3jgo"
+  },
+  {
+    title: "Implementation of ACID transaction in Database",
+    date: "October 2024",
+    href: "https://dev.to/jaiminbariya/implementation-of-acid-transaction-in-database-44nc"
+  },
+  {
+    title: "Isolation in ACID Transaction",
       date: "October 2024",
-      href: "#"
-    },
-    {
-      title: "Tables with Fixed Headers and Horizontal Scroll",
-      date: "October 2024",
-      href: "#"
-    },
-    {
-      title: "How to Use WebSockets in a Redux Application",
-      date: "February 2023",
-      href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 2023",
-      href: "#"
-    },
-    {
-      title: "Testing API Calls With React Testing Library and Jest",
-      date: "December 2022",
-      href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 2023",
-      href: "#"
-    },
-    {
-      title: "Testing API Calls With React Testing Library and Jest",
-      date: "December 2022",
-      href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 2023",
-      href: "#"
-    },
-    {
-      title: "Testing API Calls With React Testing Library and Jest",
-      date: "December 2022",
-      href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 2023",
-      href: "#"
-    },
-    {
-      title: "Testing API Calls With React Testing Library and Jest",
-      date: "December 2022",
-      href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 2023",
-      href: "#"
-    },
-    {
-      title: "Testing API Calls With React Testing Library and Jest",
-      date: "December 2022",
-      href: "#"
-    }
+      href: "https://dev.to/jaiminbariya/isolation-in-acid-transaction-3055"
+  },
   ]
 
 
@@ -72,67 +27,74 @@ const Toparticles = [
 const AllArticles = {
   "2024": [
     {
-      title: "Creating a Keyboard Shortcut Hook in React (Deep Dive)",
-      date: "October 19",
-      href: "#"
+      title: "SQL Basic Question for interview",
+      date: "November 2024 ",
+      href: "https://dev.to/jaiminbariya/sql-basic-question-for-interview-51j5"
     },
     {
-      title: "Tables with Fixed Headers and Horizontal Scroll",
+      title: "SQL Basic and Intermediate Questions for Interview",
+      date: "December 2024",
+      href: "https://dev.to/jaiminbariya/sql-basic-and-intermediate-questions-for-interview-3jgo"
+    },
+    {
+      title: "Implementation of ACID transaction in Database",
       date: "October 2024",
-      href: "#"
+      href: "https://dev.to/jaiminbariya/implementation-of-acid-transaction-in-database-44nc"
     },
     {
-      title: "How to Use WebSockets in a Redux Application",
-      date: "February 2023",
-      href: "#"
-    }
-  ],
-  "2023": [
-    {
-      title: "How to Use WebSockets in a Redux Application",
-        date: "February 15",
-        href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 27",
-      href: "#"
+      title: "Isolation in ACID Transaction",
+        date: "October 2024",
+        href: "https://dev.to/jaiminbariya/isolation-in-acid-transaction-3055"
     },
   ],
-  "2023": [
-    {
-      title: "How to Use WebSockets in a Redux Application",
-        date: "February 15",
-        href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 27",
-      href: "#"
-    },
-  ],
-  "2022": [
-    {
-      title: "How to Use WebSockets in a Redux Application",
-        date: "February 15",
-        href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 27",
-      href: "#"
-    },
-    {
-      title: "How to Use WebSockets in a Redux Application",
-        date: "February 15",
-        href: "#"
-    },
-    {
-      title: "Understanding the GraphQL Type System",
-      date: "January 27",
-      href: "#"
-    },
-  ],
+
+
+  // "2023": [
+    
+  //   {
+  //     title: "Understanding the GraphQL Type System",
+  //     date: "January 27",
+  //     href: "#"
+  //   },
+  // ],
+
+
+  // "2022": [
+  //   {
+  //     title: "How to Use WebSockets in a Redux Application",
+  //       date: "February 15",
+  //       href: "#"
+  //   },
+  //   {
+  //     title: "Understanding the GraphQL Type System",
+  //     date: "January 27",
+  //     href: "#"
+  //   },
+  // ],
+
+
+  // "2021": [
+  //   {
+  //     title: "How to Use WebSockets in a Redux Application",
+  //       date: "February 15",
+  //       href: "#"
+  //   },
+  //   {
+  //     title: "Understanding the GraphQL Type System",
+  //     date: "January 27",
+  //     href: "#"
+  //   },
+  //   {
+  //     title: "How to Use WebSockets in a Redux Application",
+  //       date: "February 15",
+  //       href: "#"
+  //   },
+  //   {
+  //     title: "Understanding the GraphQL Type System",
+  //     date: "January 27",
+  //     href: "#"
+  //   },
+  // ],
 
 }
 

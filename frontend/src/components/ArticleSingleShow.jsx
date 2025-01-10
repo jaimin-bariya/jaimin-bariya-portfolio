@@ -15,7 +15,7 @@ const ArticleSingleShow = ({articles}) => {
               <a 
                 href={article.href}
                 target="_blank"
-                className=" dark:text-articleLinkColor text-indigo-600 font-semibold dark:font-normal hover:text-orange-500 dark:hover:text-orange-400 transition-colors sm:text-lg text-sm"
+                className=" dark:text-articleLinkColor text-blue-800 font-semibold dark:font-normal hover:text-orange-500 dark:hover:text-orange-400 transition-colors sm:text-lg text-sm"
               >
                 {article.title}
               </a>

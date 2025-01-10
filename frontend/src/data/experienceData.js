@@ -1,31 +1,34 @@
-import { GitHubLogo } from "@/assets/images"
+import { GitHubLogo, FreelancerLogo } from "@/assets/images"
 
 
 const AllExperience = [
     {
-        company: "Optimus AI Lab",
-        role: "Mid-level Frontend Engineer",
-        startDate: "NOV 2024",
+        company: "Unified Mentor",
+        role: "ML Developer Intern",
+        startDate: "DEC 2024",
         endDate: "PRESENT",
         description: [
-            "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
-            "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
-            "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products."
-        ],
-        logo: GitHubLogo
+            "At Unified Mentor, my work involves designing and implementing advanced machine learning models to solve real-world problems effectively.",
+            "Built a classification model to identify Instagram fake accounts with 95% accuracy.",
+            "Optimized data preprocessing pipelines, reducing runtime by 20%.",
+            "Collaborated with the team to deploy AI solutions, leveraging TensorFlow and AWS Educate for scalable performance.",  
+          
+          ],
+        logo: FreelancerLogo
       },
       {
-        company: "Educative",
-        role: "Project Author",
-        startDate: "DEC 2023",
-        endDate: "SEP 2024",
+        company: "Self-Employed",
+        role: "Freelance Web Developer",
+        startDate: "DEC 2022",
+        endDate: "FEB 2023",
         description: [
-            "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
-            "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
-            "At Optimus, my work involves developing and maintaing dynamic user-centric interfaces and applications that simplify access to complex AI functionalities across multiple products.",
-            "Technical content author tasked with creating interactive real-world tutorials, focused on topics like Next.js, TypeScript, React."
-        ],
-        logo: GitHubLogo
+            "As a freelance web developer during my bachelor's, I created WordPress websites for local clients, focusing on user-friendly, responsive designs.",
+            "Built websites using Elementor, ensuring easy editing and maintenance for clients.",
+            "Delivered fully responsive, SEO-friendly websites that improved clients’ online presence.",
+            "Collaborated with clients to understand their needs and delivered high-quality websites within deadlines.",   
+          
+          ],
+        logo: FreelancerLogo
       },
 ]
 

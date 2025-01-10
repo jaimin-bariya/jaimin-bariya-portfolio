@@ -22,43 +22,43 @@ const AllSocialMedia = [
       name: "GitHub",
       logo: GitHubLogo,
       isEnable: true,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/jaimin-bariya",
     },
     {
       name: "Codeforces",
       logo: CodeforcesLogo,
       isEnable: true,
-      url: "https://codeforces.com/profile/yourusername",
+      url: "https://codeforces.com/profile/jaiminbariya",
     },
     {
       name: "LeetCode",
       logo: LeetCodeLogo,
       isEnable: true,
-      url: "https://leetcode.com/yourusername",
+      url: "https://leetcode.com/u/jaimin-bariya/",
     },
     {
       name: "LinkedIn",
       logo: LinkedInLogo,
       isEnable: true,
-      url: "https://www.linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/jaiminbariya/",
     },
     {
       name: "Twitter (X)",
       logo: XLogo,
       isEnable: true,
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/jaiminbariya_",
     },
     {
       name: "Dev.to",
       logo: DevToLogo,
       isEnable: true,
-      url: "https://dev.to/yourusername",
+      url: "https://dev.to/jaiminbariya",
     },
     {
       name: "Discord",
       logo: DiscordLogo,
       isEnable: false,
-      url: "https://discord.com/users/yourid",
+      url: "https://discord.com/users/1154752660222791722",
     },
     {
       name: "Facebook",
@@ -107,6 +107,22 @@ const AllSocialMedia = [
 
 
 
+const SocialLinks = {
+  githubLink: "https://github.com/jaimin-bariya",
+  codeforcesLink: "https://codeforces.com/profile/jaiminbariya",
+  leetcodeLink: "https://leetcode.com/u/jaimin-bariya/",
+  linkedInLink: "https://www.linkedin.com/in/jaiminbariya/",
+  twitterLink: "https://x.com/jaiminbariya_",
+  devToLink: "https://dev.to/jaiminbariya",
+  discordLink: "https://discord.com/users/1154752660222791722", // You can remove this if isEnable: false
+  facebookLink: "https://facebook.com/yourusername", // Remove or replace if needed
+  gmailLink: "mailto:yourname@gmail.com", // Replace with your actual email if needed
+  kaggleLink: "https://www.kaggle.com/yourusername", // Replace with your username
+  mediumLink: "https://medium.com/@yourusername", // Replace with your username
+  slackLink: "",
+  stackOverflowLink: "https://stackoverflow.com/users/yourid/yourusername", // Replace with actual info
+  youtubeLink: "https://www.youtube.com/c/yourchannelname", // Replace with your channel link
+};
 
 
 
@@ -116,14 +132,13 @@ const AllSocialMedia = [
 
 const WhatIamDoingNow = {
   
-  lastUpdate: "December 1st, 2024",
+  lastUpdate: "January 10, 2025",
   list: [
-    "Working full-time",
-    "Weight-lifting three times/week",
-    "Building a replica of our home out of Lego",
-    "Playing the demo disc for Dynasty Warriors: Origin",
-    "Reading Fire and Blood by George R. R. Martin",
-    "Redesigning this website for the nteenth time",
+    "Crafting Strong Resume",
+    "Weight-lifting seven times/week",
+    "Developing some unique projects",
+    "Playing Nothing - ",
+    "Reading Corporate Chanakya, Chanakya 100 Best Sutras",
   ] 
 }
 
@@ -136,11 +151,11 @@ const ToolBox = {
     Technologies: [
       {
         name: "Programming Languages",
-        list: ["Python", "JavaScript", "C++", "Java"],
+        list: ["Python", "JavaScript", "C++", "SQL"],
       },
       {
         name: "Frameworks",
-        list: ["React.js", "Node.js", "Django", "Flask"],
+        list: ["React.js", "Flask"],
       },
       {
         name: "AI/ML Libraries",
@@ -148,64 +163,64 @@ const ToolBox = {
       },
       {
         name: "Database Technologies",
-        list: ["MySQL", "PostgreSQL", "MongoDB", "Firebase"],
+        list: ["MySQL", "PostgreSQL", "Firebase"],
       },
     ],
   
     Tools: [
       {
         name: "Version Control",
-        list: ["Git", "GitHub", "GitLab"],
+        list: ["Git", "GitHub"],
       },
       {
         name: "IDEs/Editors",
-        list: ["VS Code", "PyCharm", "Jupyter Notebook", "IntelliJ IDEA"],
+        list: ["VS Code", "PyCharm", "Jupyter Notebook"],
       },
       {
         name: "Design Tools",
-        list: ["Figma", "Adobe XD", "Canva"],
+        list: ["Canva"],
       },
       {
         name: "Project Management",
-        list: ["Trello", "Jira", "Notion"],
+        list: ["Notion"],
       },
     ],
   
     Hardware: [
       {
         name: "Laptop/PC",
-        list: ["MacBook Pro M1", "Dell XPS 15", "Custom-Built PC"],
+        list: ["Asus TUF Gaming F15"],
       },
       {
         name: "Development Boards",
-        list: ["Raspberry Pi", "Arduino", "Jetson Nano"],
+        list: [],
       },
       {
         name: "Peripherals",
-        list: ["Mechanical Keyboard", "Dual Monitors", "Graphics Tablet"],
+        list: ["Mechanical Keyboard"],
       },
       {
         name: "AI-Specific Hardware",
-        list: ["NVIDIA GPUs (RTX 3080 for ML training)"],
+        list: [],
       },
     ],
   
     Platforms: [
       {
         name: "Cloud Platforms",
-        list: ["AWS", "Google Cloud Platform", "Microsoft Azure"],
+        list: ["AWS"],
       },
       {
         name: "Collaboration",
-        list: ["Slack", "Microsoft Teams", "Zoom"],
+        list: ["Slack", "Zoom"],
       },
       {
         name: "Learning Platforms",
-        list: ["Coursera", "Udemy", "Khan Academy"],
+        list: ["Coursera", "Udemy", "Khan Academy", "YouTube"],
       },
       {
         name: "Competitive Coding",
-        list: ["Codeforces", "LeetCode", "HackerRank"],
+        list: ["Codeforces", "LeetCode"],
       },
     ],
 
@@ -222,7 +237,7 @@ const MyHobbies = [
 
   {
     name: "Watching Anime & Movies 🍿",
-    message: "Watching epic battles and heartwarming stories, one episode at a time... and pretending I can do those sick moves! 💥"
+    message: "Watching epic battles and heartwarming stories, one season at a time... 😁 💥"
   },
 
   {
@@ -237,12 +252,12 @@ const MyHobbies = [
 
   {
     name: "Stargazing ✨",
-    message: "Waiting for aliens to invade or just wishing my life had a cool soundtrack. 🌌"
+    message: "Waiting for aliens to invade and just wishing my life had a cool soundtrack. 🌌"
   },
 
   {
     name: "Reading 📚",
-    message: "Feeding my brain with knowledge... or occasionally diving into a good fantasy novel. 📖🧙‍♂️"
+    message: "Feeding my brain with knowledge... and occasionally diving into a good fantasy novel. 📖🧙‍♂️"
   },
 
   {
@@ -258,5 +273,5 @@ const MyHobbies = [
 
 
 
-export { AllSocialMedia, WhatIamDoingNow, ToolBox, MyHobbies};
+export { AllSocialMedia, WhatIamDoingNow, ToolBox, MyHobbies, SocialLinks};
   

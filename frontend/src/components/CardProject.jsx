@@ -10,13 +10,13 @@ const CardProject = ({project, index}) => {
                 <Folder className="h-5 w-5 text-orange-500" />
                 <div className="flex gap-4">
                   {project.demoLink && (
-                    <Link href={project.demoLink} className="text-gray-400 hover:text-white">
-                      <ExternalLink className="h-5 w-5" />
-                    </Link>
+                    <a target="_blank" href={project.demoLink} className="dark:text-gray-400 text-gray-700 dark:hover:text-white hover:text-orange-500">
+                      <ExternalLink className="h-5 w-5 " />
+                    </a>
                   )}
-                  <Link href={project.githubLink} className="text-gray-400 hover:text-white">
+                  <a target="_blank" href={project.githubLink} className="dark:text-gray-400 text-gray-700 dark:hover:text-white hover:text-orange-500">
                     <Github className="h-5 w-5" />
-                  </Link>
+                  </a>
                 </div>
               </CardHeader>
               <CardContent>

@@ -9,11 +9,6 @@ const YTChannels = [
         link: "https://www.youtube.com/@takeUforward",
         for: "DSA"
     },
-    {
-        channelName: "Dash Dash",
-        link: "",
-        for: "Web Development"
-    },
 ]
 
 export {YTChannels}

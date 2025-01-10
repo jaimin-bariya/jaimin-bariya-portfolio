@@ -8,6 +8,8 @@ import {
   LinkedInLogo,
   XLogo,
 } from "@/assets/images";
+import { SocialLinks } from "@/data/adminData";
+
 
 const StandOutSection = () => {
   return (
@@ -38,8 +40,9 @@ const StandOutSection = () => {
         <div className="h-80 grid sm:col-span-3 grid-cols-1 col-span-2 sm:grid-cols-1 sm:gap-6 sm:mb-0 mb-4  ">
           {/* All Social Media Cards  */}
           <div className="h-40 grid sm:gap-6 gap-4 sm:grid-cols-4 grid-cols-2 col-span-1 [&>*]:dark:border-white [&>*]:border-black ">
-            {/* X Card */}
+            {/* GitHub Card */}
             <Card className="bg-transparent h-40 border-white p-6 flex justify-center items-center  cursor-pointer hover:scale-105 duration-700">
+              <a target="_blank" href={SocialLinks['githubLink']}>
               <img
                 src={GitHubLogo}
                 alt="Avatar"
@@ -47,10 +50,12 @@ const StandOutSection = () => {
                 width="80px"
                 className=" rounded-full"
               />
+              </a>
             </Card>
 
-            {/* LinkedIn Card */}
+            {/* X Card */}
             <Card className="bg-transparent h-40 border-white p-6 flex justify-center items-center cursor-pointer hover:scale-105 duration-700">
+              <a target="_blank" href={SocialLinks['twitterLink']}>
               <img
                 src={XLogo}
                 alt="Avatar"
@@ -58,10 +63,13 @@ const StandOutSection = () => {
                 width="80px"
                 className="rounded-full"
               />
+              </a>
             </Card>
 
             {/* LinkedIn Card */}
             <Card className="bg-transparent h-40  border-white p-6 flex justify-center items-center cursor-pointer hover:scale-105 duration-700">
+              <a target="_blank" href={SocialLinks['linkedInLink']}>
+
               <img
                 src={LinkedInLogo}
                 alt="Avatar"
@@ -69,10 +77,12 @@ const StandOutSection = () => {
                 width="80px"
                 className=" rounded-full"
               />
+              </a>
             </Card>
 
-            {/* Resume Card */}
+            {/* Leetcode Card */}
             <Card className="bg-transparent h-40 border-white p-6 flex justify-center items-center cursor-pointer hover:scale-105 duration-700">
+              <a target="_blank" href={SocialLinks['leetcodeLink']}>
               <img
                 src={LeetCodeLogo}
                 alt="Avatar"
@@ -80,24 +90,30 @@ const StandOutSection = () => {
                 width="80px"
                 className=" rounded-full"
               />
+              </a>
             </Card>
           </div>
 
           <div className="hidden sm:block h-40 sm:col-span-1 [&>*]:dark:border-white [&>*]:border-black">
             {/* Connections Card */}
+            
             <Card className="bg-transparent border-white p-8  cursor-pointer hover:scale-105 duration-700">
+              <a className="dark:text-white text-black hover:text-orange-500 dark:hover:text-orange-500" href="">
               <div className="text-center">
                 <h2 className="text-2xl font-semibold mb-4">Connections</h2>
                 <p className="text-gray-400">
                   An ever-evolving list of people I have met and wish to meet.
                 </p>
               </div>
+              </a>
             </Card>
+            
           </div>
         </div>
 
         {/* 3 - Toolbox Card */}
         <Card className=" h-96 bg-transparent border-white p-6 sm:col-span-2 col-span-1 cursor-pointer hover:scale-105 duration-700">
+          <Link className="dark:text-white text-black hover:text-orange-500 dark:hover:text-orange-500">
           <h2 className="text-2xl font-semibold mb-4">Toolbox</h2>
           <p className="text-gray-400 mb-6">
             Check out my favorite tools and spots around the web.
@@ -114,11 +130,13 @@ const StandOutSection = () => {
               </div>
             </div>
           </div>
+          </Link>
         </Card>
 
         <div className="h-96 grid sm:grid-cols-1 sm:col-span-2 col-span-1 sm:gap-6 gap-4 [&>*]:dark:border-white [&>*]:border-black">
           {/* Writing Contributions */}
           <Card className="bg-transparent border-white backdrop-blur-xl p-6 cursor-pointer hover:scale-105 duration-700">
+            <a className="dark:text-white text-black hover:text-orange-500 dark:hover:text-orange-500" href={SocialLinks['devToLink']} target='_blank'>
             <div className="text-center ">
               <h2 className="sm:text-2xl text-lg font-semibold mb-4">
                 Writing Contributions
@@ -127,10 +145,14 @@ const StandOutSection = () => {
                 An ever-evolving list of people I have met and wish to meet.
               </p>
             </div>
+            </a>
           </Card>
 
           {/* Compete Card (Another Example) */}
           <Card className="bg-transparent border-white backdrop-blur-xl p-6  cursor-pointer hover:scale-105 duration-700">
+            
+            <Link className="dark:text-white text-black hover:text-orange-500 dark:hover:text-orange-500" to="/compete">
+
             <div className="text-center">
               <h2 className="sm:text-2xl text-lg font-semibold mb-4">
                 Compete
@@ -139,6 +161,9 @@ const StandOutSection = () => {
                 An ever-evolving list of people I have met and wish to meet.
               </p>
             </div>
+
+            </Link>
+            
           </Card>
         </div>
       </div>
