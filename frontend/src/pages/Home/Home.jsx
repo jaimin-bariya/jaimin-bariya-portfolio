@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <main className="min-h-screen py-8 px-4 md:p-16 lg:p-24">
+      <main className="min-h-screen pt-20 px-4 md:p-16 lg:p-24">
         <HeroSection />
 
         {/* Projects  */}

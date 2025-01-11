@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople} from "@pages/index"
-
+import { SingleProjectShowCase } from "@/components";
 const AppRouter = () => {
 
 
@@ -23,6 +23,8 @@ const AppRouter = () => {
             <Route path="/compete" element={<Compete />} />
             
 
+            {/* Sub Pages  */}
+            <Route path="project/:projectId" element={<SingleProjectShowCase/>} /> {/* Dynamic route */}
             
 
             
