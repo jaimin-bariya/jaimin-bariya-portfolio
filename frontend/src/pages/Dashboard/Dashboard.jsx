@@ -25,7 +25,7 @@ const Dashboard = () => {
         <div className="min-h-screen ">
         <div className="grid gap-6 md:grid-cols-3  lg:gap-8 ">
           {dataFiles.map((fileName, index) => (
-            <FileCard file={fileName} />
+            <FileCard file={fileName} key={index} />
           ))}
         </div>
         </div>

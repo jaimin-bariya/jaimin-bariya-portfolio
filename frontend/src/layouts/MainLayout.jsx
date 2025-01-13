@@ -25,6 +25,14 @@ const MainLayout = ({children}) => {
 
   useKeyShortcut(() => {
 
+    console.log("no no no");
+    
+
+  }, (e) => (e.key === "F12") || (e.ctrlKey && e.shiftKey && e.key === 'I') )
+
+
+  useKeyShortcut(() => {
+
     playMouseClick()
     setIsFirstPasswordOpen((prev) => !prev)
 

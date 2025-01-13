@@ -14,6 +14,7 @@ import { Label } from "@/components/ui/label";
 import { PlayAdminIntro } from "@/utils/soundsPlaying";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import CryptoJS from "crypto-js";
 
 
 
@@ -24,18 +25,22 @@ const SecurityPassword = ({isFirstPasswordOpen, setIsFirstPasswordOpen}) => {
     const navigate = useNavigate();
 
 
-    const [isEnteredPassword, setIsEnteredPassword] = useState("JP001")
+    const [isEnteredPassword, setIsEnteredPassword] = useState("suraj2@01")
     const [isUserName, setIsUserName] = useState("admin")
 
 
-    const openAdminPage = () => {        
+    const openAdminPage = () => {   
+        
+        
 
-        if (isEnteredPassword === import.meta.env.VITE_ENTRY_PASSWORD) {
+        if (CryptoJS.SHA256(isEnteredPassword).toString() === import.meta.env.VITE_ENTRY_PASSWORD) {
             console.log("done");
             PlayAdminIntro()
             setTimeout(() => {
                 setIsFirstPasswordOpen(false);
                 navigate('/admin/dashboard')
+                
+                
                 
             }, 1200)
         }
