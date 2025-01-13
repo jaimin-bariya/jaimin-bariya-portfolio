@@ -31,7 +31,7 @@ jobs:
     # Set Up the environment Variabels 
     - name: Set up environment Variables
       run: |
-      echo "VITE_ENTRY_PASSWORD = ${{ secrets.VITE_ENTRY_PASSWORD }}" >> .env
+        echo "VITE_ENTRY_PASSWORD = ${{ secrets.VITE_ENTRY_PASSWORD }}" >> .env
 
 
     # Build the React app
