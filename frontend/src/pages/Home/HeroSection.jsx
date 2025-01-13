@@ -1,7 +1,8 @@
 
 import HeroHomeIcon from "@assets/images/keyboard.png";
 import HeroHomeIcon2 from "@assets/images/hunter.png";
-
+import { adminName } from "@/data/adminData";
+import { introHomePage } from "@/data/adminDesc";
 
 
 const HeroSection = () => {
@@ -12,23 +13,15 @@ const HeroSection = () => {
           {/* Hero Section */}
           <div className="space-y-6 col-span-2 text-start ">
             <h1 className="text-5xl md:text-6xl lg:text-5xl font-bold">
-              Hey, I am <span className="text-orange-500">Jaimin Bariya</span>
+              Hey, I am <span className="text-orange-500">{adminName}</span>
             </h1>
             <p className="dark:text-gray-300 text-[16px]  md:text-xl leading-relaxed ">
-              Welcome to my{" "}
-              <span className="text-white bg-orange-700 px-2 font-mono rounded">
-                digital home
-              </span>{" "}
-              where I share my little but interesting journey. I’m an AI/ML
-              Developer, web enthusiast, and tech lover. I’ve been working on
-              exciting projects and exploring next-gen technologies for a while
-              now.
-              <br />
-              <br />
-              In my free time, I love watching anime, movies, building SAAS
-              projects, creating dev tools, playing with DSA, and writing
-              articles. I’m also open to freelance opportunities!
+
+              {introHomePage}
             </p>
+              
+          
+          
           </div>
 
           {/* Image Section */}

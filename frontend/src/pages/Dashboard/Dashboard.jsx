@@ -1,37 +1,42 @@
+
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import FileCard from "@/components/FileCard";
+
+
+const dataFiles = ["adminData.js", "adminDesc.jsx", "articlesData.js", "competeData.js", "experienceData.js", 
+  "herosData.js", "miscellaneousData.js", "myBucketListData.js", 
+  "navbar.js", "projectData.js", "quotesData.js", "ScreenTimeData.js", "siteMetaData.js", "startupData.js", 
+  "usagesData.js"
+]
+
+
 
 const Dashboard = () => {
 
-
-  const navigate = useNavigate();
-
-  useEffect(() => {
-
-    const handleKeyDown = (e) => {
-      if (e.ctrlKey && e.key === "d" ) {
-          e.preventDefault();
-          navigate(-1) // last page opened in stack
-        
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-
-
-
-  }, []);
+  
 
 
   return (
-    <>
-        <h1>This is Dashboard</h1>
-        <p>This page comes only in dark mode, if you like light mode here, then probably you are not developer. </p>
+    <>  
+
+<div className="sm:my-32 my-16 max-w-6xl mx-auto p-8 md:p-0">
+
+        <div className="min-h-screen ">
+        <div className="grid gap-6 md:grid-cols-3  lg:gap-8 ">
+          {dataFiles.map((fileName, index) => (
+            <FileCard file={fileName} />
+          ))}
+        </div>
+        </div>
+
+        
+          
+
+    </div>
+        
+
+
     </>
   );
 };

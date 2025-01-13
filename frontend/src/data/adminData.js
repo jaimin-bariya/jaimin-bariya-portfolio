@@ -17,6 +17,11 @@ import {
   
 
 
+
+const adminName = "Jaimin Bariya";
+
+
+
 const AllSocialMedia = [
     {
       name: "GitHub",
@@ -273,5 +278,5 @@ const MyHobbies = [
 
 
 
-export { AllSocialMedia, WhatIamDoingNow, ToolBox, MyHobbies, SocialLinks};
+export { AllSocialMedia, WhatIamDoingNow, ToolBox, MyHobbies, SocialLinks, adminName};
   

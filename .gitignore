@@ -8,6 +8,8 @@ firebase-debug.log*
 firebase-debug.*.log*
 
 
+# All env files 
+*.env
 
 
 # Ignore Firebase deployment files

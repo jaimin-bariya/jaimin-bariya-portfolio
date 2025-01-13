@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
+import DashBoardLayout from "@/layouts/DashBoardLayout";
 import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople} from "@pages/index"
 import { SingleProjectShowCase } from "@/components";
 const AppRouter = () => {
@@ -37,8 +38,10 @@ const AppRouter = () => {
             <Route path="/connect" element={<ConnectPeople />} />
           </Route>
 
-            <Route path="/admin/dashboard" element={<Dashboard/>} />
-            
+          <Route element={<DashBoardLayout/>}>
+            <Route path="/admin/dashboard" element={<Dashboard/>}/>
+          </Route>
+
         </Routes>
 
     </Router>
