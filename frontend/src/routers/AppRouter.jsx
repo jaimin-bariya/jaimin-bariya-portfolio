@@ -40,7 +40,7 @@ const AppRouter = () => {
 
           <Route element={<DashBoardLayout/>}>
             <Route path={import.meta.env.VITE_ADMIN_DASHBOARD_URL} element={<Dashboard/>}/>
-            <Route path={import.meta.env.VITE_ADMIN_DASHBOARD_EDITOR} element={<JSObjectEditor/>}/>
+            <Route path={`${import.meta.env.VITE_ADMIN_DASHBOARD_URL}/editor`} element={<JSObjectEditor/>}/>
           </Route>
 
         </Routes>
