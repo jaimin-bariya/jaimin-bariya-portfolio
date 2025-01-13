@@ -17,6 +17,14 @@ const DashBoardLayout = () => {
 
   }, (e) => e.ctrlKey && (e.key === "d" || e.key === "D"))
 
+
+  useKeyShortcut(() => {
+
+    console.log("no no no");
+    
+
+  }, (e) => (e.key === "F12") || (e.ctrlKey && e.shiftKey && e.key === 'I') )
+
   
 
 

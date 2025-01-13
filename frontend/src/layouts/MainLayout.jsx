@@ -5,12 +5,44 @@ import { useKeyShortcut } from "@/hooks/keyListener";
 import { PlayAdminIntro, playMouseClick } from "@/utils/soundsPlaying";
 import { SecurityPassword } from "@/pages";
 import { useEffect, useState } from "react";
+import { Toaster } from "@/components/ui/sonner"
+import { toast } from "sonner";
 
 const MainLayout = ({children}) => {
 
+
   const navigate = useNavigate();
   const [isFirstPasswordOpen, setIsFirstPasswordOpen] = useState(false);
+  const [isMsgNumber, setIsMsgNumber] = useState(0);
 
+
+  const MsgToCoder = [
+    "Oh ho! F12? Trying to be Sherlock? 🕵️‍♂️",
+    "No Coder Bro 😁", 
+    "Whoops! F12 is disabled for your safety. 😉",
+    "Bhai, F12 se kuch nahi milega! 😂",
+    "Don't do it 😶",
+    "Aree Na bola na 😎",
+    "Bro, F12 doesn't make you a hacker! 🧑‍💻",
+    "Bhai, relax! 😂",
+    "Beta tumse na ho payega! 😏",
+    "No, no! Developer mode is off-limits! 🚫",
+    "Arre, stop hacking! 🕵️‍♂️",
+    "Kaam kar le ab! 🧑‍💻",
+    "Bro, you're unstoppable! 😅",
+    "Dekh raha hai Binod! 🤔",
+    "Kya kar raha hai bhai? 🫣"
+  ]
+
+
+  // const setErrorMessage = () => {
+
+  //   if (isMsgNumber >= 3) {
+  //     setIsMsgNumber(0);
+  //   }
+
+  //   return MsgToCoder[isMsgNumber]
+  // }
 
 
   // // 1 - what will happen when key press -> log "chal raha hai"
@@ -24,11 +56,13 @@ const MainLayout = ({children}) => {
 
 
   useKeyShortcut(() => {
-
-    console.log("no no no");
-    
-
-  }, (e) => (e.key === "F12") || (e.ctrlKey && e.shiftKey && e.key === 'I') )
+    setIsMsgNumber((prev) => {
+      const newNumber = (prev + 1) % MsgToCoder.length; // Update state and loop back
+      const errorMessage = MsgToCoder[prev]; // Use the current state for the message
+      toast(errorMessage); // Show the toast
+      return newNumber; // Increment state
+    });
+  }, (e) => (e.key === "F12") || (e.ctrlKey && e.shiftKey && e.key === 'I'));
 
 
   useKeyShortcut(() => {
@@ -81,6 +115,7 @@ const MainLayout = ({children}) => {
         <main>
           <Outlet/>
         </main>
+        <Toaster/>
         <Footer/>
         
 
