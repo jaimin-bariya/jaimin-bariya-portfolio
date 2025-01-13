@@ -14,7 +14,8 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, 'src/assets'),
       '@layouts': path.resolve(__dirname, 'src/layouts'),
       '@contexts': path.resolve(__dirname, 'src/contexts'),
-      '@hooks': path.resolve(__dirname, 'src/hooks')
+      '@hooks': path.resolve(__dirname, 'src/hooks'),
+      '@data': path.resolve(__dirname, 'src/data')
     },
   },
 })

@@ -20,6 +20,10 @@ import {
 
 const adminName = "Jaimin Bariya";
 
+console.log(import.meta.url); // Outputs the URL of this script
+
+
+
 
 
 const AllSocialMedia = [
