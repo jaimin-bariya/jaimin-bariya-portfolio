@@ -55,7 +55,7 @@ const SecurityPassword = ({isFirstPasswordOpen, setIsFirstPasswordOpen}) => {
             PlayAdminIntro()
             setTimeout(() => {
                 setIsFirstPasswordOpen(false);
-                navigate('/admin/dashboard')      
+                navigate(import.meta.env.VITE_ADMIN_DASHBOARD_URL)    
             }, 1200)
         } else {
             setIsMsgNumber((prev) => {

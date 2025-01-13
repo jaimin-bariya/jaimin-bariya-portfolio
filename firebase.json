@@ -14,7 +14,11 @@
     ],
     "rewrites": [ 
       {
-        "source": "**",
+        "source": "/admin/**",  
+        "destination": "/index.html" 
+      },
+      {
+        "source": "/**",
         "destination": "/index.html"
       }
     ]

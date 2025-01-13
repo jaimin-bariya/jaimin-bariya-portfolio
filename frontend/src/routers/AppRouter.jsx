@@ -6,6 +6,10 @@ import { SingleProjectShowCase } from "@/components";
 const AppRouter = () => {
 
 
+  const ADMIN_DASHBOARD_URL = import.meta.env.VITE_ADMIN_DASHBOARD_URL || "/admin/dashboard";
+
+
+
 
 
 
@@ -39,12 +43,13 @@ const AppRouter = () => {
           </Route>
 
           <Route element={<DashBoardLayout/>}>
-            <Route path={import.meta.env.VITE_ADMIN_DASHBOARD_URL} element={<Dashboard/>}/>
-            <Route path={`${import.meta.env.VITE_ADMIN_DASHBOARD_URL}/editor`} element={<JSObjectEditor/>}/>
+          <Route path={ADMIN_DASHBOARD_URL} element={<Dashboard />} />
+          <Route path={`${ADMIN_DASHBOARD_URL}/editor`} element={<JSObjectEditor />} />
+
           </Route>
 
         </Routes>
-
+s
     </Router>
   );
 };
