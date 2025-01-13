@@ -48,6 +48,7 @@ const SecurityPassword = ({isFirstPasswordOpen, setIsFirstPasswordOpen}) => {
     ]
 
 
+    
     const openAdminPage = () => {   
         
         if (CryptoJS.SHA256(isEnteredPassword).toString() === import.meta.env.VITE_ENTRY_PASSWORD) {
