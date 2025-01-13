@@ -6,7 +6,7 @@ import { SingleProjectShowCase } from "@/components";
 const AppRouter = () => {
 
 
-  const ADMIN_DASHBOARD_URL = import.meta.env.VITE_ADMIN_DASHBOARD_URL || "/admin/dashboard";
+  const ADMIN_DASHBOARD_URL = import.meta.env.VITE_ADMIN_DASHBOARD_URL;
 
 
 
