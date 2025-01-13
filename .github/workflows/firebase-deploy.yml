@@ -41,7 +41,8 @@ jobs:
       working-directory: frontend
       env: 
         VITE_ENTRY_PASSWORD: ${{ secrets.VITE_ENTRY_PASSWORD }} # Inject secret
-        VITE_ADMIN_DASHBOARD_URL: ${{ secrets.VITE_ADMIN_DASHBOARD_URL }} 
+        VITE_ADMIN_DASHBOARD_URL: ${{secrets.VITE_ADMIN_DASHBOARD_URL}} 
+
 
 
     # # Set up Google Cloud credentials
