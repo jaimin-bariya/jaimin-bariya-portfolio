@@ -25,7 +25,7 @@ const SecurityPassword = ({isFirstPasswordOpen, setIsFirstPasswordOpen}) => {
     const navigate = useNavigate();
 
 
-    const [isEnteredPassword, setIsEnteredPassword] = useState("suraj2@01")
+    const [isEnteredPassword, setIsEnteredPassword] = useState("---")
     const [isUserName, setIsUserName] = useState("admin")
 
 
