@@ -42,3 +42,4 @@ const AnimeShow = [
 export {Movies, AnimeShow}
  Yes bor I am updated 
  Yes bor I am updated 
+Yes bor I am updated 
