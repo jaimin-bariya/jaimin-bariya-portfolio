@@ -1,8 +1,6 @@
 /** @format */
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { useState, useCallback } from "react";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { useState } from "react";
 import { Editor } from "@monaco-editor/react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -10,14 +8,70 @@ const JSObjectEditor = () => {
   const [editorContent, setEditorContent] = useState(
     "{\n // Your Javascript object goes here \n}"
   );
-  const [unchangedContent, setUnchangedContent] = useState(null)
+  const [unchangedContent, setUnchangedContent] = useState(null);
   const [currentFile, setCurrentFile] = useState("File 1");
-  const [parsedObject, setParsedObject] = useState(null);
   const [error, setError] = useState(null);
 
+  const [oldFileSHA, setOldFileSHA] = useState(null);
 
+  const getRepo = async (fileName) => {
+    console.log("step 1 done");
 
-  const BACKEND_WORKER = import.meta.env.VITE_BACKEND_WORKER_URL;
+    try {
+      const res = await fetch(
+        `https://api.github.com/repos/jaimin-bariya/jaimin-bariya-portfolio/contents/frontend/src/data/${fileName}.js`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: import.meta.env.VITE_GITHUB_REPO_TOCKEN,
+            Accept: "application/vnd.github.v3+json",
+          },
+        }
+      );
+
+      const jsonRes = await res.json();
+      setOldFileSHA(jsonRes.sha);
+
+      const base64Content = jsonRes.content;
+      const decodedContent = atob(base64Content);
+      console.log(decodedContent);
+
+      setEditorContent(decodedContent);
+      setUnchangedContent(decodedContent);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const setRepo = async (currentFile, oldFileSHA) => {
+    console.log("setting on");
+    console.log("sha", oldFileSHA);
+    console.log(currentFile);
+    console.log(editorContent);
+
+    const updatedBase64Content = btoa(editorContent);
+
+    const res = await fetch(
+      `https://api.github.com/repos/jaimin-bariya/jaimin-bariya-portfolio/contents/frontend/src/data/${currentFile}.js`,
+      {
+        method: "PUT",
+        headers: {
+          Authorization: import.meta.env.VITE_GITHUB_REPO_TOCKEN,
+          Accept: "application/vnd.github.v3+json",
+        },
+        body: JSON.stringify({
+          message: "trying to update - testing 001",
+          content: updatedBase64Content,
+          sha: oldFileSHA, // old req sha
+        }),
+      }
+    );
+
+    const jsonRes = res.json();
+    console.log(jsonRes);
+
+    console.log("done");
+  };
 
   const allDataFiles = [
     "adminData",
@@ -37,63 +91,41 @@ const JSObjectEditor = () => {
     "usagesData",
   ];
 
-
   const handleEditorChange = (value) => {
     setEditorContent(value);
   };
 
-
   const handleChangedCancel = () => {
     setEditorContent(unchangedContent);
-  }
-
-  const handleFileOpen = async (fileName) => {
-    try {
-      // Generate the URL of the JS file based on the current file's URL
-      const resourcesUrl =
-        new URL(`../../data/${fileName}.js`, import.meta.url).href ||
-        new URL(`../../data/${fileName}.jsx`, import.meta.url).href;
-
-      // Fetch the content of JS as text
-      const response = await fetch(resourcesUrl);
-      const content = await response.text();
-
-      setEditorContent(content);
-      setUnchangedContent(content);
-
-      setCurrentFile(fileName);
-    } catch (error) {
-      console.error("Error:", error);
-      setCurrentFile("Error");
-    }
   };
 
+  const handleFileOpen = async (fileName) => {
+    // try {
+    //   // Generate the URL of the JS file based on the current file's URL
+    //   const resourcesUrl =
+    //     new URL(`../../data/${fileName}.js`, import.meta.url).href ||
+    //     new URL(`../../data/${fileName}.jsx`, import.meta.url).href;
 
-  const testing = async () => {
+    //   // Fetch the content of JS as text
+    //   const response = await fetch(resourcesUrl);
+    //   const content = await response.text();
 
-    console.log("Start");
-    console.log(typeof(editorContent));
+    //   setEditorContent(content);
+    //   setUnchangedContent(content);
 
+    //   setCurrentFile(fileName);
+    // } catch (error) {
+    //   console.error("Error:", error);
+    //   setCurrentFile("Error");
+    // }
 
-    try {
-      const res = await fetch(BACKEND_WORKER, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'text/plain',
-        },
-        body: editorContent
-      });
-      const data = await res.text()
-      console.log(data);
-      
-    } catch (error) {
-      console.error(error);
-      
-    }
-  }
+    getRepo(fileName);
+    setCurrentFile(fileName);
+  };
 
-
-
+  const updateFileToGitHub = async (currentFile, oldFileSHA) => {
+    setRepo(currentFile, oldFileSHA);
+  };
 
   return (
     <>
@@ -104,8 +136,17 @@ const JSObjectEditor = () => {
           <div className="grid grid-cols-9 col-span-9 justify-center items-center ">
             <p className="text-center text-xl col-span-7">{currentFile}</p>
             <div className="col-span-2 flex justify-between">
-              <Button variant="destructive" className=" dark:hover:border-orange-500" onClick={handleChangedCancel} >Cancel</Button>
-              <Button className=" bg-blue-900 text-white dark:hover:bg-blue-900 dark:hover:border-orange-500 " onClick={testing}>
+              <Button
+                variant="destructive"
+                className=" dark:hover:border-orange-500"
+                onClick={handleChangedCancel}
+              >
+                Cancel
+              </Button>
+              <Button
+                className=" bg-blue-900 text-white dark:hover:bg-blue-900 dark:hover:border-orange-500 "
+                onClick={() => updateFileToGitHub(currentFile, oldFileSHA)}
+              >
                 Update
               </Button>
             </div>

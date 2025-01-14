@@ -42,6 +42,7 @@ jobs:
       env: 
         VITE_ENTRY_PASSWORD: ${{ secrets.VITE_ENTRY_PASSWORD }} # Inject secret
         VITE_ADMIN_DASHBOARD_URL: ${{secrets.VITE_ADMIN_DASHBOARD_URL}} 
+        VITE_GITHUB_REPO_TOCKEN: ${{ secrets.VITE_GITHUB_REPO_TOCKEN }}
 
 
 
