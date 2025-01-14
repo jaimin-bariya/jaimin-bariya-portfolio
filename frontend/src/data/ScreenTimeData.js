@@ -30,7 +30,7 @@ const Movies = [
 
 const AnimeShow = [
     {
-        name: "Narutooooooooo",
+        name: "Boruto",
         poster: "https://drive.google.com/thumbnail?id=1yEzdwGmEeExNobgnYlA_gKBwcLxF5TQ-",
         isMessage: false,
         message: "Belive It!"
