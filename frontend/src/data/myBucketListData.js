@@ -152,9 +152,9 @@ const myBucketList = [
                 list: [
                     {
                         action: "7 straight bar dips in one go",
-                        isDone: false,
-                        haveSideMSG: false,
-                        message: ""
+                        isDone: true,
+                        haveSideMSG: true,
+                        message: "14-01-2025"
                     },
                     {
                         action: "10 straight bar dips in one go",
