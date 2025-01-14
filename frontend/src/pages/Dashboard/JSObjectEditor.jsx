@@ -144,7 +144,7 @@ const JSObjectEditor = () => {
 
 
 
-  const checkAuthorizationByPassword = () => {
+  const openCheckerCard = () => {
     setOpenPasswordChecker(true)
   }
 
@@ -168,7 +168,7 @@ const JSObjectEditor = () => {
               <Button
                 className=" bg-blue-900 text-white dark:hover:bg-blue-900 dark:hover:border-orange-500 "
                 // onClick={() => updateFileToGitHub(currentFile, oldFileSHA)}
-                onClick={checkAuthorizationByPassword}
+                onClick={openCheckerCard}
               >
                 Update
               </Button>
