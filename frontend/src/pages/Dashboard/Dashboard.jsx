@@ -34,7 +34,6 @@ const Dashboard = () => {
             ))}
           </div>
         </div>
-        <GetRepoData/>
       </div>
     </>
   );

@@ -20,7 +20,7 @@ import { toast } from "sonner"
 
 
 
-const SecurityPassword = ({isFirstPasswordOpen, setIsFirstPasswordOpen, submitButtonName = "Open Dashboard"}) => {
+const SecurityToUpdateData = ({isFirstPasswordOpen, setIsFirstPasswordOpen, submitButtonName = "Open Dashboard", updateFileToGitHub = () => {}}) => {
 
 
     const navigate = useNavigate();
@@ -49,15 +49,12 @@ const SecurityPassword = ({isFirstPasswordOpen, setIsFirstPasswordOpen, submitBu
 
 
     
-    const openAdminPage = () => {   
+    const checkAuthorizationByPassword = () => {   
         
         if (CryptoJS.SHA256(isEnteredPassword).toString() === import.meta.env.VITE_ENTRY_PASSWORD) {
             console.log("done");
-            PlayAdminIntro()
-            setTimeout(() => {
-                setIsFirstPasswordOpen(false);
-                navigate(import.meta.env.VITE_ADMIN_DASHBOARD_URL)    
-            }, 1200)
+            updateFileToGitHub();
+            setIsFirstPasswordOpen(false)
         } else {
             setIsMsgNumber((prev) => {
                 const newNumber = (prev + 1) %  msgTOGuesser.length;
@@ -99,7 +96,7 @@ const SecurityPassword = ({isFirstPasswordOpen, setIsFirstPasswordOpen, submitBu
 
                 <DialogFooter>
                     
-                    <Button type="submit" onClick={openAdminPage} > {submitButtonName} </Button>
+                    <Button type="submit" onClick={checkAuthorizationByPassword} > {submitButtonName} </Button>
 
                 </DialogFooter>
 
@@ -115,4 +112,4 @@ const SecurityPassword = ({isFirstPasswordOpen, setIsFirstPasswordOpen, submitBu
   );
 };
 
-export default SecurityPassword;
+export default SecurityToUpdateData;

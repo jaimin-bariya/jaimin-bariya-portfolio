@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useKeyShortcut } from "@/hooks/keyListener";
-
+import { Toaster } from "@/components/ui/sonner";
 
 const DashBoardLayout = () => {
 
@@ -42,6 +42,7 @@ const DashBoardLayout = () => {
         <main>
             <Outlet/>
         </main>
+        <Toaster/>
 
         {/* FOOTER */}
         {/* <footer className="text-zinc-400 py-8 px-6 border-t">

@@ -3,6 +3,19 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Editor } from "@monaco-editor/react";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import CryptoJS from "crypto-js";
+import { SecurityToUpdateData } from "@pages/index";
 
 const JSObjectEditor = () => {
   const [editorContent, setEditorContent] = useState(
@@ -11,8 +24,10 @@ const JSObjectEditor = () => {
   const [unchangedContent, setUnchangedContent] = useState(null);
   const [currentFile, setCurrentFile] = useState("File 1");
   const [error, setError] = useState(null);
-
+  const [openPasswordChecker, setOpenPasswordChecker] = useState(false)
   const [oldFileSHA, setOldFileSHA] = useState(null);
+  const [isEnteredPassword, setIsEnteredPassword] = useState("---")
+  const [isUserName, setIsUserName] = useState("admin")
 
   const getRepo = async (fileName) => {
     console.log("step 1 done");
@@ -43,7 +58,7 @@ const JSObjectEditor = () => {
     }
   };
 
-  const setRepo = async (currentFile, oldFileSHA) => {
+  const setRepo = async () => {
     console.log("setting on");
     console.log("sha", oldFileSHA);
     console.log(currentFile);
@@ -60,7 +75,7 @@ const JSObjectEditor = () => {
           Accept: "application/vnd.github.v3+json",
         },
         body: JSON.stringify({
-          message: "trying to update - testing 001",
+          message: `Update data source of ${currentFile} `,
           content: updatedBase64Content,
           sha: oldFileSHA, // old req sha
         }),
@@ -123,9 +138,16 @@ const JSObjectEditor = () => {
     setCurrentFile(fileName);
   };
 
-  const updateFileToGitHub = async (currentFile, oldFileSHA) => {
+  const updateFileToGitHub = async () => {
     setRepo(currentFile, oldFileSHA);
   };
+
+
+
+  const checkAuthorizationByPassword = () => {
+    setOpenPasswordChecker(true)
+  }
+
 
   return (
     <>
@@ -145,7 +167,8 @@ const JSObjectEditor = () => {
               </Button>
               <Button
                 className=" bg-blue-900 text-white dark:hover:bg-blue-900 dark:hover:border-orange-500 "
-                onClick={() => updateFileToGitHub(currentFile, oldFileSHA)}
+                // onClick={() => updateFileToGitHub(currentFile, oldFileSHA)}
+                onClick={checkAuthorizationByPassword}
               >
                 Update
               </Button>
@@ -198,6 +221,9 @@ const JSObjectEditor = () => {
           </div>
         </div>
       </div>
+
+      <SecurityToUpdateData isFirstPasswordOpen={openPasswordChecker} setIsFirstPasswordOpen={setOpenPasswordChecker} submitButtonName="Make Change Bro"  updateFileToGitHub={updateFileToGitHub}/>
+
     </>
   );
 };
