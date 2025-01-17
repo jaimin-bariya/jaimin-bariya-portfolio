@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 import DashBoardLayout from "@/layouts/DashBoardLayout";
-import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople, JSObjectEditor} from "@pages/index"
+import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople, JSObjectEditor, EducationPage} from "@pages/index"
 import { SingleProjectShowCase } from "@/components";
 const AppRouter = () => {
 
@@ -25,6 +25,7 @@ const AppRouter = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/about-me" element={<About />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/education" element={<EducationPage />} />
             <Route path="/compete" element={<Compete />} />
             
 
