@@ -104,6 +104,7 @@ const JSObjectEditor = () => {
     "siteMetaData",
     "startupData",
     "usagesData",
+    "educationData",
   ];
 
   const handleEditorChange = (value) => {
