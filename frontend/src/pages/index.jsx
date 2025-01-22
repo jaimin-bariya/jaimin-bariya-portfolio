@@ -18,3 +18,4 @@ export { default as SecurityToUpdateData } from "./Dashboard/SecurityToUpdateDat
 export { default as Education } from ".//Education/Education"
 export { default as Certifications } from "./Education/Certifications"
 export { default as EducationPage } from "./Education/EducationPage"
+export { default as FourTierMastery } from "./Miscellaneous/FourTierMastery"

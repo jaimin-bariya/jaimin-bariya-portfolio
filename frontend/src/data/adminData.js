@@ -278,9 +278,61 @@ const MyHobbies = [
 
 
 
+const FourTierMasteryData = {
+  2024: [
+    {
+      name: "Primary", // Don't Change this,
+      which: "AI/ML Developer 🤖💡",
+      desc: [
+        "This is where I spend most of my time mastering Artificial Intelligence and Machine Learning to build cutting-edge solutions.",
+        "From deep learning to NLP, I’m diving into it all!"
+      ],
+      skillTags: [
+        "Machine Learning", "Deep Learning", "Natural Language Processing (NLP)", 
+        "Data Science", "TensorFlow", "PyTorch", "Keras", "Model Deployment", 
+        "Data Visualization"
+      ],
+    },
+    {
+      name: "Secondary", // Don't Change this,
+      which: "Full-Stack Developer 💻🔧",
+      desc: [
+        "Web development is my second focus! I use React for the frontend and Flask for the backend to build powerful, interactive apps that integrate AI seamlessly."
+      ],
+      skillTags: [
+        "React", "HTML5", "CSS3", "JavaScript", "Flask", "APIs",  "RESTful API", "Version Control", "Git", 
+        "GitHub", "State Management", "Redux", "Context API"
+      ],
+    },
+    {
+      name: "Third", // Don't Change this,
+      which: "Competitive Programmer 🧩💪",
+      desc: [
+        "I keep my problem-solving skills sharp by constantly working on data structures and algorithms. This keeps me ready for any coding challenge and tech interview. 💻⚡",
+        "In short, I like to make money and fame through competitions"
+      ],
+      skillTags: [
+        "DSA", "Kaggle", "Leetcode weekly", "Codeforce"
+      ],
+    },
+    {
+      name: "Fourth", // Don't Change this,
+      which: "Game Development with AI 🎮🤖",
+      desc: [
+        "Games powered by AI are more than just fun—they offer innovative ways to engage with technology.",
+        "I explore how AI can create smarter NPCs, procedural content, and dynamic gameplay."
+      ],
+      skillTags: [
+        
+      ]
+    }
+  ]
+}
 
 
 
 
-export { AllSocialMedia, WhatIamDoingNow, ToolBox, MyHobbies, SocialLinks, adminName};
+
+
+export { AllSocialMedia, WhatIamDoingNow, ToolBox, MyHobbies, SocialLinks, adminName, FourTierMasteryData};
   

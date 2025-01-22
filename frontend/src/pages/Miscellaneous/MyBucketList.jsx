@@ -16,20 +16,20 @@ const MyBucketList = () => {
 
           <div className=" divide-y-2 space-y-8 [&>*]:pt-8">
               
-              {myBucketList.map((oneBucket) => (
-                <div>
+              {myBucketList.map((oneBucket, index) => (
+                <div key={index}>
                   <h2 className="sm:text-4xl text-3xl font-normal underline underline-offset-8">{oneBucket['name']}</h2>
                   {oneBucket['haveSubTypes'] ? 
                     (
                       <div className="pl-8 space-y-4 divide-y-2 [&>*]:pt-8">
-                        {oneBucket['Types'].map((oneSmallBucket) => (
-                          <div>
+                        {oneBucket['Types'].map((oneSmallBucket, index) => (
+                          <div key={index}>
                             <h3 className="sm:text-xl text-lg font-sans">{oneSmallBucket['name']}</h3>
                             <ul className="sm:text-base p-4 pl-12 space-y-2 list-disc list-outside font-serif dark:text-zinc-300 text-zinc-700">
-                              {oneSmallBucket['list'].map((oneList) => (
+                              {oneSmallBucket['list'].map((oneList, index) => (
                                 
 
-                                <div className="flex text-nowrap flex-wrap">
+                                <div className="flex text-nowrap flex-wrap" key={index}>
                                   
                                   <li className={`${oneList['isDone'] ? "line-through text-orange-500" : "" } text-wrap`} >{oneList['action']}</li>
 
@@ -47,10 +47,10 @@ const MyBucketList = () => {
                     (
                       <div>
                         <ul className="sm:text-base p-4 pl-12 space-y-2 list-disc list-outside font-serif dark:text-zinc-300 text-zinc-700">
-                              {oneBucket['list'].map((oneList) => (
+                              {oneBucket['list'].map((oneList, index) => (
                                 
 
-                                <div className="flex text-nowrap flex-wrap">
+                                <div className="flex text-nowrap flex-wrap" key={index}>
                                   
                                   <li className={`${oneList['isDone'] ? "line-through text-orange-500" : "" } text-wrap`} >
                                     <p>{oneList['action']}</p>

@@ -18,4 +18,9 @@ export default defineConfig({
       '@data': path.resolve(__dirname, 'src/data')
     },
   },
+  server: {
+    host: '0.0.0.0',  // This allows access from any device on the same network
+    port: 5173,        // Make sure this is the same port your app runs on
+    strictPort: true,  // Ensure it doesn't change the port
+  }
 })

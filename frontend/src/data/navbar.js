@@ -15,6 +15,7 @@ const subRoutesNames = [
   {href: "/Favorite-YT-Channels-Mentors", label: "Favorite YT Channels / Mentors "},
   {href: "/Startup-py", label: "Startup.py"},
   {href: "/My-Bucket-List", label: "My-Bucket-List"},
+  {href: "/Four-Tier-Mastery", label: "Four-Tier Mastery"},
   // {href: "/connect", label: "Connect"},
   // {href: "/my-journey", label: "My Journey [TimeLine]"},
 ]

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 import DashBoardLayout from "@/layouts/DashBoardLayout";
-import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople, JSObjectEditor, EducationPage} from "@pages/index"
+import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople, JSObjectEditor, EducationPage, FourTierMastery} from "@pages/index"
 import { SingleProjectShowCase } from "@/components";
 const AppRouter = () => {
 
@@ -41,6 +41,7 @@ const AppRouter = () => {
             <Route path="/My-Bucket-List" element={<MyBucketList />} />
             <Route path="/my-journey" element={<MyJourney />} />
             <Route path="/connect" element={<ConnectPeople />} />
+            <Route path="/Four-Tier-Mastery" element={<FourTierMastery />} />
           </Route>
 
           <Route element={<DashBoardLayout/>}>
@@ -50,7 +51,7 @@ const AppRouter = () => {
           </Route>
 
         </Routes>
-s
+
     </Router>
   );
 };
