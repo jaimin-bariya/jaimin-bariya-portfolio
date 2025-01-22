@@ -90,10 +90,6 @@ const MainLayout = ({children}) => {
 
 
 
-  // 3 - for checking toggling is working or not
-  useEffect(() => {
-    console.log(isFirstPasswordOpen);
-  }, [isFirstPasswordOpen])
 
 
   

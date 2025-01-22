@@ -14,4 +14,14 @@ const FilterShowsBasedOnPoster = (file) => {
 
 
 
-export {FilterShowsBasedOnPoster}
+const isDevToolOpen = () => {
+    const start = performance.now();
+    console.log("Checking Dev Tools.....");
+    const end = performance.now();
+    return end - start > 50;
+    
+}
+
+
+
+export {FilterShowsBasedOnPoster, isDevToolOpen}
