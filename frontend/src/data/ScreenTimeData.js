@@ -6,7 +6,7 @@ const Movies = [
     {
         name: "Salaar",
         poster: "https://drive.google.com/thumbnail?id=1P1fQpLdOjlybufa1nU000q1-EYe6LBcN",
-        isMessage: true,
+        isMessage: false,
         message: "Yes yes!!"
     },
     

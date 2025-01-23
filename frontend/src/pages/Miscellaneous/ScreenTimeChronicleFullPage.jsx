@@ -26,12 +26,12 @@ const ScreenTimeChronicleFullPage = () => {
               
               <div>
                 <h2 className="sm:text-3xl text-2xl font-semibold font-mono mb-8" >Movies</h2>
-                <ScreenTimeChronicles ScreenTimeFile={Movies} showMessage={true} />
+                <ScreenTimeChronicles ScreenTimeFile={Movies} />
               </div>
               
               <div>
                 <h2 className="sm:text-3xl   text-2xl font-semibold font-mono mb-8" >Anime</h2>
-                <ScreenTimeChronicles ScreenTimeFile={AnimeShow} showMessage={true} />
+                <ScreenTimeChronicles ScreenTimeFile={AnimeShow}  />
               </div>
             
 

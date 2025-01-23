@@ -1,7 +1,7 @@
 import { MovieShowCard } from "@/components";
 
 
-const ScreenTimeChronicles = ({numberOfMovieCardShow = 999, ScreenTimeFile = [], showMessage = false}) => {
+const ScreenTimeChronicles = ({numberOfMovieCardShow = 999, ScreenTimeFile = []}) => {
 
 
 
@@ -15,7 +15,7 @@ const ScreenTimeChronicles = ({numberOfMovieCardShow = 999, ScreenTimeFile = [],
         {ScreenTimeFile
         .slice(0, numberOfMovieCardShow)
         .map((movie, index) => (
-            <MovieShowCard key={index} movie={movie} showMessage={showMessage}/>
+            <MovieShowCard key={index} movie={movie} />
         ))}
         </div>
 
