@@ -1,3 +1,5 @@
+import matrixPoster from "@assets/images/moviePoster/matrixCollection.jpg"
+
 
 const Movies = [
 
@@ -22,7 +24,7 @@ const Movies = [
     },
     {
         name: "Matrix",
-        poster: ,
+        poster: matrixPoster,
         isMessage: false,
         message: "Screen Time Chronicles🍿📺 Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺"
     },
