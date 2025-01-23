@@ -11,7 +11,6 @@ import {
 import { SocialLinks } from "@/data/adminData";
 import { gridAboutMeBGImg } from "@/data/ImgSupplier";
 
-
 const StandOutSection = () => {
   return (
     <>
