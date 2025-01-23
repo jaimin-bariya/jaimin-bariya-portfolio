@@ -14,6 +14,53 @@ const FilterShowsBasedOnPoster = (file) => {
 
 
 
+
+const addImgToRepo  = async (token, base64Img, fileName, dirName) => {
+
+
+    // GitHub API URL
+    const url = `https://api.github.com/repos/jaimin-bariya/jaimin-bariya-portfolio/contents/frontend/src/assets/images/${dirName}/${fileName}`;
+
+    // Prepare the data for the API request
+    const data = {
+      message: `Upload ${fileName}`,
+      content: base64Img,
+      branch: "main",
+    };
+
+    const headerData = {
+        Authorization: token,
+          Accept: "application/vnd.github.v3+json",
+    }
+ 
+    try {
+        
+        const res = await fetch(url, {
+            method: "PUT",
+            headers: headerData,
+            body: JSON.stringify(data),
+        })
+
+
+        if (!res.ok) {
+            throw new Error(`Failed to upload image: ${res.statusText}`);
+          }
+      
+          const result = await res.json();
+          console.log("Image uploaded successfully", result);
+
+
+    } catch (error) {
+        console.error("Error uploading image:", error);
+    }
+
+    console.log("Entry");
+    
+
+}
+
+
+
 const isDevToolOpen = () => {
     const start = performance.now();
     console.log("Checking Dev Tools.....");
@@ -24,4 +71,4 @@ const isDevToolOpen = () => {
 
 
 
-export {FilterShowsBasedOnPoster, isDevToolOpen}
+export {FilterShowsBasedOnPoster, isDevToolOpen, addImgToRepo}

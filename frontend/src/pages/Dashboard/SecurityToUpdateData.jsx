@@ -6,13 +6,10 @@ import {
     DialogFooter,
     DialogHeader,
     DialogTitle,
-    DialogTrigger,
   } from "@/components/ui/dialog"
-import { DropdownMenuLabel } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { PlayAdminIntro } from "@/utils/soundsPlaying";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CryptoJS from "crypto-js";
 
@@ -23,7 +20,7 @@ import { toast } from "sonner"
 const SecurityToUpdateData = ({isFirstPasswordOpen, setIsFirstPasswordOpen, submitButtonName = "Open Dashboard", updateFileToGitHub = () => {}}) => {
 
 
-    const navigate = useNavigate();
+    
 
 
     const [isEnteredPassword, setIsEnteredPassword] = useState("---")
