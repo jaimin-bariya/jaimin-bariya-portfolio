@@ -1,0 +1,1 @@
+export {default as gridAboutMeBGImg} from "@assets/images/bgImage/aboutme.jpeg"
