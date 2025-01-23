@@ -9,6 +9,7 @@ import {
   XLogo,
 } from "@/assets/images";
 import { SocialLinks } from "@/data/adminData";
+import { gridAboutMeBGImg } from "@/data/ImgSupplier";
 
 
 const StandOutSection = () => {
@@ -24,7 +25,7 @@ const StandOutSection = () => {
             className="relative h-full text-white hover:text-white"
           >
             <img
-              src={GitHubLogo}
+              src={gridAboutMeBGImg}
               alt="Profile"
               className="object-cover w-full h-full"
             />

@@ -3,19 +3,8 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Editor } from "@monaco-editor/react";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import CryptoJS from "crypto-js";
 import { SecurityToUpdateData } from "@pages/index";
+import { allDataFiles } from "@/data/siteMetaData";
 
 const JSObjectEditor = () => {
   const [editorContent, setEditorContent] = useState(
@@ -23,11 +12,8 @@ const JSObjectEditor = () => {
   );
   const [unchangedContent, setUnchangedContent] = useState(null);
   const [currentFile, setCurrentFile] = useState("File 1");
-  const [error, setError] = useState(null);
   const [openPasswordChecker, setOpenPasswordChecker] = useState(false)
   const [oldFileSHA, setOldFileSHA] = useState(null);
-  const [isEnteredPassword, setIsEnteredPassword] = useState("---")
-  const [isUserName, setIsUserName] = useState("admin")
 
   const getRepo = async (fileName) => {
     console.log("step 1 done");
@@ -88,24 +74,7 @@ const JSObjectEditor = () => {
     console.log("done");
   };
 
-  const allDataFiles = [
-    "adminData",
-    "adminDesc",
-    "articlesData",
-    "competeData",
-    "experienceData",
-    "herosData",
-    "miscellaneousData",
-    "myBucketListData",
-    "navbar",
-    "projectsData",
-    "quotesData",
-    "ScreenTimeData",
-    "siteMetaData",
-    "startupData",
-    "usagesData",
-    "educationData",
-  ];
+
 
   const handleEditorChange = (value) => {
     setEditorContent(value);
