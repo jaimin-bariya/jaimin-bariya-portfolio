@@ -9,7 +9,7 @@ import {
   XLogo,
 } from "@/assets/images";
 import { SocialLinks } from "@/data/adminData";
-import { gridAboutMeBGImg } from "@/data/ImgSupplier";
+import { gridAboutMeBGImg } from "@/data/imgSupplier";
 
 const StandOutSection = () => {
   return (
