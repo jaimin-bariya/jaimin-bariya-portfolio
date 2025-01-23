@@ -46,12 +46,13 @@ const SecurityToUpdateData = ({isFirstPasswordOpen, setIsFirstPasswordOpen, subm
 
 
     
-    const checkAuthorizationByPassword = () => {   
+    const checkAuthorizationByPassword =  () => {   
         
         if (CryptoJS.SHA256(isEnteredPassword).toString() === import.meta.env.VITE_ENTRY_PASSWORD) {
             console.log("done");
             updateFileToGitHub();
             setIsFirstPasswordOpen(false)
+            toast("Data updated Boss ")
         } else {
             setIsMsgNumber((prev) => {
                 const newNumber = (prev + 1) %  msgTOGuesser.length;
