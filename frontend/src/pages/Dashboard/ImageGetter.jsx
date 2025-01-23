@@ -8,11 +8,11 @@ import {
     SelectContent,
     SelectGroup,
     SelectItem,
-    SelectLabel,
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
 
+import { SecurityToUpdateData } from "@pages/index";
 import { addImgToRepo } from "@/utils/PureFunctions";
 import { toast } from "sonner";
 
@@ -20,8 +20,10 @@ const ImageGetter = () => {
 
     const [image, setImage] = useState(null);
     const [message, setMessage] = useState("");
+    const [openPasswordChecker, setOpenPasswordChecker] = useState(false)
     const [selectedDir, setSelectedDir] = useState("other")
     const [fileName, setFileName] = useState("")
+
 
 
 
@@ -72,8 +74,15 @@ const ImageGetter = () => {
 
         toast("Image Uploaded Boss")
         handleImageRemove();
+
+        
         
     }
+
+
+    const openCheckerCard = () => {
+        setOpenPasswordChecker(true)
+      }
 
   return (
     <>
@@ -107,7 +116,7 @@ const ImageGetter = () => {
                         <Button variant="destructive" size="icon" className=" bg-red-800" onClick={handleImageRemove} >
                             <X className=" w-2 h-2 "/>
                         </Button>
-                        <Button  size="icon" className=" bg-green-600 " onClick={handleUploadImg} >
+                        <Button  size="icon" className=" bg-green-600 " onClick={openCheckerCard} >
                             <Check className="w-2 h-2"/>
                         </Button>
                     </div>
@@ -115,6 +124,9 @@ const ImageGetter = () => {
                 
             )}
         </div>
+
+
+        <SecurityToUpdateData isFirstPasswordOpen={openPasswordChecker} setIsFirstPasswordOpen={setOpenPasswordChecker} submitButtonName="Make Change Bro"  updateFileToGitHub={handleUploadImg}/>
       
     </>
   );

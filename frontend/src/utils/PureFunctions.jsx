@@ -70,5 +70,11 @@ const isDevToolOpen = () => {
 }
 
 
+const checkAuthorizationByPassword = (userEntered, truePassword) => {
 
-export {FilterShowsBasedOnPoster, isDevToolOpen, addImgToRepo}
+    return userEntered === truePassword;
+}
+
+
+
+export {FilterShowsBasedOnPoster, isDevToolOpen, addImgToRepo, checkAuthorizationByPassword}

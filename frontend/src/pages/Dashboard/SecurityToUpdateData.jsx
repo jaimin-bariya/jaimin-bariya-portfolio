@@ -12,6 +12,8 @@ import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CryptoJS from "crypto-js";
+import { msgTOGuesser } from "@/data/siteMetaData";
+import { checkAuthorizationByPassword } from "@/utils/PureFunctions";
 
 import { toast } from "sonner"
 
@@ -28,31 +30,17 @@ const SecurityToUpdateData = ({isFirstPasswordOpen, setIsFirstPasswordOpen, subm
     const [isMsgNumber, setIsMsgNumber] = useState(0);
 
 
-    const msgTOGuesser = [
-        "Admin zone is not your gully, bhai! 🚷",
-        "Admin access? Nice joke! 😂",
-        "Bhai, Shortcut pata hone se admin nahi banega 😅",
-        "Bhai, ye tera portfolio nahi hai 😁",
-        "Bhai, admin banna hai? Pehle coding seekh le! 😏",
-        "Galat password! Hacker banne ki koshish mat karo! 🤓",
-        "Beta, tumse na ho payega! 😂",
-        "Beta, 6 bar galat password dal chuka hai, ab to ruk ja",
-        "You thought you could sneak in? LOL! 😎",
-        "Oh no, that’s not it! Try harder, genius! 🤯",
-        "Nope, wrong door! This one’s locked. 🚪",
-        "Bhai, yehi soch ke password lagaya tha tum guess na kar pau! 😏",
-        "Not today, Sherlock! Wrong password detected. 🕵️‍♂️",
-    ]
+    
 
 
     
-    const checkAuthorizationByPassword =  () => {   
+    const verifyWithPassword = async  () => {   
         
-        if (CryptoJS.SHA256(isEnteredPassword).toString() === import.meta.env.VITE_ENTRY_PASSWORD) {
+        if (checkAuthorizationByPassword(CryptoJS.SHA256(isEnteredPassword).toString(), import.meta.env.VITE_ENTRY_PASSWORD)){
             console.log("done");
             updateFileToGitHub();
             setIsFirstPasswordOpen(false)
-            toast("Data updated Boss ")
+            
         } else {
             setIsMsgNumber((prev) => {
                 const newNumber = (prev + 1) %  msgTOGuesser.length;
@@ -94,7 +82,7 @@ const SecurityToUpdateData = ({isFirstPasswordOpen, setIsFirstPasswordOpen, subm
 
                 <DialogFooter>
                     
-                    <Button type="submit" onClick={checkAuthorizationByPassword} > {submitButtonName} </Button>
+                    <Button type="submit" onClick={verifyWithPassword} > {submitButtonName} </Button>
 
                 </DialogFooter>
 
