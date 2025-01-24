@@ -32,6 +32,8 @@ const DashBoardLayout = () => {
     <>
 
         {/* HEADER  */}
+
+       
         
         <header className="sticky py-2 top-0 flex justify-center z-50  border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <h1>This is Dashboard</h1>
@@ -39,16 +41,17 @@ const DashBoardLayout = () => {
 
         
 
-        <main>
+        <main className="">
             <Outlet/>
         </main>
         <Toaster/>
 
         {/* FOOTER */}
-        {/* <footer className="text-zinc-400 py-8 px-6 border-t">
-        <p>This page comes only in dark mode, if you like light mode here, then probably you are not developer. 
-        Choose what do you want to update in your porfolio. </p>
-        </footer> */}
+        <footer className="text-zinc-400 py-8 px-6 border-t">
+        <p className=" text-nowrap overflow-hidden"> {'Hey Boss | '.repeat(100)} </p>
+        </footer>
+
+      
 
     </>
   );

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 import DashBoardLayout from "@/layouts/DashBoardLayout";
-import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople, JSObjectEditor, EducationPage, FourTierMastery} from "@pages/index"
-import { SingleProjectShowCase } from "@/components";
+import {Experience, About, Projects, Home, Articles, Compete, Dashboard, ScreenTimeChronicleFullPage, MyBucketList, YTMentors, StartPy, MyJourney, ConnectPeople, JSObjectEditor, EducationPage, FourTierMastery, SingleProjectShowCase} from "@pages/index"
+
 const AppRouter = () => {
 
 

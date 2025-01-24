@@ -5,7 +5,21 @@ const projects = [
       description: "A dynamic portfolio website for developers and non-developers. It features a secret Ctrl + D admin dashboard to modify GitHub data, with secure password authorization via Cloudflare Worker. Built with amazing responsiveness and an eye-catching color theme, combining frontend and backend in a seamless way.",
       tags: ["React", "ailwind CSS", "Shadcn", "Firebase", "Cloudflare Worker", "GitHub", "GitHub Action CICD"],
       githubLink: "https://github.com/jaimin-bariya/jaimin-bariya-portfolio",
-      demoLink: "https://jaimin-bariya.web.app/"
+      demoLink: "https://jaimin-bariya.web.app/",
+      features: [
+        {
+          feat: "Something Something",
+          imgLink: null
+        },
+        {
+          feat: "Something Something",
+          imgLink: null
+        },
+        {
+          feat: "Something Something",
+          imgLink: null
+        },
+      ]
     },
     {
       id: 2,

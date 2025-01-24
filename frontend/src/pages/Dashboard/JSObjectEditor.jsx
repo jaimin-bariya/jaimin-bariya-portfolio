@@ -1,10 +1,11 @@
 /** @format */
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { Editor } from "@monaco-editor/react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { SecurityToUpdateData } from "@pages/index";
 import { allDataFiles } from "@/data/siteMetaData";
+import { toast } from "sonner";
 
 const JSObjectEditor = () => {
   const [editorContent, setEditorContent] = useState(
@@ -109,7 +110,8 @@ const JSObjectEditor = () => {
   };
 
   const updateFileToGitHub = async () => {
-    setRepo(currentFile, oldFileSHA);
+    await setRepo(currentFile, oldFileSHA);
+    toast("Okay, Data updation Done boss 🤘")
   };
 
 
@@ -147,6 +149,8 @@ const JSObjectEditor = () => {
         </div>
 
         <div className="grid grid-cols-12  gap-8">
+
+
           {/* Sidebar with files  */}
           <div className="col-span-3 ">
             <ScrollArea className="h-[600px] pr-4 ">
@@ -169,7 +173,10 @@ const JSObjectEditor = () => {
             </ScrollArea>
           </div>
 
+
+
           {/* Editor  */}
+          
           <div className="h-[600px] col-span-9  border-orange-500 border-2 rounded-xl overflow-hidden ">
             <Editor
               className=""
@@ -189,6 +196,7 @@ const JSObjectEditor = () => {
               }}
             />
           </div>
+          
         </div>
       </div>
 
@@ -199,3 +207,6 @@ const JSObjectEditor = () => {
 };
 
 export default JSObjectEditor;
+
+
+

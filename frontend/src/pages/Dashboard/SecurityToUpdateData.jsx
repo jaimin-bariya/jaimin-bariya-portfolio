@@ -37,9 +37,10 @@ const SecurityToUpdateData = ({isFirstPasswordOpen, setIsFirstPasswordOpen, subm
     const verifyWithPassword = async  () => {   
         
         if (checkAuthorizationByPassword(CryptoJS.SHA256(isEnteredPassword).toString(), import.meta.env.VITE_ENTRY_PASSWORD)){
-            console.log("done");
             updateFileToGitHub();
             setIsFirstPasswordOpen(false)
+            
+
             
         } else {
             setIsMsgNumber((prev) => {
