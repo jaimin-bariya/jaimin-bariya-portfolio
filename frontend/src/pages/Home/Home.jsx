@@ -4,15 +4,11 @@ import HeroSection from "./HeroSection";
 import { projects } from "@/data/projectsData";
 import { Toparticles } from "@/data/articlesData";
 import { CardProject, ArticleSingleShow, CallToActionCard } from "@/components";
-import { Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 import StandOutSection from "./StandOutSection";
 
 const Home = () => {
-
-
-
   return (
     <>
       <main className="min-h-screen pt-20 px-4 md:p-16 lg:p-24">
@@ -23,8 +19,7 @@ const Home = () => {
           <div className="border-b-2 mb-8 pb-6 flex flex-col sm:flex-row sm:gap-0 sm:items-center gap-6 sm:justify-between">
             <h1 className="sm:text-5xl text-4xl  text-start">Projects</h1>
 
-            <CallToActionCard pageLink="projects" titleOfPage="All Projects"/>
-            
+            <CallToActionCard pageLink="projects" titleOfPage="All Projects" />
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {projects.slice(0, 6).map((project, index) => (
@@ -41,8 +36,7 @@ const Home = () => {
             </h1>
           </div>
 
-          <StandOutSection/>
-
+          <StandOutSection />
         </div>
 
         {/* Articles Section  */}
@@ -50,17 +44,11 @@ const Home = () => {
           <div className="border-b-2 mb-8 pb-6 flex flex-col sm:flex-row sm:gap-0 sm:items-center gap-6 sm:justify-between">
             <h1 className="sm:text-5xl text-4xl  text-start">Articles</h1>
 
-
             <CallToActionCard pageLink="articles" titleOfPage="All Articles" />
-            </div>
-
-
-            <ArticleSingleShow articles={Toparticles.slice(0,5)} />
-
-
-
           </div>
-        
+
+          <ArticleSingleShow articles={Toparticles.slice(0, 5)} />
+        </div>
       </main>
     </>
   );

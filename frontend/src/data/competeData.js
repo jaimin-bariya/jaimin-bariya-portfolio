@@ -1,12 +1,6 @@
 /** @format */
 
-
-
 import { LeetCodeLogo, GitHubLogo, CodeforcesLogo } from "@/assets/images";
-
-
-
-
 
 const AllBadges = [
   {
@@ -20,39 +14,35 @@ const AllBadges = [
 const AllHackathons = [
   {
     name: "Odoo",
-    description: "Hackathon Wins: Highlight any hackathons you’ve won or placed highly in. Include brief descriptions of the projects, your role, the technologies used, and any prizes.",
-    technology: ["react", "django", "tailwind"]
+    description:
+      "Hackathon Wins: Highlight any hackathons you’ve won or placed highly in. Include brief descriptions of the projects, your role, the technologies used, and any prizes.",
+    technology: ["react", "django", "tailwind"],
   },
   {
     name: "Amazon ML Hackathon",
-    description: "Hackathon Wins: Highlight any hackathons you’ve won or placed highly in. Include brief descriptions of the projects, your role, the technologies used, and any prizes.",
+    description:
+      "Hackathon Wins: Highlight any hackathons you’ve won or placed highly in. Include brief descriptions of the projects, your role, the technologies used, and any prizes.",
     technology: ["Ml", "NLP", "DL"],
   },
-
 ];
 
-
-
 const PlatFormIUse = [
-    {
-        name: "LeetCode",
-        logo: LeetCodeLogo,
-        link: "https://leetcode.com/u/jaimin-bariya/",
-    },
-    {
-      name: "GitHub",
-      logo: GitHubLogo,
-      link: "https://github.com/jaimin-bariya",
-    },
-    {
-      name: "Codeforce",
-      logo: CodeforcesLogo,
-      link: "https://codeforces.com/profile/jaiminbariya",
+  {
+    name: "LeetCode",
+    logo: LeetCodeLogo,
+    link: "https://leetcode.com/u/jaimin-bariya/",
   },
-
-]
-
-
+  {
+    name: "GitHub",
+    logo: GitHubLogo,
+    link: "https://github.com/jaimin-bariya",
+  },
+  {
+    name: "Codeforce",
+    logo: CodeforcesLogo,
+    link: "https://codeforces.com/profile/jaiminbariya",
+  },
+];
 
 const CompetitionNames = [
   // {
@@ -76,10 +66,6 @@ const CompetitionNames = [
   //   prize: "Laptop",
   //   link: ""
   // },
-  
-
-]
-
-
+];
 
 export { AllBadges, AllHackathons, PlatFormIUse, CompetitionNames };

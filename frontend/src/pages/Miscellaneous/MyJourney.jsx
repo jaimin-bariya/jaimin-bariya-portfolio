@@ -1,10 +1,7 @@
+/** @format */
 
 const MyJourney = () => {
-  return (
-    <>
-      
-    </>
-  );
+  return <></>;
 };
 
 export default MyJourney;

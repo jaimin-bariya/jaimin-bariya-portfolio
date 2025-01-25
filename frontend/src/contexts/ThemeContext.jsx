@@ -1,3 +1,5 @@
+/** @format */
+
 import { createContext, useContext, useEffect, useState } from "react";
 
 // 0 - Initial State
@@ -7,7 +9,11 @@ const initialState = { theme: "system", setTheme: () => null };
 const ThemeProviderContext = createContext(initialState);
 
 // 2 - ThemeContext Provider Creation
-const ThemeProvider = ({ children, defaultTheme = "system", storageKey = "vite-ui-theme" }) => {
+const ThemeProvider = ({
+  children,
+  defaultTheme = "system",
+  storageKey = "vite-ui-theme",
+}) => {
   const [theme, setTheme] = useState(() => {
     // Get the theme from localStorage or fallback to default
     return localStorage.getItem(storageKey) || defaultTheme;
@@ -21,7 +27,10 @@ const ThemeProvider = ({ children, defaultTheme = "system", storageKey = "vite-u
 
     if (theme === "system") {
       // Detect the system theme preference (dark/light)
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+        .matches
+        ? "dark"
+        : "light";
       root.classList.add(systemTheme);
     } else {
       // Add the user-selected theme (light/dark)

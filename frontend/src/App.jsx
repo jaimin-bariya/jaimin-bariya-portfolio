@@ -1,20 +1,15 @@
-import { ThemeProvider} from './contexts/ThemeContext'
-import AppRouter from './routers/AppRouter'
-import './App.css'
-import { useEffect, useState } from 'react'
-import {useNavigate} from "react-router-dom"
-import { isDevToolOpen } from './utils/PureFunctions'
+/** @format */
+
+import { ThemeProvider } from "./contexts/ThemeContext";
+import AppRouter from "./routers/AppRouter";
+import "./App.css";
 
 function App() {
-
-
-
-  
   return (
     <ThemeProvider>
-      <AppRouter/>
+      <AppRouter />
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,10 +1,7 @@
+/** @format */
 
 const Certifications = () => {
-  return (
-    <>
-      
-    </>
-  );
+  return <></>;
 };
 
 export default Certifications;

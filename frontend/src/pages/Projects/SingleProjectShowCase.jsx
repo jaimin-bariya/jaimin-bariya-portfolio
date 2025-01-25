@@ -49,8 +49,8 @@ const SingleProjectShowCase = () => {
           </p>
         </div>
 
-        {thisProject['features'].map(({feat, imgLink}, index) => (
-          <div key={index} >
+        {thisProject["features"].map(({ feat, imgLink }, index) => (
+          <div key={index}>
             <ProjectFeature feat={feat} imgLink={imgLink} />
           </div>
         ))}

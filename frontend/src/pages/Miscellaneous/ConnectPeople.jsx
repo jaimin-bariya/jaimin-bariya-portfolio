@@ -1,10 +1,7 @@
+/** @format */
 
 const ConnectPeople = () => {
-  return (
-    <>
-      
-    </>
-  );
+  return <></>;
 };
 
 export default ConnectPeople;

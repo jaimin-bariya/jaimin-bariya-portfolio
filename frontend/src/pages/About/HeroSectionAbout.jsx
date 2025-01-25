@@ -21,11 +21,9 @@ const HeroSectionAbout = () => {
         </div>
 
         <div className="w-72 h-72 sm:w-96 sm:h-96 mx-auto flex items-center justify-center pt-8">
-        <img width="800px" height="800px" src={HeroHomeIcon2} alt="" />
+          <img width="800px" height="800px" src={HeroHomeIcon2} alt="" />
         </div>
       </div>
-
-      
     </>
   );
 };

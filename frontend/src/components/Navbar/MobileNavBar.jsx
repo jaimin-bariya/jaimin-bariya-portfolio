@@ -12,7 +12,7 @@ const MobileNavBar = ({ routesName }) => {
         <SheetTrigger asChild>
           <Button
             variant="ghost"
-            size="icon" 
+            size="icon"
             className="h-9 w-9 md:hidden bg-gray-300 dark:bg-orange-800 hover:border-orange-500 border-2"
             aria-label="Open menu"
           >

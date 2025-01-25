@@ -13,7 +13,7 @@ const JSObjectEditor = () => {
   );
   const [unchangedContent, setUnchangedContent] = useState(null);
   const [currentFile, setCurrentFile] = useState("File 1");
-  const [openPasswordChecker, setOpenPasswordChecker] = useState(false)
+  const [openPasswordChecker, setOpenPasswordChecker] = useState(false);
   const [oldFileSHA, setOldFileSHA] = useState(null);
 
   const getRepo = async (fileName) => {
@@ -75,8 +75,6 @@ const JSObjectEditor = () => {
     console.log("done");
   };
 
-
-
   const handleEditorChange = (value) => {
     setEditorContent(value);
   };
@@ -111,15 +109,12 @@ const JSObjectEditor = () => {
 
   const updateFileToGitHub = async () => {
     await setRepo(currentFile, oldFileSHA);
-    toast("Okay, Data updation Done boss 🤘")
+    toast("Okay, Data updation Done boss 🤘");
   };
 
-
-
   const openCheckerCard = () => {
-    setOpenPasswordChecker(true)
-  }
-
+    setOpenPasswordChecker(true);
+  };
 
   return (
     <>
@@ -149,8 +144,6 @@ const JSObjectEditor = () => {
         </div>
 
         <div className="grid grid-cols-12  gap-8">
-
-
           {/* Sidebar with files  */}
           <div className="col-span-3 ">
             <ScrollArea className="h-[600px] pr-4 ">
@@ -173,10 +166,8 @@ const JSObjectEditor = () => {
             </ScrollArea>
           </div>
 
-
-
           {/* Editor  */}
-          
+
           <div className="h-[600px] col-span-9  border-orange-500 border-2 rounded-xl overflow-hidden ">
             <Editor
               className=""
@@ -196,17 +187,17 @@ const JSObjectEditor = () => {
               }}
             />
           </div>
-          
         </div>
       </div>
 
-      <SecurityToUpdateData isFirstPasswordOpen={openPasswordChecker} setIsFirstPasswordOpen={setOpenPasswordChecker} submitButtonName="Make Change Bro"  updateFileToGitHub={updateFileToGitHub}/>
-
+      <SecurityToUpdateData
+        isFirstPasswordOpen={openPasswordChecker}
+        setIsFirstPasswordOpen={setOpenPasswordChecker}
+        submitButtonName="Make Change Bro"
+        updateFileToGitHub={updateFileToGitHub}
+      />
     </>
   );
 };
 
 export default JSObjectEditor;
-
-
-

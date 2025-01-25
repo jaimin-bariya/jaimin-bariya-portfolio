@@ -1,53 +1,48 @@
-import matrixPoster from "@assets/images/moviePoster/matrixCollection.jpg"
+/** @format */
 
+import matrixPoster from "@assets/images/moviePoster/matrixCollection.jpg";
 
 const Movies = [
+  {
+    name: "Salaar",
+    poster:
+      "https://drive.google.com/thumbnail?id=1P1fQpLdOjlybufa1nU000q1-EYe6LBcN",
+    isMessage: false,
+    message: "Yes yes!!",
+  },
 
-    {
-        name: "Salaar",
-        poster: "https://drive.google.com/thumbnail?id=1P1fQpLdOjlybufa1nU000q1-EYe6LBcN",
-        isMessage: false,
-        message: "Yes yes!!"
-    },
-    
-    {
-        name: "Master",
-        poster: "https://drive.google.com/thumbnail?id=1GPaKbxudXNVv7eSUcllMrG0jl6B16cSb",
-        isMessage: true,
-        message: "Yes yes!!"
-    },
-    {
-        name: "LE0",
-        poster: "https://drive.google.com/thumbnail?id=1X2rTXpkoGvIqqJ5AT0ulfer5PIkuD33v",
-        isMessage: true,
-        message: "Screen Time Chronicles🍿📺 Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺"
-    },
-    {
-        name: "Matrix",
-        poster: matrixPoster,
-        isMessage: false,
-        message: "Screen Time Chronicles🍿📺 Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺"
-    },
-
-
-    
-   
-    
-
-]
-
-
-
+  {
+    name: "Master",
+    poster:
+      "https://drive.google.com/thumbnail?id=1GPaKbxudXNVv7eSUcllMrG0jl6B16cSb",
+    isMessage: true,
+    message: "Yes yes!!",
+  },
+  {
+    name: "LE0",
+    poster:
+      "https://drive.google.com/thumbnail?id=1X2rTXpkoGvIqqJ5AT0ulfer5PIkuD33v",
+    isMessage: true,
+    message:
+      "Screen Time Chronicles🍿📺 Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺",
+  },
+  {
+    name: "Matrix",
+    poster: matrixPoster,
+    isMessage: false,
+    message:
+      "Screen Time Chronicles🍿📺 Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺Screen Time Chronicles🍿📺",
+  },
+];
 
 const AnimeShow = [
-    {
-        name: "Boruto",
-        poster: "https://drive.google.com/thumbnail?id=1yEzdwGmEeExNobgnYlA_gKBwcLxF5TQ-",
-        isMessage: false,
-        message: "Belive It!"
-    },
+  {
+    name: "Boruto",
+    poster:
+      "https://drive.google.com/thumbnail?id=1yEzdwGmEeExNobgnYlA_gKBwcLxF5TQ-",
+    isMessage: false,
+    message: "Belive It!",
+  },
+];
 
-
-]
-
-export {Movies, AnimeShow}
+export { Movies, AnimeShow };
