@@ -1,5 +1,6 @@
 
-
+import {feat_dashboard} from "@assets/images/projects/portfolio/dashboard.webp"
+import {feat_npm} from "@assets/images/projects/auto_init_pack/npm.webp"
 
 
 const projects = [
@@ -13,7 +14,7 @@ const projects = [
       features: [
         {
           feat: "Something Something",
-          imgLink: null
+          imgLink: feat_dashboard
         },
         {
           feat: "Something Something",
@@ -31,7 +32,12 @@ const projects = [
       description: "A machine learning model that classifies Instagram accounts into fake, spam, or genuine categories. Enabling better content moderation on social media platforms.",
       tags: ["Python", "FastAPI", "NumPy",  "Pandas", "TensorFlow", "Scikit-Learn"],
       githubLink: "#",
-      demoLink: ""
+      demoLink: "",
+      features: [
+        {
+          
+        }
+      ]
     },
     {
       id: 3,
@@ -39,7 +45,12 @@ const projects = [
       description: "A simple and efficient note-taking app that stores data in the browser's local storage, enabling users to create and manage unlimited notes. Achieved a clean user interface and seamless user experience without requiring logins or database.",
       tags: ["Scipy", "Linear Regression", "Javascript"],
       githubLink: "https://github.com/jaimin-bariya/noter",
-      demoLink: "https://jaimin-bariya.github.io/Noter/"
+      demoLink: "https://jaimin-bariya.github.io/Noter/",
+      features: [
+        {
+          
+        }
+      ]
     },
     {
       id: 4,
@@ -47,7 +58,12 @@ const projects = [
       description: "A local AI-powered assistant that performs system operations, file management, and voice interactions, all offline. Implemented voice commands for tasks like file handling and system updates.",
       tags: ["Python", "Speech Recognition", "OS"],
       githubLink: "#",
-      demoLink: "#"
+      demoLink: "#",
+      features: [
+        {
+          
+        }
+      ]
     },
     {
       id: 5,
@@ -55,7 +71,12 @@ const projects = [
       description: "An automated tool that fills Google Forms based on predefined data, saving time for users by automating repetitive form submissions.",
       tags: ["JavaScript", "React", " Google Forms API", "Python", "Flask", "Selenium", "Automation"],
       githubLink: "#",
-      demoLink: "#"
+      demoLink: "#",
+      features: [
+        {
+          
+        }
+      ]
     },
     {
       id: 6,
@@ -63,14 +84,27 @@ const projects = [
       description: "A command-line tool designed to simplify project initialization for developers. Especially useful for React projects, it automates setting up boilerplates with frameworks like Vite, Tailwind CSS, and Shadcn for faster development.",
       tags: ["Node.js", "NPM"],
       githubLink: "#",
-      demoLink: "https://www.npmjs.com/package/auto-init-cloudboy"
+      demoLink: "https://www.npmjs.com/package/auto-init-cloudboy",
+      features: [
+        {
+          feat: "Something Something",
+          imgLink: feat_npm
+        },
+
+      ]
     },
     {
       id: 7,
       title: "Iron YouTube Extension",
       description: "A browser extension that enhances YouTube functionality by adding features like auto-play/pause when the user looks away, ad-skipping, and quick access to video tools for a seamless viewing experience.",
       tags: ["JavaScript", "Chrome Extensions API", "Manifest.json"],
-      githubLink: "#"
+      githubLink: "#",
+      demoLink: "#",
+      features: [
+        {
+
+        }
+      ]
     },
     
   ]
