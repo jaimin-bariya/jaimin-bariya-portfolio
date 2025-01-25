@@ -1,7 +1,6 @@
 /** @format */
 
 import HeroHomeIcon from "@assets/images/keyboard.png";
-import HeroHomeIcon2 from "@assets/images/hunter.png";
 import { adminName } from "@/data/adminData";
 import { introHomePage } from "@/data/adminDesc";
 

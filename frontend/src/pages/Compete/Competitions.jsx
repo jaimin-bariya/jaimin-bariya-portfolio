@@ -1,6 +1,5 @@
 /** @format */
 
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { CompetitionNames } from "@/data/competeData";
 
 const Competitions = () => {

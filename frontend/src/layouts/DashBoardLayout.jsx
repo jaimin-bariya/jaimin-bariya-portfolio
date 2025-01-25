@@ -1,7 +1,6 @@
 /** @format */
 
 import { Outlet } from "react-router-dom";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useKeyShortcut } from "@/hooks/keyListener";
 import { Toaster } from "@/components/ui/sonner";

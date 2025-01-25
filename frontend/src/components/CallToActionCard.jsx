@@ -1,7 +1,7 @@
 /** @format */
 
 import { Link } from "react-router-dom";
-import { Command, GraduationCap, Book } from "lucide-react";
+import { Command} from "lucide-react";
 
 const CallToActionCard = ({ pageLink = "", titleOfPage = "None" }) => {
   return (

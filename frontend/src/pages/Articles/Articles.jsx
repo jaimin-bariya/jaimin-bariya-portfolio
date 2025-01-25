@@ -1,7 +1,6 @@
 /** @format */
 
 import { AllArticles } from "@/data/articlesData";
-import { ScrollArea, Scrollbar } from "@radix-ui/react-scroll-area";
 
 const Articles = () => {
   return (

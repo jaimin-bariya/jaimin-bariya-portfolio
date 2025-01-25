@@ -1,7 +1,6 @@
 /** @format */
 
 import { YTChannels } from "@/data/miscellaneousData";
-import { YTLogo } from "@/assets/images";
 
 const YTMentors = () => {
   return (

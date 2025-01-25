@@ -2,36 +2,20 @@
 
 import { Navbar, Footer } from "@/components";
 import { Outlet } from "react-router-dom";
-import { Link, useNavigate } from "react-router-dom";
+import { MsgToCoder } from "@/data/siteMetaData";
 import { useKeyShortcut } from "@/hooks/keyListener";
-import { PlayAdminIntro, playMouseClick } from "@/utils/soundsPlaying";
+import { playMouseClick } from "@/utils/soundsPlaying";
 import { SecurityPassword } from "@/pages";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
 
-const MainLayout = ({ children }) => {
-  const navigate = useNavigate();
+const MainLayout = () => {
+
   const [isFirstPasswordOpen, setIsFirstPasswordOpen] = useState(false);
   const [isMsgNumber, setIsMsgNumber] = useState(0);
 
-  const MsgToCoder = [
-    "Oh ho! F12? Trying to be Sherlock? 🕵️‍♂️",
-    "No Coder Bro 😁",
-    "Whoops! F12 is disabled for your safety. 😉",
-    "Bhai, F12 se kuch nahi milega! 😂",
-    "Don't do it 😶",
-    "Aree Na bola na 😎",
-    "Bro, F12 doesn't make you a hacker! 🧑‍💻",
-    "Bhai, relax! 😂",
-    "Beta tumse na ho payega! 😏",
-    "No, no! Developer mode is off-limits! 🚫",
-    "Arre, stop hacking! 🕵️‍♂️",
-    "Kaam kar le ab! 🧑‍💻",
-    "Bro, you're unstoppable! 😅",
-    "Dekh raha hai Binod! 🤔",
-    "Kya kar raha hai bhai? 🫣",
-  ];
+
 
   // const setErrorMessage = () => {
 

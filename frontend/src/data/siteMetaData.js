@@ -37,4 +37,23 @@ const msgTOGuesser = [
   "Not today, Sherlock! Wrong password detected. 🕵️‍♂️",
 ];
 
-export { allDataFiles, msgTOGuesser };
+
+const MsgToCoder = [
+  "Oh ho! F12? Trying to be Sherlock? 🕵️‍♂️",
+  "No Coder Bro 😁",
+  "Whoops! F12 is disabled for your safety. 😉",
+  "Bhai, F12 se kuch nahi milega! 😂",
+  "Don't do it 😶",
+  "Aree Na bola na 😎",
+  "Bro, F12 doesn't make you a hacker! 🧑‍💻",
+  "Bhai, relax! 😂",
+  "Beta tumse na ho payega! 😏",
+  "No, no! Developer mode is off-limits! 🚫",
+  "Arre, stop hacking! 🕵️‍♂️",
+  "Kaam kar le ab! 🧑‍💻",
+  "Bro, you're unstoppable! 😅",
+  "Dekh raha hai Binod! 🤔",
+  "Kya kar raha hai bhai? 🫣",
+];
+
+export { allDataFiles, msgTOGuesser, MsgToCoder };

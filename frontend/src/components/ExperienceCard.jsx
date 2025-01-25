@@ -1,6 +1,6 @@
 /** @format */
 
-import exp from "constants";
+
 import { ChevronRight } from "lucide-react";
 
 const ExperienceCard = ({ experience }) => {

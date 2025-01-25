@@ -1,10 +1,10 @@
 /** @format */
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, ExternalLink, Folder } from "lucide-react";
+import { Folder } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const CardProject = ({ project, index }) => {
+const CardProject = ({ project }) => {
   return (
     <>
       <Card

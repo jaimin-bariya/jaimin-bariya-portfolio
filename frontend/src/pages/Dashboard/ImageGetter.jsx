@@ -20,7 +20,6 @@ import { toast } from "sonner";
 
 const ImageGetter = () => {
   const [image, setImage] = useState(null);
-  const [message, setMessage] = useState("");
   const [openPasswordChecker, setOpenPasswordChecker] = useState(false);
   const [selectedDir, setSelectedDir] = useState("other");
   const [newDir, setNewDir] = useState(null);

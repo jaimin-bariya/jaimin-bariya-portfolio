@@ -1,7 +1,6 @@
 /** @format */
 
 import { ToolBox } from "@/data/adminData";
-import { Badge } from "@/components/ui/badge";
 import { CustomBadge } from "@/components";
 
 const ToolBoxSection = () => {

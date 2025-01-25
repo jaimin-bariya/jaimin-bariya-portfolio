@@ -4,7 +4,6 @@ import HeroSection from "./HeroSection";
 import { projects } from "@/data/projectsData";
 import { Toparticles } from "@/data/articlesData";
 import { CardProject, ArticleSingleShow, CallToActionCard } from "@/components";
-import { Link } from "react-router-dom";
 
 import StandOutSection from "./StandOutSection";
 

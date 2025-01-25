@@ -1,8 +1,5 @@
 /** @format */
 
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import FileCard from "@/components/FileCard";
 import ImageGetter from "./ImageGetter";
 
 const Dashboard = () => {

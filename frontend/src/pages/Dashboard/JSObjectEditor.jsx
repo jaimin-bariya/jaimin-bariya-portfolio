@@ -1,6 +1,6 @@
 /** @format */
 import { Button } from "@/components/ui/button";
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import { Editor } from "@monaco-editor/react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { SecurityToUpdateData } from "@pages/index";
