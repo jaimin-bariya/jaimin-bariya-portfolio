@@ -17,13 +17,13 @@ const myBucketList = [
           },
           {
             action: "30 regular push-ups in one set",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
           {
             action: "40 regular push-ups in one set",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -83,7 +83,7 @@ const myBucketList = [
         list: [
           {
             action: "7 strict pull-ups in one set",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -107,7 +107,7 @@ const myBucketList = [
           },
           {
             action: "7 strict chin-ups",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -161,7 +161,7 @@ const myBucketList = [
           },
           {
             action: "7 parallel bar dips",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -233,13 +233,13 @@ const myBucketList = [
           },
           {
             action: "50 Squats in one go",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
           {
             action: "70 Squats in one go",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -311,7 +311,7 @@ const myBucketList = [
         list: [
           {
             action: "Hold a Handstand against the wall for 1 minute 🤸‍♂️",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -341,13 +341,13 @@ const myBucketList = [
           },
           {
             action: "Perform 30 Seconds Hanging",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
           {
             action: "Perform 1 minute of Hanging",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -570,6 +570,12 @@ const myBucketList = [
             isDone: false,
             haveSideMSG: false,
             message: "",
+          },
+          {
+            action: "Daman",
+            isDone: true,
+            haveSideMSG: true,
+            message: "26 Jan 2025",
           },
         ],
       },
