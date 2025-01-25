@@ -58,30 +58,77 @@ Welcome to the open-source portfolio website of **Jaimin Bariya AKA Cloud Boy**!
 
 
 <br/>
+<br/>
 
 
 ## 📸 Features and Page Names with Screenshots
 
 ### 1. **Home Page** - *Dynamic and Engaging*
    - **Feature**: Displays real-time data from `herosData.js` and `siteMetaData.js`.
-   - ![Home Page Screenshot](frontend/src/assets/images/home-page.png)
+   - ![Home Page Screenshot](Screenshot/homedark.png)
+   - ![Home Page Screenshot](Screenshot/homelight.png)
+
+<br/>
 
 ### 2. **Projects Page** - *Showcase Your Work*
    - **Feature**: Pulls project details from `projectsData.js`.
-   - ![Projects Page Screenshot](frontend/src/assets/images/projects-page.png)
+   - ![Projects Page Screenshot](Screenshot/projects.png)
 
-### 3. **Dashboard Page** - *Admin Control Panel*
+<br/>
+
+### 3. **Experience Page** - *Highlight Professional Journey*
+   - **Feature**: Displays job roles and achievements from `experienceData.js`.
+   - ![Experience Page Screenshot](Screenshot/experience.png)
+
+<br/>
+
+### 4. **Bucket List Page** - *Personal Goals*
+   - **Feature**: A fun way to showcase ambitions from `myBucketListData.js`.
+   - ![Bucket List Page Screenshot](Screenshot/bucket.png)
+
+<br/>
+
+### 5. **Four Tier Approach** - *Tech selection approach (my created one)*
+   - ![Four Screenshot](Screenshot/four.png)
+
+<br/>
+
+### 6. **Mentor Page** - *Guidance, Favorite YT Channels and Res*
+   - ![Mentor Page](Screenshot/mentor.png)
+
+<br/>
+
+### 7. **ScreenTime Chronicles Page** - *FV Movies, web series, and anime that inspire you*
+   - ![Screentime Chronicles page](Screenshot/screentime.png)
+
+<br/>
+
+### 8. **Compete and Conquer Page** - *Place to showcase your winning*
+   - ![compete and conquer page](Screenshot/compete.png)
+
+<br/>
+
+### 9. **About-me Page** - *Personal Introduction Page*
+   - ![About-me page](Screenshot/about.png)
+
+<br/>
+
+### 10. **Articles Page** - *Your articles about tech and beyond*
+   - ![Articles page](Screenshot/articles.png)
+
+<br/>
+
+### 11. **Dashboard Page** - *Admin Control Panel* *Secret page 🤫🤐🔐* 
    - **Feature**: Admin-only access with password verification.
    - **Feature**: Upload images and update content files directly.
-   - ![Dashboard Page Screenshot](frontend/src/assets/images/dashboard-page.png)
+   - ![Dashboard Page Screenshot](Screenshot/dashboard.png)
 
-### 4. **Experience Page** - *Highlight Professional Journey*
-   - **Feature**: Displays job roles and achievements from `experienceData.js`.
-   - ![Experience Page Screenshot](frontend/src/assets/images/experience-page.png)
+<br/>
 
-### 5. **Bucket List Page** - *Personal Goals*
-   - **Feature**: A fun way to showcase ambitions from `myBucketListData.js`.
-   - ![Bucket List Page Screenshot](frontend/src/assets/images/bucketlist-page.png)
+### 12. **Editor Page** - *Admin DataFiles Update Panel* *Secret page 🤫🤐🔐* 
+   - **Feature**: Admin-only update with password verification.
+   - **Feature**: Update Data Files.
+   - ![Dashboard Page Screenshot](Screenshot/editor.png)
 
 
 
