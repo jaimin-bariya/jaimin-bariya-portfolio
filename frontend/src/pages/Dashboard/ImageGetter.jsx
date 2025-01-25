@@ -22,6 +22,7 @@ const ImageGetter = () => {
     const [message, setMessage] = useState("");
     const [openPasswordChecker, setOpenPasswordChecker] = useState(false)
     const [selectedDir, setSelectedDir] = useState("other")
+    const [newDir, setNewDir] = useState(null)
     const [fileName, setFileName] = useState("")
 
 
@@ -70,7 +71,18 @@ const ImageGetter = () => {
           }
           const base64Img = image.split(",")[1];
 
-        await addImgToRepo(token, base64Img, fileName, selectedDir);
+
+        if (selectedDir === 'newDir' && newDir) {
+            console.log(selectedDir, newDir);
+            
+            await addImgToRepo(token, base64Img, fileName, newDir);
+        } else {
+            console.log(selectedDir, newDir, "else chala bhi");
+            await addImgToRepo(token, base64Img, fileName, selectedDir);
+        }
+
+        
+        
 
         toast("Image Uploaded Boss")
         handleImageRemove();
@@ -102,9 +114,13 @@ const ImageGetter = () => {
                             <SelectItem value="moviePoster">MoviePoster</SelectItem>
                             <SelectItem value="bgImage" >BGImgs</SelectItem>
                             <SelectItem value="other" >Other</SelectItem>
+                            <SelectItem value="newDir" >Add new Dir</SelectItem>
                         </SelectGroup>
                     </SelectContent>
                 </Select>
+                {selectedDir === "newDir" && (
+                    <Input placeholde="New Dir" onChange={(e) => setNewDir(e.target.value) } />
+                )}
             </div>
 
 

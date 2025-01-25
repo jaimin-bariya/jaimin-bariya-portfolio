@@ -49,7 +49,11 @@ const SingleProjectShowCase = () => {
           </p>
         </div>
 
-        <ProjectFeature/>
+        {thisProject['features'].map(({feat, imgLink}, index) => (
+          <div key={index} >
+            <ProjectFeature feat={feat} imgLink={imgLink} />
+          </div>
+        ))}
 
         <div className="">
           <div className="flex gap-4 flex-wrap">
