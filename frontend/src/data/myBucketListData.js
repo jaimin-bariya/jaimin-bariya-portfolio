@@ -738,7 +738,7 @@ const myBucketList = [
         list: [
           {
             action: "Contribute to small OSP",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -762,7 +762,7 @@ const myBucketList = [
         list: [
           {
             action: "50 questions",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
@@ -804,7 +804,7 @@ const myBucketList = [
           },
           {
             action: "Take part in a hackathon",
-            isDone: false,
+            isDone: true,
             haveSideMSG: false,
             message: "",
           },
