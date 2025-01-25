@@ -20,8 +20,8 @@ const HobbiesSection = () => {
 
         <div className="flex flex-col sm:gap-6 gap-4 pl-4 ">
           {MyHobbies.map((hob, index) => (
-            <div key={index} className=" flex items-center">
-              <h2 className="border rounded-s-xl sm:rounded-e-none rounded-e-xl w-fit text-nowrap h-16 dark:border-white border-black p-8 flex justify-center items-center hover:bg-orange-500 hover:font-bold">
+            <div key={index} className=" flex items-center group">
+              <h2 className="border rounded-s-xl sm:rounded-e-none rounded-e-xl w-fit text-nowrap h-16 dark:border-white border-black p-8 flex justify-center items-center  group-hover:bg-orange-500 group-hover:font-bold">
                 {hob["name"]}
               </h2>
               <div className=" hidden sm:block">
