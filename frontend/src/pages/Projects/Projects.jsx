@@ -16,7 +16,7 @@ const Projects = () => {
         <div className="min-h-screen ">
           <div className="grid gap-6 md:grid-cols-3  lg:gap-8 ">
             {projects.map((project, index) => (
-              <CardProject project={project} index={index} />
+              <CardProject project={project} key={index} />
             ))}
           </div>
         </div>

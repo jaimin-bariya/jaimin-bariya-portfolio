@@ -2,7 +2,7 @@
 
 import { useParams } from "react-router-dom";
 import { projects } from "@/data/projectsData";
-import { ExternalLink} from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { CustomBadge, ProjectFeature } from "@/components";
 
 const SingleProjectShowCase = () => {
