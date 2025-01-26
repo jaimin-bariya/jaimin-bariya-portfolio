@@ -27,6 +27,11 @@ const Toparticles = [
         href: "https://dev.to/jaiminbariya/implementation-of-acid-transaction-in-database-44nc",
     },
     {
+        title: "Top 10 Tech Podcasts for Software Engineers to Level Up in 2025",
+        date: "January 2025",
+        href: "https://dev.to/jaiminbariya/top-10-tech-podcasts-for-software-engineers-to-level-up-in-2025-518j",
+    },
+    {
         title: "Isolation in ACID Transaction",
         date: "October 2024",
         href: "https://dev.to/jaiminbariya/isolation-in-acid-transaction-3055",
@@ -36,6 +41,11 @@ const Toparticles = [
 const AllArticles = {
   
   2025: [
+    {
+        title: "Top 10 Tech Podcasts for Software Engineers to Level Up in 2025",
+        date: "January 2025",
+        href: "https://dev.to/jaiminbariya/top-10-tech-podcasts-for-software-engineers-to-level-up-in-2025-518j",
+    },
     {
     title: "Why Quick Sort is Faster Than Heap Sort",
     date: "January 2025",
