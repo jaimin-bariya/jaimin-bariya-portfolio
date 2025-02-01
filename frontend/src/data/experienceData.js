@@ -1,6 +1,6 @@
 /** @format */
 
-import { GitHubLogo, FreelancerLogo } from "@/assets/images";
+import { GitHubLogo, FreelancerLogo , DevToLogo} from "@/assets/images";
 
 const AllExperience = [
   {
@@ -29,7 +29,7 @@ const AllExperience = [
       "Translated intricate technical concepts into practical, easy-to-understand insights.",
       "Aimed to foster knowledge sharing and learning within the tech community."
     ],
-    logo: FreelancerLogo,
+    logo: DevToLogo,
   },
   {
     company: "Self-Employed",
