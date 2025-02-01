@@ -16,6 +16,21 @@ const AllExperience = [
     ],
     logo: FreelancerLogo,
   },
+    {
+    company: "Dev.to",
+    role: "Technical Content Writer",
+    startDate: "SEP 2023",
+    endDate: "PRESENT",
+    description: [
+      "creating insightful articles on AI, machine learning, and emerging technologies.",
+      "I write for platforms like dev.to and will soon expand to Medium. .",
+      "My focus is on simplifying complex technical concepts and making them easily accessible for developers and tech enthusiasts, without all the jargon",
+      "Published articles on AI, ML, and programming trends on dev.to.",
+      "Translated intricate technical concepts into practical, easy-to-understand insights.",
+      "Aimed to foster knowledge sharing and learning within the tech community."
+    ],
+    logo: FreelancerLogo,
+  },
   {
     company: "Self-Employed",
     role: "Freelance Web Developer",
