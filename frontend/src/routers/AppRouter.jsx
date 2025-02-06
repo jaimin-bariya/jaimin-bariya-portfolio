@@ -21,6 +21,7 @@ import {
   EducationPage,
   FourTierMastery,
   SingleProjectShowCase,
+  MasterTechChild
 } from "@pages/index";
 
 const AppRouter = () => {
@@ -45,16 +46,14 @@ const AppRouter = () => {
           />{" "}
           {/* Dynamic route */}
           {/* Miscellaneous */}
-          <Route
-            path="/Screen-Time-Chronicles"
-            element={<ScreenTimeChronicleFullPage />}
-          />
+          <Route path="/Screen-Time-Chronicles" element={<ScreenTimeChronicleFullPage />}/>
           <Route path="/Favorite-YT-Channels-Mentors" element={<YTMentors />} />
           <Route path="/Startup-py" element={<StartPy />} />
           <Route path="/My-Bucket-List" element={<MyBucketList />} />
           <Route path="/my-journey" element={<MyJourney />} />
           <Route path="/connect" element={<ConnectPeople />} />
           <Route path="/Four-Tier-Mastery" element={<FourTierMastery />} />
+          <Route path="/Tech-Child-Mastery" element={<MasterTechChild />} />
         </Route>
 
         <Route element={<DashBoardLayout />}>

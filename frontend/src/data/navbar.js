@@ -19,6 +19,7 @@ const subRoutesNames = [
   { href: "/Startup-py", label: "Startup.py" },
   { href: "/My-Bucket-List", label: "My-Bucket-List" },
   { href: "/Four-Tier-Mastery", label: "Four-Tier Mastery" },
+  { href: "/Tech-Child-Mastery", label: "Tech-Child Mastery" },
   // {href: "/connect", label: "Connect"},
   // {href: "/my-journey", label: "My Journey [TimeLine]"},
 ];

@@ -19,6 +19,7 @@ const allDataFiles = [
   "startupData",
   "usagesData",
   "educationData",
+  "TechChildMastery",
 ];
 
 const msgTOGuesser = [
