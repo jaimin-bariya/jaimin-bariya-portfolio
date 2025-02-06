@@ -12,28 +12,29 @@ const MasterTechChild = () => {
           </h1>
 
           <p className="dark:text-zinc-400 text-zinc-600 sm:text-lg  mb-8">
-            Each tier is a building block to reach true mastery in tech, and
-            it’s your roadmap to becoming a super developer! 🧠💪
+            Tech Tool World 🛠️💻 This page showcases the tools, libraries, and
+            frameworks I use across various technologies. 📝 
+            
             <br />
             <br />
-            The Four-Tier Mastery approach keeps me focused and organized while
-            helping me become an expert in my primary focus and a well-rounded
-            developer overall! 🌍🔝
+            It's a comprehensive guide to everything that supports my development
+            process—from frontend 🔬 and backend 🧰 frameworks to AI 🤖, ML 🧬,
+            LLMs 📚, open-source tech 🧱, and utility libraries for seamless
+            application building. 🚀
           </p>
         </div>
 
-
         {/* All Tech-Childs  */}
-        <div className="space-y-32" >
-
+        <div className="space-y-32">
           {AllTechChild.map((oneTechList, index) => (
             <div key={index} className="">
-            <TechChild tools={oneTechList['toolList']} name={oneTechList['name']} />
+              <TechChild
+                tools={oneTechList["toolList"]}
+                name={oneTechList["name"]}
+              />
             </div>
           ))}
-
         </div>
-        
       </div>
     </>
   );

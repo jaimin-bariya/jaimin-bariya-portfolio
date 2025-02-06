@@ -15,8 +15,13 @@ const ListLayout = ({ tools }) => {
           return (
             <motion.div
               key={index}
-              className="border-2 p-2 h-full  flex justify-start  items-start "
+              className="border-2 p-2 h-full  flex justify-start  items-start  "
+              initial={{scale: 0, opacity: 0}}
+              animate={{scale: 1, opacity:1}}
+              transition={{delay: index * 0.1 , duration:0.4}}
+
             >
+              
               {/* Image  */}
               <div
                 className={`p-2 flex w-12 h-12 rounded-full ${
