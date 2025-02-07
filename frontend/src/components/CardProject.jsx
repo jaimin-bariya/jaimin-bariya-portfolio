@@ -5,6 +5,11 @@ import { Folder } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CardProject = ({ project }) => {
+
+
+  console.log(project['features'] , "ans");
+  
+
   return (
     <>
       <Card

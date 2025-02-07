@@ -33,15 +33,23 @@ const SubNavbar = () => {
         <DropdownMenuContent>
           <DropdownMenuLabel>My Sub-Pages</DropdownMenuLabel>
           <DropdownMenuSeparator />
-          {subRoutesNames.map((route) => (
-            <Link
-              to={route["href"]}
-              key={route["label"]}
-              className="dark:text-white text-black "
-            >
-              <DropdownMenuItem>{route["label"]}</DropdownMenuItem>
-            </Link>
-          ))}
+
+
+          {subRoutesNames.map((route) => {
+
+            if (route['label'] === 'SEP') {
+              return (<DropdownMenuSeparator key={route['label']} />)
+            }
+            return (
+              <Link
+                to={route["href"]}
+                key={route["label"]}
+                className="dark:text-white text-black "
+              >
+                <DropdownMenuItem>{route["label"]}</DropdownMenuItem>
+              </Link>
+            );
+          })}
 
           {/* <DropdownMenuSeparator/> */}
         </DropdownMenuContent>

@@ -7,6 +7,7 @@ const allDataFiles = [
   "competeData",
   "educationData",
   "experienceData",
+  "GitHubDevHubRepos",
   "herosData",
   "miscellaneousData",
   "myBucketListData",
@@ -20,6 +21,7 @@ const allDataFiles = [
   "usagesData",
   "educationData",
   "TechChildMastery",
+  
 ];
 
 const msgTOGuesser = [

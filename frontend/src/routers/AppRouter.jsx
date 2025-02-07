@@ -21,7 +21,8 @@ import {
   EducationPage,
   FourTierMastery,
   SingleProjectShowCase,
-  MasterTechChild
+  MasterTechChild,
+  GitHubDevHubRepos
 } from "@pages/index";
 
 const AppRouter = () => {
@@ -54,6 +55,7 @@ const AppRouter = () => {
           <Route path="/connect" element={<ConnectPeople />} />
           <Route path="/Four-Tier-Mastery" element={<FourTierMastery />} />
           <Route path="/Tech-Child-Mastery" element={<MasterTechChild />} />
+          <Route path="/GitHub-DevHub-Repos" element={<GitHubDevHubRepos />} />
         </Route>
 
         <Route element={<DashBoardLayout />}>
