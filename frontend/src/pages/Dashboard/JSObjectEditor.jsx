@@ -52,15 +52,15 @@ const JSObjectEditor = () => {
     console.log(editorContent);
 
 
-    function toBinaryStr(str) {
-      const encoder = new TextEncoder();
-      const charCodes = encoder.encode(str);
-      return String.fromCharCode(...charCodes);
-  }
+  //   function toBinaryStr(str) {
+  //     const encoder = new TextEncoder();
+  //     const charCodes = encoder.encode(str);
+  //     return String.fromCharCode(...charCodes);
+  // }
 
 
-    const binaryString = toBinaryStr(editorContent)
-    const updatedBase64Content = btoa(binaryString);
+    // const binaryString = toBinaryStr(editorContent)
+    const updatedBase64Content = btoa(editorContent);
 
     const res = await fetch(
       `https://api.github.com/repos/jaimin-bariya/jaimin-bariya-portfolio/contents/frontend/src/data/${currentFile}.js`,
