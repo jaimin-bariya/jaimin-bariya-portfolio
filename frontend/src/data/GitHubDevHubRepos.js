@@ -15,7 +15,7 @@ const allReposNames = [
         repoLink: "https://github.com/jaimin-bariya/Awesome-SQL-Interview"
     },
     {
-        name: "Python Complexity Cheat Sheet",
+        name: "Python Complexity Cheat Sheet 📊",
         desc: "AboutA concise and comprehensive cheat sheet covering time complexities of Python's built-in data structures like Lists, Dictionaries, Sets, Tuples, and Strings. This resource is designed to help developers write efficient and optimized Python code.",
         repoLink: "https://github.com/jaimin-bariya/python-complexity-cheatsheet"
     }
