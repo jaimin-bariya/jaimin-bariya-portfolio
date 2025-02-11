@@ -8,7 +8,7 @@ import {
 } from "@/data/projectsData";
 
 const Projects = () => {
-  console.log(topFiveProjects);
+  
 
   return (
     <>
