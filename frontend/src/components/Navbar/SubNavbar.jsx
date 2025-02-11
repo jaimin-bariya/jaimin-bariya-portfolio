@@ -35,10 +35,10 @@ const SubNavbar = () => {
           <DropdownMenuSeparator />
 
 
-          {subRoutesNames.map((route) => {
+          {subRoutesNames.map((route, index) => {
 
-            if (route['label'] === 'SEP') {
-              return (<DropdownMenuSeparator key={route['label']} />)
+            if (route['label'] === 'SEP' ) {
+              return (<DropdownMenuSeparator key={index} />)
             }
             return (
               <Link

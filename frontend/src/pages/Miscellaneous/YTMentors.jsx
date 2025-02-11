@@ -18,8 +18,8 @@ const YTMentors = () => {
 
         <div className=" divide-y space-y-16 [&>*]:pt-8">
           <ul className="list-disc space-y-2 divide-y [&>*]:py-4">
-            {YTChannels.map((channel) => (
-              <li>
+            {YTChannels.map((channel, index) => (
+              <li key={index}>
                 <div className="flex gap-2 items-center">
                   <a
                     target="_blank"

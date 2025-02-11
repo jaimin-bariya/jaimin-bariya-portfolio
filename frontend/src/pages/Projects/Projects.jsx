@@ -26,8 +26,8 @@ const Projects = () => {
         </div>
 
         <div className=" divide-y-2  ">
-          {typesOfProjects.map((oneType) => (
-            <div className="pt-20 pb-20">
+          {typesOfProjects.map((oneType, index) => (
+            <div key={index} className="pt-20 pb-20">
               <h2 className="sm:text-3xl underline underline-offset-8 mb-8 font-roboto-slab text-2xl font-semibold">
                 {oneType["typeName"]}
               </h2>
