@@ -6,6 +6,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { SecurityToUpdateData } from "@pages/index";
 import { allDataFiles } from "@/data/siteMetaData";
 import { toast } from "sonner";
+import { unescape } from "querystring";
 
 const JSObjectEditor = () => {
   const [editorContent, setEditorContent] = useState(
@@ -60,7 +61,7 @@ const JSObjectEditor = () => {
 
 
     // const binaryString = toBinaryStr(editorContent)
-    const updatedBase64Content = btoa(editorContent);
+    const updatedBase64Content = btoa(unescape(encodeURIComponent(editorContent)))
 
     const res = await fetch(
       `https://api.github.com/repos/jaimin-bariya/jaimin-bariya-portfolio/contents/frontend/src/data/${currentFile}.js`,
