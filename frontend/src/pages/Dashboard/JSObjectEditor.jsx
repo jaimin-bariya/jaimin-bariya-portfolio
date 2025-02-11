@@ -36,7 +36,7 @@ const JSObjectEditor = () => {
       setOldFileSHA(jsonRes.sha);
 
       const base64Content = jsonRes.content;
-      const decodedContent = decodeURIComponent(atob(base64Content))
+      const decodedContent = atob(base64Content)
       console.log(decodedContent);
 
       setEditorContent(decodedContent);
@@ -61,7 +61,7 @@ const JSObjectEditor = () => {
 
 
     // const binaryString = toBinaryStr(editorContent)
-    const updatedBase64Content = btoa(encodeURIComponent(editorContent));
+    const updatedBase64Content = btoa(editorContent)
 
     const res = await fetch(
       `https://api.github.com/repos/jaimin-bariya/jaimin-bariya-portfolio/contents/frontend/src/data/${currentFile}.js`,
