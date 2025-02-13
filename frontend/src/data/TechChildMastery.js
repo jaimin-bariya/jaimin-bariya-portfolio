@@ -28,7 +28,6 @@ import {
   Repeat as FlaskMigrate,
   Server as Gunicorn,
   Rocket as Celery,
-  Dock as Docker,
   FlaskRound as FlaskSQLAlchemy,
   TestTubes as Postman
 } from "lucide-react";
