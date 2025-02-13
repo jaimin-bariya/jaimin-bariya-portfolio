@@ -12,7 +12,6 @@ import {
   Cloud as AxiosIcon,
   RocketIcon as ViteIcon,
   FlameIcon as FirebaseIcon,
-  TestTubes as Flask,
 
 } from "lucide-react";
 
@@ -73,6 +72,7 @@ const FlaskToolChild = [
   { name: "Flask", icon: Flask, color: "text-red-500", desc: "Lightweight web framework for building APIs and web apps." },
   { name: "Jinja2", icon: Jinja2, color: "text-orange-600", desc: "Templating engine used to render dynamic HTML pages." },
   { name: "SQLAlchemy", icon: SQLAlchemy, color: "text-blue-600", desc: "ORM for database interaction in Flask apps." },
+  { name: "Blueprint", icon: "BP", color: "text-blue-400", desc: "Way to organize routes and modularize your application." },
   { name: "Marshmallow", icon: Marshmallow, color: "text-green-600", desc: "Library for serializing and validating data objects." },
   { name: "WTForms", icon: WTForms, color: "text-teal-500", desc: "Used for form validation and rendering in Flask apps." },
   { name: "Flask-RESTful", icon: FlaskRESTful, color: "text-purple-600", desc: "Extension for building RESTful APIs with Flask." },
@@ -82,8 +82,6 @@ const FlaskToolChild = [
   { name: "Flask-Migrate", icon: FlaskMigrate, color: "text-yellow-500", desc: "Handles database migrations using Alembic." },
   { name: "Gunicorn", icon: Gunicorn, color: "text-green-500", desc: "WSGI server for running Flask apps in production." },
   { name: "Celery", icon: Celery, color: "text-pink-500", desc: "Task queue for handling background jobs in Flask." },
-  { name: "Docker", icon: Docker, color: "text-blue-400", desc: "Containerization tool to package Flask apps." },
-  { name: "Postman", icon: Postman, color: "text-orange-500", desc: "API testing tool for Flask applications." }
 ];
 
 
