@@ -64,24 +64,35 @@ const projects = [
     demoLink: "#",
     features: [],
   },
-  {
-    id: 4,
-    title: "GForm Auto",
-    description:
-      "An automated tool that fills Google Forms based on predefined data, saving time for users by automating repetitive form submissions.",
-    tags: [
-      "JavaScript",
-      "React",
-      " Google Forms API",
-      "Python",
-      "Flask",
-      "Selenium",
-      "Automation",
-    ],
-    githubLink: "#",
-    demoLink: "#",
-    features: [],
-  },
+{
+  id: 4,
+  title: "GFormAuto",
+  description:
+    "A cross-platform desktop app that automates Google Form submissions using CSV/Excel data. Built with Electron.js, React.js, and Flask, it simplifies bulk form-filling tasks with a single click.",
+  tags: [
+    "JavaScript",
+    "React.js",
+    "Electron.js",
+    "Tailwind CSS",
+    "Python",
+    "Flask",
+    "Selenium",
+    "Automation",
+    "CSV",
+    "Excel",
+  ],
+  githubLink: "https://github.com/jaimin-bariya/GAutoForm-Product",
+  demoLink: "#",
+  features: [
+    "Bulk Google Form submissions using CSV/Excel files",
+    "Cross-platform support (Windows, macOS, Linux)",
+    "Electron.js for a native-like desktop experience",
+    "Flask API for secure backend processing",
+    "Automated form-filling using Selenium",
+    "Simple and clean UI built with React.js and Tailwind CSS",
+  ],
+},
+
   {
     id: 5,
     title: "auto-init-cloudboy (NPM Package)",
