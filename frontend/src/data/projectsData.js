@@ -2,6 +2,13 @@
 
 import feat_dashboard from "@assets/images/projects/portfolio/dashboard.webp";
 import feat_npm from "@assets/images/projects/auto_init_pack/npm.webp";
+import gformauto_form from "@assets/images/Projects/GFormAuto/GFormAutoForm.png";
+import gformauto_form2 from "@assets/images/Projects/GFormAuto/GFormAutoForm2.png";
+import gformauto_form3 from "@assets/images/Projects/GFormAuto/GFormAutoForm3.png";
+import gformauto_form4 from "@assets/images/Projects/GFormAuto/GFormAutoForm4.png";
+import gformauto_guide from "@assets/images/Projects/GFormAuto/GFormAutoGuide.png";
+import gformauto_guide2 from "@assets/images/Projects/GFormAuto/GFormAutoGuide2.png";
+import gformautohome from "@assets/images/Projects/GFormAuto/GFormAutohome.png";
 
 
 const projects = [
@@ -84,12 +91,37 @@ const projects = [
   githubLink: "https://github.com/jaimin-bariya/GAutoForm-Product",
   demoLink: "#",
   features: [
-    "Bulk Google Form submissions using CSV/Excel files",
-    "Cross-platform support (Windows, macOS, Linux)",
-    "Electron.js for a native-like desktop experience",
-    "Flask API for secure backend processing",
-    "Automated form-filling using Selenium",
-    "Simple and clean UI built with React.js and Tailwind CSS",
+    {
+        feat: "Home page",
+        imgLink: gformautohome
+    },
+    
+    {
+        feat: "Bulk Google Form submissions using CSV/Excel files",
+        imgLink: gformauto_form
+    },
+    {
+        feat: "Cross-platform support (Windows, macOS, Linux)",
+        imgLink: gformauto_form2
+    },
+    {
+        feat: "Electron.js for a native-like desktop experience",
+        imgLink: gformauto_form3
+    },
+    {
+        feat: "Flask API for secure backend processing",
+        imgLink: gformauto_form4
+    },
+    {
+        feat: "Automated form-filling using Selenium",
+        imgLink: gformauto_guide
+    },
+    {
+        feat: "Simple and clean UI built with React.js and Tailwind CSS",
+        imgLink: gformauto_guide2
+    }
+    
+
   ],
 },
 
