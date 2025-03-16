@@ -34,23 +34,23 @@ const projects = [
       },
     ],
   },
-  {
-    id: 1,
-    title: "AI-Powered Instagram Account Classifier",
-    description:
-      "A machine learning model that classifies Instagram accounts into fake, spam, or genuine categories. Enabling better content moderation on social media platforms.",
-    tags: [
-      "Python",
-      "FastAPI",
-      "NumPy",
-      "Pandas",
-      "TensorFlow",
-      "Scikit-Learn",
-    ],
-    githubLink: "#",
-    demoLink: "",
-    features: [],
-  },
+//   {
+//     id: 1,
+//     title: "AI-Powered Instagram Account Classifier",
+//     description:
+//       "A machine learning model that classifies Instagram accounts into fake, spam, or genuine categories. Enabling better content moderation on social media platforms.",
+//     tags: [
+//       "Python",
+//       "FastAPI",
+//       "NumPy",
+//       "Pandas",
+//       "TensorFlow",
+//       "Scikit-Learn",
+//     ],
+//     githubLink: "#",
+//     demoLink: "",
+//     features: [],
+//   },
   {
     id: 2,
     title: "Noter (Note-Taking App)",
