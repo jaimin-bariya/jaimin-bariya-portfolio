@@ -17,7 +17,7 @@ import {
   YTLogo,
 } from "@/assets/images";
 
-const adminName = "Jaimin Bariyaaa";
+const adminName = "Jaimin Bariya";
 
 console.log(import.meta.url); // Outputs the URL of this script
 
