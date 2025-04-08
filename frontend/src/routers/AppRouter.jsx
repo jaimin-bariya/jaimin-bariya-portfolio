@@ -22,7 +22,9 @@ import {
   FourTierMastery,
   SingleProjectShowCase,
   MasterTechChild,
-  GitHubDevHubRepos
+  GitHubDevHubRepos,
+  MyThought
+  
 } from "@pages/index";
 
 const AppRouter = () => {
@@ -48,7 +50,8 @@ const AppRouter = () => {
           {/* Dynamic route */}
           {/* Miscellaneous */}
           <Route path="/Screen-Time-Chronicles" element={<ScreenTimeChronicleFullPage />}/>
-          <Route path="/Favorite-YT-Channels-Mentors" element={<YTMentors />} />
+          <Route path="/North-Stars" element={<YTMentors />} />
+          <Route path="/Thought-orbit" element={<MyThought />} />
           <Route path="/Startup-py" element={<StartPy />} />
           <Route path="/My-Bucket-List" element={<MyBucketList />} />
           <Route path="/my-journey" element={<MyJourney />} />

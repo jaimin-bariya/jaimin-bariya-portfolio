@@ -14,7 +14,8 @@ const routesName = [
 
 const subRoutesNames = [
   { href: "/Screen-Time-Chronicles", label: "Screen Time Chronicles🍿📺" },
-  { href: "/Favorite-YT-Channels-Mentors", label: "Favorite YT Channels / Mentors ",},
+  { href: "/North-Stars", label: "North Stars",},
+  { href: "/Thought-orbit", label: "Thought Orbit 🧠🌍",},
   { label: 'SEP'},
   { href: "/Startup-py", label: "Startup.py" },
   { href: "/My-Bucket-List", label: "My-Bucket-List" },

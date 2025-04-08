@@ -23,3 +23,4 @@ export { default as FourTierMastery } from "./Miscellaneous/FourTierMastery";
 export { default as SingleProjectShowCase } from "./Projects/SingleProjectShowCase";
 export { default as MasterTechChild } from "./Miscellaneous/MasterTechChild/MasterTechChild";
 export { default as GitHubDevHubRepos } from "./Miscellaneous/GitHubDevHubRepos";
+export { default as MyThought } from "./Miscellaneous/mythought";
