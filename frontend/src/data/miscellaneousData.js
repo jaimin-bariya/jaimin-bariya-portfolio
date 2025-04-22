@@ -24,7 +24,7 @@ const YTChannels = [
 
     {
     channelName: "Dr. Angela Yu - Udemy",
-    link: "https://www.udemy.com/course/100-days-of-code/",
+    link: "https://www.udemy.com/share/103IHM3@keVJ4eFzr0BKnilW9VU_s_13m7lFOyllrjvDlcGYeQcLmprqjzmPauYOtVHRrNCHgg==/",
     for: "100 Days of Code: The Complete Python Pro Bootcamp", 
   },
 ];
