@@ -21,6 +21,7 @@ const allDataFiles = [
   "usagesData",
   "educationData",
   "TechChildMastery",
+  "mythought"
   
 ];
 
