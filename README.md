@@ -2,6 +2,9 @@
 
 Welcome to the open-source portfolio website of **Jaimin Bariya AKA Cloud Boy**! 🌟 This dynamic, privacy-focused, and user-friendly site is built to inspire both tech-savvy individuals and non-tech enthusiasts. Feel free to explore, use, and even fork this project. There are **no copyrights**—everyone has the right to copy, modify, and create their version! 😅
 
+
+
+
 <br/>
 
 ## ✨ Key Features
