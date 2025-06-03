@@ -7,7 +7,7 @@ const AllExperience = [
     company: "Unified Mentor",
     role: "ML Developer Intern",
     startDate: "DEC 2024",
-    endDate: "PRESENT",
+    endDate: "FEB 2025",
     description: [
       "At Unified Mentor, my work involves designing and implementing advanced machine learning models to solve real-world problems effectively.",
       "Built a classification model to identify Instagram fake accounts with 95% accuracy.",
