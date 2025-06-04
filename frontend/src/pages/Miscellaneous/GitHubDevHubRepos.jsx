@@ -27,15 +27,15 @@ const GitHubDevHubRepos = () => {
 
             <div className={`p-4  w-full rounded-lg `}>
               {oneType["listOf"].map((oneRepo, index) => (
-                  <a
-                    key={index}
-                    target="_blank"
-                    href={oneRepo['repoLink']}
-                    className="border p-4 flex justify-between px-6  dark:text-white  dark:hover:text-orange-500 hover:text-orange-500"
-                  >
-                    <p>{oneRepo["name"]}</p>
-                    <Link/>
-                  </a>
+                <a
+                  key={index}
+                  target="_blank"
+                  href={oneRepo["repoLink"]}
+                  className="border p-4 flex justify-between px-6  dark:text-white  dark:hover:text-orange-500 hover:text-orange-500"
+                >
+                  <p>{oneRepo["name"]}</p>
+                  <Link />
+                </a>
               ))}
             </div>
           </div>

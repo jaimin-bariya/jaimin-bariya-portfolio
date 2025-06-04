@@ -13,7 +13,7 @@ import {
   Dashboard,
   ScreenTimeChronicleFullPage,
   MyBucketList,
-  YTMentors,
+  Mentors,
   StartPy,
   MyJourney,
   ConnectPeople,
@@ -23,8 +23,7 @@ import {
   SingleProjectShowCase,
   MasterTechChild,
   GitHubDevHubRepos,
-  MyThought
-  
+  MyThought,
 } from "@pages/index";
 
 const AppRouter = () => {
@@ -49,8 +48,11 @@ const AppRouter = () => {
           />{" "}
           {/* Dynamic route */}
           {/* Miscellaneous */}
-          <Route path="/Screen-Time-Chronicles" element={<ScreenTimeChronicleFullPage />}/>
-          <Route path="/North-Stars" element={<YTMentors />} />
+          <Route
+            path="/Screen-Time-Chronicles"
+            element={<ScreenTimeChronicleFullPage />}
+          />
+          <Route path="/North-Stars" element={<Mentors />} />
           <Route path="/Thought-orbit" element={<MyThought />} />
           <Route path="/Startup-py" element={<StartPy />} />
           <Route path="/My-Bucket-List" element={<MyBucketList />} />
