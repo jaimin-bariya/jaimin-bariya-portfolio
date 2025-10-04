@@ -3,6 +3,14 @@
 import { GitHubLogo, FreelancerLogo , DevToLogo} from "@/assets/images";
 
 const AllExperience = [
+{
+    company: "IBM",
+    role: "Application Developer - RPA ",
+    startDate: "JUL 2025",
+    endDate: "PRESENT",
+    description: [],
+    logo: FreelancerLogo,
+  },
   {
     company: "Unified Mentor",
     role: "ML Developer Intern",
